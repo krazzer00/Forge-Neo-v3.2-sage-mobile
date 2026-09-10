@@ -24,9 +24,10 @@
 
 13 моделей (57 ГБ: ControlNet Illustrious/NoobAI, `flux-2-klein-9b-fp8`, `moodyDesireMix_v30`,
 VAE `illustriousXLV20_v10`) есть только на Civitai, а он отдаёт файлы только после входа.
-Скрипт спросит API-ключ при первой такой модели. Ключ создаётся на
-[civitai.com/user/account](https://civitai.com/user/account) (раздел API Keys).
-Можно задать его заранее: `set CIVITAI_TOKEN=ключ` перед запуском.
+Скрипт спросит API-ключ при первой такой модели и сохранит его в `civitai_token.txt`
+в корне сборки, чтобы больше не спрашивать. Этот файл есть в `.gitignore` и в репозиторий не попадает.
+Ключ создаётся на [civitai.com/user/account](https://civitai.com/user/account) (раздел API Keys).
+Вместо этого можно создать `civitai_token.txt` вручную или задать `set CIVITAI_TOKEN=ключ`.
 
 ## Скрипты
 
@@ -36,7 +37,7 @@ VAE `illustriousXLV20_v10`) есть только на Civitai, а он отда
 | `download-models.bat` | Докачать недостающие модели. Ключи: `--list` — показать, чего не хватает; `--verify` — проверить SHA256 скачанного; `--only ТЕКСТ` — только модели с ТЕКСТ в пути |
 | `update.bat` | `git pull` всей сборки и докачка новых моделей |
 | `RUN-Sage.bat` | Forge с `--sage` + MobileUI |
-| `RUN.bat`, `RUN-reserve-vram2gb.bat`, `RUN-Klein.bat` | Другие варианты запуска |
+| `RUN.bat`, `RUN-reserve-vram2gb.bat` | Другие варианты запуска |
 | `update-requirements.bat` | `pip install -r webui/requirements.txt` |
 | `Additions/Install_Triton_&_Sage.bat` | Установка Triton и SageAttention (см. `Additions/For Triton Install/Инструкция.txt`) |
 

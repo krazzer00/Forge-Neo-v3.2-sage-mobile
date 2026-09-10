@@ -7,7 +7,8 @@
   --list    показать, каких моделей не хватает, и выйти
 
 Некоторые модели Civitai и HuggingFace отдаются только после входа.
-Для них задайте токены в переменных окружения CIVITAI_TOKEN и HF_TOKEN.
+Скрипт спросит ключ Civitai и сохранит его в civitai_token.txt (файл не попадает в git).
+Токены можно задать и переменными окружения CIVITAI_TOKEN и HF_TOKEN.
 """
 
 import argparse
@@ -27,6 +28,7 @@ import zipfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = os.path.join(ROOT, "setup", "models.json")
 DOWNLOAD_DIR = os.path.join(ROOT, "_download")
+CIVITAI_TOKEN_FILE = os.path.join(ROOT, "civitai_token.txt")
 CHUNK = 4 << 20
 USER_AGENT = "Forge-Neo-portable"
 GITHUB_REPO = "krazzer00/Forge-Neo-v3.2-sage-mobile"
@@ -122,6 +124,10 @@ def ask_token(url):
                 _declined_tokens.add(env)
                 return False
             os.environ[env] = token
+            if env == "CIVITAI_TOKEN":
+                with open(CIVITAI_TOKEN_FILE, "w", encoding="utf-8") as f:
+                    f.write(token + "\n")
+                print("  Ключ сохранён в civitai_token.txt")
             return True
     return False
 
@@ -235,6 +241,9 @@ def extract_members(archive, members):
 def main():
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(errors="replace")
+    if not os.environ.get("CIVITAI_TOKEN") and os.path.exists(CIVITAI_TOKEN_FILE):
+        with open(CIVITAI_TOKEN_FILE, encoding="utf-8") as f:
+            os.environ["CIVITAI_TOKEN"] = f.read().strip()
     ap = argparse.ArgumentParser(description="Скачивание моделей Forge Neo")
     ap.add_argument("--verify", action="store_true")
     ap.add_argument("--only", default="")

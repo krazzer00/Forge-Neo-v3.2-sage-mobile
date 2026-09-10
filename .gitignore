@@ -100,3 +100,6 @@ __pycache__/
 /webui/models/u2net/silueta.onnx
 /webui/models/u2net/u2net.onnx
 /webui/models/u2net/u2net_human_seg.onnx
+
+# Локальный ключ Civitai (download-models.bat)
+/civitai_token.txt

@@ -1,0 +1,3 @@
+shower selfie of a young anime girl, cyberpunk aesthetic, silver-grey chin-length wet bob haircut with straight bangs, hair tips with blue neon gradient, big bright blue eyes, oval face, pointed chin, small nose, small lips, slim athletic body, wet skin with water droplets, standing under shower stream, steam, soap suds, holding phone up for a selfie, looking at camera, playful smile, bathroom with neon pink and blue accent lights, high quality, detailed
+Negative prompt: blurry, low quality, watermark, text, extra limbs, deformed, bad anatomy
+Steps: 10, Sampler: Euler, Schedule type: Flux2, CFG scale: 3.5, Seed: 2612025109, Size: 832x1152, Model: moodyDesireMix_v30, Model hash: 4c41e09e41, Module 1: flux2-vae, Module 2: qwen_3_8b, RNG: CPU, Version: neo-2.29

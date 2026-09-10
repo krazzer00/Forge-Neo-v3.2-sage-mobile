@@ -1,0 +1,54 @@
+Python 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]
+Version: neo 2.29
+Comfy-Kitchen 0.2.31: {'hip': False, 'triton': False, 'cuda': True, 'eager': True}
+Total VRAM 24564 MB, total RAM 130992 MB       memory_management.py :: INFO    
+PyTorch Version: 2.10.0+cu130                  memory_management.py :: INFO    
+VRAM State: NORMAL_VRAM                        memory_management.py :: INFO    
+Device: NVIDIA GeForce RTX 3090 Ti (cuda:0) -  memory_management.py :: INFO    
+native                                                                         
+Using async weight offloading with 2 streams   memory_management.py :: INFO
+CUDA 13.0
+Launching Web UI with arguments: --sage --cuda-malloc --cuda-stream --listen --enable-insecure-extension-access --api --skip-version-check --lock-oo-submodule
+Comfy-Kitchen 0.2.31: {'cuda': True, 'triton': False, 'eager': True, 'hip': False}
+Total VRAM 24564 MB, total RAM 130992 MB       memory_management.py :: INFO    
+PyTorch Version: 2.10.0+cu130                  memory_management.py :: INFO    
+VRAM State: NORMAL_VRAM                        memory_management.py :: INFO    
+Device: NVIDIA GeForce RTX 3090 Ti (cuda:0) -  memory_management.py :: INFO    
+cudaMallocAsync                                                                
+Using async weight offloading with 2 streams   memory_management.py :: INFO    
+Using SageAttention 2                                  attention.py :: INFO    
+Using PyTorch Attention for VAE                        attention.py :: INFO    
+ControlNet preprocessor location: H:\Forge-Neo-v3.2-sage\webui\models\ControlNetPreprocessor
+[ADetailer]: Loading Models...
+[ADetailer]: Initialized - Version: Neo ; 10 Models
+CHv1.8.13: Get Custom Model Folder
+Tag Autocomplete: Could not locate model-keyword extension, Lora trigger word completion will be limited to those added through the extra networks menu.
+AI Model: gpt-4o-mini
+OpenAI Base URL: https://api.openai.com/v1
+OpenAI API Key: Not configured
+Embedding Model: text-embedding-3-small
+TwelveLabs API Key: Not configured
+sd-webui-prompt-all-in-one background API service started successfully.
+15:44:51 - ReActor - [38;5;173mSTATUS[0m - Running v0.7.1-a2 on Device: CUDA
+Forge: True, reForge: False
+CHv1.8.13: Set Proxy: 
+ControlNet UI callback registered.           controlnet_ui_group.py :: INFO    
+[openOutpaint] Submodule locked. Will skip submodule update.
+Model Selected:                                       main_entry.py :: INFO    
+{
+  "checkpoint": "moodyDesireMix_v30.safetensors",
+  "modules": [
+    "flux2-vae.safetensors",
+    "qwen_3_8b.safetensors"
+  ],
+  "dtype": "[torch.float16, torch.bfloat16]"
+}
+Patch LoRAs on-the-fly: False                         main_entry.py :: INFO    
+Running on local URL:  http://0.0.0.0:7860
+
+To create a public link, set `share=True` in `launch()`.
+[93mIIB Database backup already exists for today (2026-09-08). Skipping backup.[0m
+Startup time: 79.3s (prepare environment: 27.4s, launcher: 0.6s, forge init: 8.1s, shared init: 0.3s, misc. imports: 7.1s, list SD models: 0.6s, load scripts: 9.8s, initialize extra networks: 0.3s, create ui: 8.0s, gradio launch: 8.6s, add APIs: 7.8s, app_started_callback: 0.9s).
+Loading Model: {'checkpoint_info': {'filename': 'H:\\Forge-Neo-v3.2-sage\\webui\\models\\Stable-diffusion\\KLEIN\\moodyDesireMix_v30.safetensors', 'hash': '944beb98'}, 'additional_modules': ['H:\\Forge-Neo-v3.2-sage\\webui\\models\\VAE\\flux2-vae.safetensors', 'H:\\Forge-Neo-v3.2-sage\\webui\\models\\text_encoder\\qwen_3_8b.safetensors'], 'unet_storage_dtype': None}
+Using Default Qwen3 Data Type: torch.float16              loader.py :: INFO    
+Press any key to continue . . . 

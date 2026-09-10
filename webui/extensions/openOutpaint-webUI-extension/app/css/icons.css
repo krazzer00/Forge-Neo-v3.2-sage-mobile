@@ -1,0 +1,210 @@
+.ui.inline-icon {
+	position: relative;
+
+	display: flex;
+}
+
+.ui.inline-icon::after {
+	content: "";
+	display: block;
+
+	position: absolute;
+
+	box-sizing: border-box;
+
+	margin: auto;
+	top: 15%;
+	bottom: 15%;
+
+	mask-size: contain;
+	-webkit-mask-size: contain;
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+
+	max-height: 70%;
+	aspect-ratio: 1;
+
+	left: 0;
+	right: 0;
+
+	background-color: var(--c-text);
+}
+
+.ui.inline-icon.icon-eye-off::after,
+.ui.icon > .icon-eye-off {
+	-webkit-mask-image: url("../res/icons/eye-off.svg");
+	mask-image: url("../res/icons/eye-off.svg");
+}
+
+.ui.icon > .icon-eye {
+	-webkit-mask-image: url("../res/icons/eye.svg");
+	mask-image: url("../res/icons/eye.svg");
+}
+
+.ui.icon > .icon-file-plus {
+	-webkit-mask-image: url("../res/icons/file-plus.svg");
+	mask-image: url("../res/icons/file-plus.svg");
+}
+
+.ui.inline-icon.icon-flip-horizontal::after,
+.ui.icon > .icon-flip-horizontal {
+	-webkit-mask-image: url("../res/icons/flip-horizontal.svg");
+	mask-image: url("../res/icons/flip-horizontal.svg");
+}
+
+.ui.inline-icon.icon-flip-vertical::after,
+.ui.icon > .icon-flip-vertical {
+	-webkit-mask-image: url("../res/icons/flip-vertical.svg");
+	mask-image: url("../res/icons/flip-vertical.svg");
+}
+
+.ui.icon > .icon-file-x {
+	-webkit-mask-image: url("../res/icons/file-x.svg");
+	mask-image: url("../res/icons/file-x.svg");
+}
+
+.ui.icon > .icon-chevron-down {
+	-webkit-mask-image: url("../res/icons/chevron-down.svg");
+	mask-image: url("../res/icons/chevron-down.svg");
+}
+
+.ui.icon > .icon-chevron-up {
+	-webkit-mask-image: url("../res/icons/chevron-up.svg");
+	mask-image: url("../res/icons/chevron-up.svg");
+}
+.ui.icon > .icon-chevron-first {
+	-webkit-mask-image: url("../res/icons/chevron-first.svg");
+	mask-image: url("../res/icons/chevron-first.svg");
+}
+
+.ui.icon > .icon-chevron-flat-down {
+	-webkit-mask-image: url("../res/icons/chevron-first.svg");
+	mask-image: url("../res/icons/chevron-first.svg");
+	transform: rotate(-90deg);
+}
+
+.ui.icon > .icon-scroll {
+	-webkit-mask-image: url("../res/icons/scroll.svg");
+	mask-image: url("../res/icons/scroll.svg");
+}
+
+.ui.icon > .icon-settings {
+	-webkit-mask-image: url("../res/icons/settings.svg");
+	mask-image: url("../res/icons/settings.svg");
+}
+
+.ui.icon > .icon-unzoom {
+	-webkit-mask-image: url("../res/icons/scaling.svg");
+	mask-image: url("../res/icons/scaling.svg");
+}
+
+.ui.inline-icon.icon-grid::after,
+.ui.icon > .icon-grid {
+	-webkit-mask-image: url("../res/icons/grid.svg");
+	mask-image: url("../res/icons/grid.svg");
+}
+
+.ui.inline-icon.icon-venetian-mask::after,
+.ui.icon > .icon-venetian-mask {
+	-webkit-mask-image: url("../res/icons/venetian-mask.svg");
+	mask-image: url("../res/icons/venetian-mask.svg");
+}
+
+.ui.inline-icon.icon-brush::after,
+.ui.icon > .icon-brush {
+	-webkit-mask-image: url("../res/icons/brush.svg");
+	mask-image: url("../res/icons/brush.svg");
+}
+
+.ui.inline-icon.icon-paintbrush::after,
+.ui.icon > .icon-paintbrush {
+	-webkit-mask-image: url("../res/icons/paintbrush.svg");
+	mask-image: url("../res/icons/paintbrush.svg");
+}
+
+.ui.inline-icon.icon-slice::after,
+.ui.icon > .icon-slice {
+	-webkit-mask-image: url("../res/icons/slice.svg");
+	mask-image: url("../res/icons/slice.svg");
+}
+
+.ui.inline-icon.icon-joystick::after,
+.ui.icon > .icon-joystick {
+	-webkit-mask-image: url("../res/icons/joystick.svg");
+	mask-image: url("../res/icons/joystick.svg");
+}
+
+.ui.inline-icon.icon-save::after,
+.ui.icon > .icon-save {
+	-webkit-mask-image: url("../res/icons/save.svg");
+	mask-image: url("../res/icons/save.svg");
+}
+
+.ui.inline-icon.icon-pencil::after,
+.ui.icon > .icon-pencil {
+	-webkit-mask-image: url("../res/icons/pencil.svg");
+	mask-image: url("../res/icons/pencil.svg");
+}
+
+.ui.inline-icon.icon-download::after,
+.ui.icon > .icon-download {
+	-webkit-mask-image: url("../res/icons/download.svg");
+	mask-image: url("../res/icons/download.svg");
+}
+.ui.inline-icon.icon-upload::after,
+.ui.icon > .icon-upload {
+	-webkit-mask-image: url("../res/icons/upload.svg");
+	mask-image: url("../res/icons/upload.svg");
+}
+.ui.inline-icon.icon-more-horizontal::after,
+.ui.icon > .icon-more-horizontal {
+	-webkit-mask-image: url("../res/icons/more-horizontal.svg");
+	mask-image: url("../res/icons/more-horizontal.svg");
+}
+.ui.inline-icon.icon-trash::after,
+.ui.icon > .icon-trash {
+	-webkit-mask-image: url("../res/icons/trash.svg");
+	mask-image: url("../res/icons/trash.svg");
+}
+
+.ui.inline-icon.icon-expand::after,
+.ui.icon > .icon-expand {
+	-webkit-mask-image: url("../res/icons/expand.svg");
+	mask-image: url("../res/icons/expand.svg");
+}
+
+.ui.inline-icon.icon-pin::after,
+.ui.icon > .icon-pin {
+	-webkit-mask-image: url("../res/icons/pin.svg");
+	mask-image: url("../res/icons/pin.svg");
+}
+
+.ui.inline-icon.icon-box-select::after,
+.ui.icon > .icon-box-select {
+	-webkit-mask-image: url("../res/icons/box-select.svg");
+	mask-image: url("../res/icons/box-select.svg");
+}
+
+.ui.inline-icon.icon-maximize::after,
+.ui.icon > .icon-maximize {
+	-webkit-mask-image: url("../res/icons/maximize.svg");
+	mask-image: url("../res/icons/maximize.svg");
+}
+
+.ui.inline-icon.icon-clipboard-list::after,
+.ui.icon > .icon-clipboard-list {
+	-webkit-mask-image: url("../res/icons/clipboard-list.svg");
+	mask-image: url("../res/icons/clipboard-list.svg");
+}
+
+.ui.inline-icon.icon-squircle::after,
+.ui.icon > .icon-squircle {
+	-webkit-mask-image: url("../res/icons/squircle.svg");
+	mask-image: url("../res/icons/squircle.svg");
+}
+
+.ui.inline-icon.icon-file-plus::after,
+.ui.icon > .icon-file-plus {
+	-webkit-mask-image: url("../res/icons/file-plus.svg");
+	mask-image: url("../res/icons/file-plus.svg");
+}

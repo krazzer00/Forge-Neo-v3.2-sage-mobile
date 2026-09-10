@@ -1,0 +1,28 @@
+#tab_openOutpaint {
+	position: relative;
+
+	padding: 0;
+	border: 0;
+}
+
+#openoutpaint-iframe {
+	position: absolute;
+
+	top: -2px;
+
+	box-sizing: border-box;
+
+	z-index: 1;
+}
+
+#openoutpaint-refresh {
+	position: absolute;
+
+	top: 10px;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+
+	z-index: 9999; /* little guy gets bashful and hides behind the canvas in firefox */
+}

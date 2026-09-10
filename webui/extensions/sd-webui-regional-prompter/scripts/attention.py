@@ -1,0 +1,1042 @@
+import math
+import sys
+from pprint import pprint
+import torch
+import torchvision
+import torchvision.transforms.functional as F
+from torchvision.transforms import InterpolationMode, Resize  # Mask.
+from inspect import isfunction
+from torch import nn, einsum
+from einops import rearrange, repeat
+
+from modules import launch_utils
+forge = launch_utils.git_tag()[0:2] == "f2" or launch_utils.git_tag().split(" ")[0] == "neo"
+reforge = launch_utils.git_tag()[0:2] == "f1" or launch_utils.git_tag().split(" ")[0] == "classic"
+
+TOKENSCON = 77
+TOKENS = 75
+
+def db(self,text):
+    if self.debug and self.count == 0:
+        print(text)
+
+# helper functions from LDM
+def exists(val):
+    return val is not None
+
+def default(val, d):
+    if exists(val):
+        return val
+    return d() if isfunction(d) else d
+
+def main_forward(module,x,context,mask,divide,isvanilla = False,userpp = False,tokens=[],width = 64,height = 64,step = 0, is_sdxl = False, negpip = None, inhr = None):
+    
+    # Forward.
+
+    if negpip:
+        conds, contokens = negpip
+        context = torch.cat((context,conds),1)
+        context = context.to(x.dtype)
+
+    h = module.heads
+    if isvanilla: # SBM Ddim / plms have the context split ahead along with x.
+        pass
+    else: # SBM I think divide may be redundant.
+        h = h // divide
+
+    q = module.to_q(x)
+
+    _, _, dim_head = q.shape
+    dim_head //= h
+    scale = dim_head ** -0.5
+
+    context = default(context, x)
+    k = module.to_k(context)
+    v = module.to_v(context)
+
+    q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h=h), (q, k, v))
+
+    sim = einsum('b i d, b j d -> b i j', q, k) * scale
+
+    if negpip:
+        conds, contokens = negpip
+        if isinstance(contokens, list):
+            for contoken in contokens:
+                start = (v.shape[1]//77 - len(contokens)) * 77
+                v[:,start+1:start+contoken,:] = -v[:,start+1:start+contoken,:]
+        elif isinstance(contokens, int):
+            v[:,-contokens:,:] = -v[:,-contokens:,:]
+
+    if exists(mask):
+        mask = rearrange(mask, 'b ... -> b (...)')
+        max_neg_value = -torch.finfo(sim.dtype).max
+        mask = repeat(mask, 'b j -> (b h) () j', h=h)
+        sim.masked_fill_(~mask, max_neg_value)
+
+    attn = sim.softmax(dim=-1)
+
+    ## for prompt mode make basemask from attention maps
+
+    global pmaskshw,pmasks
+
+    if inhr and not hiresfinished: hiresscaler(height,width,attn,h)
+
+    if userpp and step > 0:
+        for b in range(attn.shape[0] // h):
+            if pmaskshw == []:
+                pmaskshw = [(height,width)]
+            elif (height,width) not in pmaskshw:
+                pmaskshw.append((height,width))
+
+            for t in tokens:
+                power = 4 if is_sdxl else 1.2
+                add = attn[h*b:h*(b+1),:,t[0]:t[0]+len(t)]**power
+                add = torch.sum(add,dim = 2)
+                t = f"{t}-{b}"         
+                if t not in pmasks:
+                    pmasks[t] = add
+                else:
+                    if pmasks[t].shape[1] != add.shape[1]:
+                        add = add.view(h,height,width)
+                        add = F.resize(add,pmaskshw[0])
+                        if add.numel() != pmasks[t].numel():
+                            add = add.view(pmasks[t].shape[0], 2, add.shape[1], add.shape[2]).sum(dim=1) / 2
+                        add = add.reshape_as(pmasks[t])
+                    pmasks[t] = pmasks[t] + add
+
+    out = einsum('b i j, b j d -> b i d', attn, v)
+    out = rearrange(out, '(b h) n d -> b n (h d)', h=h)
+    out = module.to_out(out)
+
+    return out
+
+###################################################
+###### Attention mode on the Forge Neo DiT models
+# The U-Nets carry the prompt in a cross attention of its own, attn2, which is
+# what Attention mode replaces: run it once per region with that region's share
+# of the prompt and keep each result where its mask is.
+#
+# That does not carry over to a DiT, where a global self attention spreads each
+# region's conditioning over the whole canvas. Krea2 and Z-Image put the prompt
+# into the same attention as the image, so the regions can be kept apart inside
+# that one softmax: an image token sees every image token, which is what holds
+# the picture together, but only the text of its own region. That is the method
+# described for Flux at https://note.com/gcem156/n/n5489ac014a55. Anima has a
+# cross attention of its own and needs its self attention leaned on as well, see
+# the note further down.
+#
+# The regions arrive as separate conditionings rather than as chunks of one
+# prompt, so there is nothing to slice: the replaced calc_cond_uncond_batch in
+# latent.py joins them into one context and says which token belongs to where.
+
+DIT_ATTENTION_MODELS = ("Krea2", "ZImage", "Anima")
+
+# Which axis of the conditioning the prompt's tokens run along, so the regions
+# can be joined into one context. Anima carries a singleton axis in front of it.
+DIT_TEXT_AXIS = {"Krea2": 1, "ZImage": 1, "Anima": 2}
+
+PAD = -1  # a token no region owns, which everything may see
+DIT_MAX_PAD = 256  # the most padding either model rounds a sequence up by
+
+# Region number per text token of the joined context, set by latent.py for the
+# pass about to run. None means "leave the model alone".
+neo_owner = None
+
+
+def set_neo_context(owner):
+    global neo_owner
+    neo_owner = owner
+
+
+def dit_grid(self, tokens):
+    """The height and width of the token grid holding an image of this size, and
+    how many tokens of padding follow it. Both models pad the sequence up to a
+    round number, so the count alone does not give the shape."""
+    # the hires size is a scale away from the base one, so it arrives as a float
+    height = int(self.hr_h if self.in_hr and self.hr else self.h)
+    width = int(self.hr_w if self.in_hr and self.hr else self.w)
+
+    best = None
+    for scale in (8, 16, 32, 64):
+        dsh, dsw = -(-height // scale), -(-width // scale)
+        n = dsh * dsw
+        if n <= tokens and (best is None or n > best[0] * best[1]):
+            best = (dsh, dsw)
+    if best is None:
+        return None
+
+    pad = tokens - best[0] * best[1]
+    # More than a round-up of padding means this is not the image half of a joint
+    # sequence at all: Z-Image reuses the same block to refine the noise on its
+    # own, and that pass has to be left alone.
+    if pad >= DIT_MAX_PAD:
+        return None
+    return best[0], best[1], pad
+
+
+def dit_masks(self, tokens):
+    """The region masks laid onto that grid, one (1, tokens, 1) tensor per region
+    in the order the prompt lists them."""
+    cache = getattr(self, "dit_maskcache", None)
+    if cache is not None and cache[0] == tokens:
+        return cache[1]
+
+    grid = dit_grid(self, tokens)
+    if grid is None:
+        return None
+    dsh, dsw = grid[0], grid[1]
+
+    import scripts.latent as lat
+
+    if "Ran" in self.mode:
+        sors = [self.ranbase] + self.ransors if self.usebase else list(self.ransors)
+        filters = sors if sors[0].shape[-2:] == (dsh, dsw) else lat.hrchange(sors, dsh, dsw)
+    else:
+        masks = (self.regmasks, self.regbase) if "Mask" in self.mode else self.aratios
+        filters = lat.makefilters(1, dsh, dsw, masks, self.mode, self.usebase, self.bratios, "Mas" in self.mode)
+
+    filters = [f.reshape(1, -1, 1) for f in filters]
+    self.dit_maskcache = (tokens, filters)
+    return filters
+
+
+def dit_owners(self, tokens):
+    """Which region each image token falls in, padding included."""
+    masks = dit_masks(self, tokens)
+    if masks is None:
+        return None
+    grid = dit_grid(self, tokens)
+    owner = torch.stack([m.reshape(-1) for m in masks]).argmax(0)
+    if grid[2]:
+        owner = torch.cat([owner, torch.full((grid[2],), PAD, dtype=owner.dtype, device=owner.device)])
+    return owner
+
+
+def text_owners(self, length):
+    """The same for the text half. Anything past the joined context is padding
+    the model added itself."""
+    if neo_owner is None:
+        return None
+    owner = neo_owner
+    if length < owner.shape[0]:
+        return None
+    if length > owner.shape[0]:
+        owner = torch.cat([owner, torch.full((length - owner.shape[0],), PAD, dtype=owner.dtype)])
+    return owner
+
+
+def mask_of(owner, is_img):
+    same = owner[:, None] == owner[None, :]
+    free = (owner == PAD)
+    keep = same | free[:, None] | free[None, :]
+    if is_img is not None:
+        keep = keep | (is_img[:, None] & is_img[None, :])
+    return keep.unsqueeze(0).unsqueeze(0)
+
+
+def dit_text_mask(self, txtlen, device):
+    """For the passes the models make over the prompt alone, before the image
+    joins it: keep each region to itself so they are not blended back together."""
+    cache = getattr(self, "dit_textcache", None)
+    if cache is not None and cache[0] == txtlen:
+        return cache[1]
+
+    owner = text_owners(self, txtlen)
+    if owner is None or int(owner.max()) < 1:
+        return None
+
+    mask = mask_of(owner.to(device), None)
+    self.dit_textcache = (txtlen, mask)
+    return mask
+
+
+def dit_joint_mask(self, tokens, txtlen, device):
+    """Text first, then image, as both models lay the joint sequence out."""
+    cache = getattr(self, "dit_jointcache", None)
+    if cache is not None and cache[0] == (tokens, txtlen):
+        return cache[1]
+
+    text = text_owners(self, txtlen)
+    image = dit_owners(self, tokens - txtlen)
+    if text is None or image is None or len(set(int(x) for x in image.unique()) - {PAD}) < 2:
+        return None
+
+    owner = torch.cat([text.to(device), image.to(device)])
+    is_img = torch.zeros(tokens, dtype=torch.bool, device=device)
+    is_img[txtlen:] = True
+
+    mask = mask_of(owner, is_img)
+    self.dit_jointcache = ((tokens, txtlen), mask)
+    return mask
+
+
+# Anima has a cross attention of its own rather than one joint attention, so
+# there is no single softmax to separate the regions inside. Blocking that cross
+# attention does place them, but only where the prompt names a subject; a region
+# asking for an ambient quality, a flat colour say, gets ignored. Closing its
+# self attention as well fixes that and goes too far the other way - each region
+# then composes for its own half of the canvas and the picture becomes a collage.
+#
+# So follow what the ComfyUI node at
+# https://github.com/Sen-sou/Comfyui-Anima-Regional-Conditioning does: block the
+# cross attention, but only lean on the self attention with a finite penalty
+# rather than closing it, and only while the layout is being decided. The rest of
+# the run sees the whole prompt with nothing masked, and knits the regions
+# together.
+ANIMA_SELF_PENALTY = -0.6  # added to the logits of attention across regions
+ANIMA_END = 0.35  # of the schedule, after which nothing is masked at all
+
+
+def anima_masking(self):
+    """Whether the layout is still being decided."""
+    total = getattr(self, "total_step", 0) or 0
+    return total <= 0 or self.step < total * ANIMA_END
+
+
+def anima_biases(self, tokens, dtype, device):
+    """The cross and self attention biases for this token grid. A region's own
+    prompt is all its tokens can see; a base region covers the whole canvas, so
+    its prompt stays visible everywhere, which is what a base region is for."""
+    owner = neo_owner
+    if owner is None:
+        return None
+
+    cache = getattr(self, "dit_animacache", None)
+    if cache is not None and cache[0] == (tokens, dtype, owner.shape[0]):
+        return cache[1]
+
+    masks = dit_masks(self, tokens)
+    if masks is None or len(masks) != int(owner.max()) + 1:
+        return None
+
+    owner = owner.to(device)
+    covers = [m.reshape(-1).to(device) > 0 for m in masks]
+
+    cross = torch.zeros((tokens, owner.shape[0]), dtype=torch.bool, device=device)
+    for i, rows in enumerate(covers):
+        cross |= rows[:, None] & (owner == i)[None, :]
+    # a row of nothing but -inf comes back as NaN, so anything no region covers
+    # is left with the first prompt
+    stray = ~cross.any(dim=-1)
+    if stray.any():
+        cross[stray] = (owner == 0)[None, :]
+
+    within = torch.zeros((tokens, tokens), dtype=torch.bool, device=device)
+    for rows in covers:
+        within |= rows[:, None] & rows[None, :]
+    within.fill_diagonal_(True)
+
+    biases = (torch.where(cross, 0.0, float("-inf")).to(dtype)[None, None],
+              torch.where(within, 0.0, ANIMA_SELF_PENALTY).to(dtype)[None, None])
+    self.dit_animacache = ((tokens, dtype, owner.shape[0]), biases)
+    return biases
+
+
+def hook_anima_attention(self, module):
+    """Anima reaches its attention through self.torch_attention_op, so an
+    instance attribute is enough to divert it - and it has to be diverted in any
+    case, since the fused kernels take a mask and ignore it."""
+    original = type(module).torch_attention_op
+    is_self = module.is_SelfAttn
+
+    def torch_attention_op(q, k, v, transformer_options=None):
+        biases = anima_biases(self, q.shape[1], q.dtype, q.device) if anima_masking(self) else None
+        if biases is None:
+            return original(q, k, v, transformer_options=transformer_options)
+
+        from backend.attention import attention_pytorch
+        heads = q.shape[-2]
+        flat = lambda t: rearrange(t, "b ... h d -> b h ... d").view(t.shape[0], heads, -1, t.shape[-1])
+        return attention_pytorch(flat(q), flat(k), flat(v), heads,
+                                 mask=biases[1] if is_self else biases[0], skip_reshape=True)
+
+    torch_attention_op.rp_hooked = True
+    return torch_attention_op
+
+
+def hook_dit_forwards(self, root_module, remove=False):
+    """Both models already take an attention mask, they are just never given one.
+    What they also do, and what has to be undone, is run the prompt through a
+    little transformer of their own first, which would blend the regions back
+    together before the image ever sees them."""
+    self.hooked = not remove
+
+    hook_masked_attention(remove)
+    self.dit_pad = 1
+
+    for name, module in root_module.named_modules():
+        kind = module.__class__.__name__
+
+        if kind == "SelfCrossAttention":
+            # Anima, masked at the attention itself rather than through a block
+            if remove:
+                module.__dict__.pop("torch_attention_op", None)
+            elif "torch_attention_op" not in module.__dict__:
+                module.torch_attention_op = hook_anima_attention(self, module)
+            continue
+        if kind == "NextDiT":
+            # its caption and image halves are each padded up to a multiple
+            self.dit_pad = getattr(module, "pad_tokens_multiple", None) or 1
+            continue
+        if kind == "SingleStreamBlock":
+            hooked = hook_krea_block(self, module)
+        elif kind == "TextFusionTransformer":
+            hooked = hook_krea_textfusion(module)
+        elif kind == "JointTransformerBlock":
+            hooked = hook_zimage_block(self, module)
+        else:
+            continue
+
+        if remove:
+            module.__dict__.pop("forward", None)
+        elif not getattr(module.forward, "rp_hooked", False):
+            module.forward = hooked
+
+
+def rp_hook(original, forward):
+    forward.rp_hooked = True
+    forward.rp_original = original
+    return forward
+
+
+def hook_krea_block(self, module):
+    original = module.forward
+
+    def forward(x, vec, freqs, mask=None, transformer_options={}):
+        if mask is None and neo_owner is not None:
+            mask = dit_joint_mask(self, x.shape[1], neo_owner.shape[0], x.device)
+        return original(x, vec, freqs, mask, transformer_options=transformer_options)
+
+    return rp_hook(original, forward)
+
+
+def hook_krea_textfusion(module):
+    """Krea2's prompt arrives as (batch, token, layer, feature) and this collapses
+    the layers with an attention that also runs along the tokens. Feeding it one
+    region at a time is simpler than masking it."""
+    original = module.forward
+
+    def forward(x, mask=None, transformer_options={}):
+        spans = neo_spans(x.shape[1])
+        if spans is None:
+            return original(x, mask=mask, transformer_options=transformer_options)
+        return torch.cat([original(x[:, a:b].clone(), mask=None, transformer_options=transformer_options)
+                          for a, b in spans], dim=1)
+
+    return rp_hook(original, forward)
+
+
+def hook_zimage_block(self, module):
+    """Z-Image uses the same block for three jobs, told apart by how long the
+    sequence is: refining the caption, refining the noise, and the joint pass."""
+    original = module.forward
+
+    def forward(x, x_mask, freqs_cis, adaln_input=None, transformer_options={}):
+        if x_mask is None and neo_owner is not None:
+            txtlen = round_up(neo_owner.shape[0], getattr(self, "dit_pad", 1))
+            if x.shape[1] == txtlen:
+                x_mask = dit_text_mask(self, txtlen, x.device)
+            elif x.shape[1] > txtlen:
+                x_mask = dit_joint_mask(self, x.shape[1], txtlen, x.device)
+        return original(x, x_mask, freqs_cis, adaln_input, transformer_options=transformer_options)
+
+    return rp_hook(original, forward)
+
+
+def round_up(n, multiple):
+    return n + (-n) % multiple if multiple else n
+
+
+def neo_spans(tokens):
+    """The (start, end) of each region inside the joined context."""
+    if neo_owner is None or tokens != neo_owner.shape[0]:
+        return None
+    edges = (neo_owner[1:] != neo_owner[:-1]).nonzero().flatten() + 1
+    edges = [0] + [int(e) for e in edges] + [tokens]
+    return list(zip(edges[:-1], edges[1:]))
+
+
+orig_attention_function = None
+
+
+def hook_masked_attention(remove=False):
+    """SageAttention and the other fused kernels take an attn_mask argument and
+    then ignore it, so a masked call has to go through PyTorch's own attention.
+    Only the calls that carry a mask are diverted."""
+    global orig_attention_function
+    import backend.attention as batt
+
+    targets = [sys.modules[name] for name in ("backend.nn.krea", "backend.nn.lumina")
+               if name in sys.modules and hasattr(sys.modules[name], "attention_function")]
+
+    if remove:
+        if orig_attention_function is not None:
+            for module in targets:
+                module.attention_function = orig_attention_function
+            orig_attention_function = None
+        return
+
+    if orig_attention_function is not None or not targets:
+        return
+
+    orig_attention_function = batt.attention_function
+
+    def attention_function(q, k, v, heads, mask=None, **kwargs):
+        if mask is None:
+            return orig_attention_function(q, k, v, heads, mask=mask, **kwargs)
+        kwargs.pop("transformer_options", None)
+        kwargs.pop("attn_precision", None)
+        return batt.attention_pytorch(q, k, v, heads, mask=mask, **kwargs)
+
+    for module in targets:
+        module.attention_function = attention_function
+
+
+
+def hook_forwards(self, p, remove=False):
+    self.need_hook = not remove
+    root = p.sd_model.forge_objects.unet.model if forge else p.sd_model.model.diffusion_model
+    import scripts.latent as lat
+
+    if remove:
+        # which path put them there cannot be told from the calc mode any more,
+        # the user may have just changed it, so take both back
+        hook_dit_forwards(self, root, True)
+        hook_forwards_x(self, root, True)
+        lat.unhook_neo_cond_batch()
+        return
+
+    if getattr(self, "dit_attn", False):
+        hook_dit_forwards(self, root, False)
+        lat.hook_neo_cond_batch(self)
+        return
+
+    hook_forwards_x(self, root, False)
+
+def hook_forwards_x(self, root_module: torch.nn.Module, remove=False):
+    self.hooked = True if not remove else False
+    for name, module in root_module.named_modules():
+        if "attn2" in name and module.__class__.__name__ == "CrossAttention":
+            module.forward = hook_forward(self, module)
+            if remove:
+                del module.forward
+
+################################################################################
+##### Attention mode 
+
+def hook_forward(self, module):
+    def forward(x, context=None, mask=None, additional_tokens=None, n_times_crossframe_attn_in_self=0, value = None, transformer_options=None):
+        pndealer(self,context)
+        
+        if self.hr_returner():
+            return main_forward(module, x, context, mask, x.shape[0] // self.batch_size, self.isvanilla,userpp =True,step = self.step, is_sdxl = self.is_sdxl)
+        
+        if self.debug and self.count == 0:
+            print("\ninput : ", x.size())
+            print("tokens : ", context.size())
+            print("module : ", getattr(module, self.layer_name,None))
+            print("Pos/Neg:", self.pn)
+        if "conds" in self.log:
+            if self.log["conds"] != context.size():
+                self.log["conds2"] = context.size()
+        else:
+            self.log["conds"] = context.size()
+
+        if self.xsize == 0: self.xsize = x.shape[1]
+        if "input" in getattr(module, self.layer_name,""):
+            if x.shape[1] > self.xsize:
+                self.in_hr = True
+
+        height = self.hr_h if self.in_hr and self.hr else self.h 
+        width = self.hr_w if self.in_hr and self.hr else self.w
+
+        xs = x.size()[1]
+        scale = round(math.sqrt(height * width / xs))
+
+        dsh = round(height / scale)
+        dsw = round(width / scale)
+        ha, wa = xs % dsh, xs % dsw
+        if ha == 0:
+            dsw = int(xs / dsh)
+        elif wa == 0:
+            dsh = int(xs / dsw)
+
+        contexts = context.clone()
+
+        # SBM Matrix mode.
+        def matsepcalc(x,contexts,mask,pn,divide):
+            db(self,f"in MatSepCalc")
+            h_states = []
+            xs = x.size()[1]
+            (dsh,dsw) = split_dims(xs, height, width, self)
+            
+            if "Horizontal" in self.mode: # Map columns / rows first to outer / inner.
+                dsout = dsw
+                dsin = dsh
+            elif "Vertical" in self.mode:
+                dsout = dsh
+                dsin = dsw
+
+            tll = self.pt if pn else self.nt
+            
+            i = 0
+            outb = None
+            if self.usebase:
+                context = contexts[:,tll[i][0] * TOKENSCON:tll[i][1] * TOKENSCON,:]
+                # SBM Controlnet sends extra conds at the end of context, apply it to all regions.
+                cnet_ext = contexts.shape[1] - (contexts.shape[1] // TOKENSCON) * TOKENSCON
+                if cnet_ext > 0:
+                    context = torch.cat([context,contexts[:,-cnet_ext:,:]],dim = 1)
+                    
+                negpip = negpipdealer(i,pn)
+
+                i = i + 1
+
+                out = main_forward(module, x, context, mask, divide, self.isvanilla,userpp =True,step = self.step, is_sdxl = self.is_sdxl, negpip = negpip)
+
+                if len(self.nt) == 1 and not pn:
+                    db(self,"return out for NP")
+                    return out
+                # if self.usebase:
+                outb = out.clone()
+                outb = outb.reshape(outb.size()[0], dsh, dsw, outb.size()[2]) if "Ran" not in self.mode else outb
+
+            sumout = 0
+            db(self,f"tokens : {tll},pn : {pn}")
+            db(self,[r for r in self.aratios])
+
+            for drow in self.aratios:
+                v_states = []
+                sumin = 0
+                for dcell in drow.cols:
+                    # Grabs a set of tokens depending on number of unrelated breaks.
+                    context = contexts[:,tll[i][0] * TOKENSCON:tll[i][1] * TOKENSCON,:]
+                    # SBM Controlnet sends extra conds at the end of context, apply it to all regions.
+                    cnet_ext = contexts.shape[1] - (contexts.shape[1] // TOKENSCON) * TOKENSCON
+                    if cnet_ext > 0:
+                        context = torch.cat([context,contexts[:,-cnet_ext:,:]],dim = 1)
+                        
+                    negpip = negpipdealer(i,pn)
+
+                    db(self,f"tokens : {tll[i][0]*TOKENSCON}-{tll[i][1]*TOKENSCON}")
+                    i = i + 1 + dcell.breaks
+                    # if i >= contexts.size()[1]: 
+                    #     indlast = True
+
+                    out = main_forward(module, x, context, mask, divide, self.isvanilla,userpp = self.pn, step = self.step, is_sdxl = self.is_sdxl,negpip = negpip)
+                    db(self,f" dcell.breaks : {dcell.breaks}, dcell.ed : {dcell.ed}, dcell.st : {dcell.st}")
+                    if len(self.nt) == 1 and not pn:
+                        db(self,"return out for NP")
+                        return out
+                    # Actual matrix split by region.
+                    if "Ran" in self.mode:
+                        v_states.append(out)
+                        continue
+                    
+                    out = out.reshape(out.size()[0], dsh, dsw, out.size()[2]) # convert to main shape.
+                    # if indlast:
+                    addout = 0
+                    addin = 0
+                    sumin = sumin + int(dsin*dcell.ed) - int(dsin*dcell.st)
+                    if dcell.ed >= 0.999:
+                        addin = sumin - dsin
+                        sumout = sumout + int(dsout*drow.ed) - int(dsout*drow.st)
+                        if drow.ed >= 0.999:
+                            addout = sumout - dsout
+                    if "Horizontal" in self.mode:
+                        out = out[:,int(dsh*drow.st) + addout:int(dsh*drow.ed),
+                                    int(dsw*dcell.st) + addin:int(dsw*dcell.ed),:]
+                        if self.debug and self.count == 0: print(f"{int(dsh*drow.st) + addout}:{int(dsh*drow.ed)},{int(dsw*dcell.st) + addin}:{int(dsw*dcell.ed)}")
+                        if self.usebase : 
+                            # outb_t = outb[:,:,int(dsw*drow.st):int(dsw*drow.ed),:].clone()
+                            outb_t = outb[:,int(dsh*drow.st) + addout:int(dsh*drow.ed),
+                                            int(dsw*dcell.st) + addin:int(dsw*dcell.ed),:].clone()
+                            out = out * (1 - dcell.base) + outb_t * dcell.base
+                    elif "Vertical" in self.mode: # Cols are the outer list, rows are cells.
+                        out = out[:,int(dsh*dcell.st) + addin:int(dsh*dcell.ed),
+                                  int(dsw*drow.st) + addout:int(dsw*drow.ed),:]
+                        db(self,f"{int(dsh*dcell.st) + addin}:{int(dsh*dcell.ed)}-{int(dsw*drow.st) + addout}:{int(dsw*drow.ed)}")
+                        if self.usebase : 
+                            # outb_t = outb[:,:,int(dsw*drow.st):int(dsw*drow.ed),:].clone()
+                            outb_t = outb[:,int(dsh*dcell.st) + addin:int(dsh*dcell.ed),
+                                          int(dsw*drow.st) + addout:int(dsw*drow.ed),:].clone()
+                            out = out * (1 - dcell.base) + outb_t * dcell.base
+                    db(self,f"sumin:{sumin},sumout:{sumout},dsh:{dsh},dsw:{dsw}")
+            
+                    v_states.append(out)
+                    if self.debug and self.count == 0: 
+                        for h in v_states:
+                            print(h.size())
+                            
+                if "Horizontal" in self.mode:
+                    ox = torch.cat(v_states,dim = 2) # First concat the cells to rows.
+                elif "Vertical" in self.mode:
+                    ox = torch.cat(v_states,dim = 1) # Cols first mode, concat to cols.
+                elif "Ran" in self.mode:
+                    if self.usebase:
+                        ox = outb * makerrandman(self.ranbase,dsh,dsw).view(-1, 1)
+                    ox = torch.zeros_like(v_states[0])
+                    for state, filter in zip(v_states, self.ransors):
+                        filter = makerrandman(filter,dsh,dsw)
+                        ox = ox + state * filter.view(-1, 1)
+                    return ox
+
+                h_states.append(ox)
+            if "Horizontal" in self.mode:
+                ox = torch.cat(h_states,dim = 1) # Second, concat rows to layer.
+            elif "Vertical" in self.mode:
+                ox = torch.cat(h_states,dim = 2) # Or cols.
+            ox = ox.reshape(x.size()[0],x.size()[1],x.size()[2]) # Restore to 3d source.  
+            return ox
+
+        def masksepcalc(x,contexts,mask,pn,divide):
+            db(self,f"in MaskSepCalc")
+            xs = x.size()[1]
+            (dsh,dsw) = split_dims(xs, height, width, self)
+
+            tll = self.pt if pn else self.nt
+            
+            # Base forward.
+            i = 0
+            outb = None
+            if self.usebase:
+                context = contexts[:,tll[i][0] * TOKENSCON:tll[i][1] * TOKENSCON,:]
+                # SBM Controlnet sends extra conds at the end of context, apply it to all regions.
+                cnet_ext = contexts.shape[1] - (contexts.shape[1] // TOKENSCON) * TOKENSCON
+                if cnet_ext > 0:
+                    context = torch.cat([context,contexts[:,-cnet_ext:,:]],dim = 1)
+
+                negpip = negpipdealer(i,pn) 
+
+                i = i + 1
+                out = main_forward(module, x, context, mask, divide, self.isvanilla, is_sdxl = self.is_sdxl, negpip = negpip)
+
+                if len(self.nt) == 1 and not pn:
+                    db(self,"return out for NP")
+                    return out
+                # if self.usebase:
+                outb = out.clone()
+                outb = outb.reshape(outb.size()[0], dsh, dsw, outb.size()[2]) 
+
+            db(self,f"tokens : {tll},pn : {pn}")
+            
+            ox = torch.zeros_like(x)
+            ox = ox.reshape(ox.shape[0], dsh, dsw, ox.shape[2])
+            ftrans = Resize((dsh, dsw), interpolation = InterpolationMode("nearest"))
+            for rmask in self.regmasks:
+                # Need to delay mask tensoring so it's on the correct gpu.
+                # Dunno if caching masks would be an improvement.
+                if self.usebase:
+                    bweight = self.bratios[0][i - 1]
+                # Resize mask to current dims.
+                # Since it's a mask, we prefer a binary value, nearest is the only option.
+                rmask2 = ftrans(rmask.reshape([1, *rmask.shape])) # Requires dimensions N,C,{d}.
+                rmask2 = rmask2.reshape(1, dsh, dsw, 1)
+                
+                # Grabs a set of tokens depending on number of unrelated breaks.
+                context = contexts[:,tll[i][0] * TOKENSCON:tll[i][1] * TOKENSCON,:]
+                # SBM Controlnet sends extra conds at the end of context, apply it to all regions.
+                cnet_ext = contexts.shape[1] - (contexts.shape[1] // TOKENSCON) * TOKENSCON
+                if cnet_ext > 0:
+                    context = torch.cat([context,contexts[:,-cnet_ext:,:]],dim = 1)
+                    
+                db(self,f"tokens : {tll[i][0]*TOKENSCON}-{tll[i][1]*TOKENSCON}")
+                i = i + 1
+                # if i >= contexts.size()[1]: 
+                #     indlast = True
+                out = main_forward(module, x, context, mask, divide, self.isvanilla, is_sdxl = self.is_sdxl)
+                if len(self.nt) == 1 and not pn:
+                    db(self,"return out for NP")
+                    return out
+                    
+                out = out.reshape(out.size()[0], dsh, dsw, out.size()[2]) # convert to main shape.
+                if self.usebase:
+                    out = out * (1 - bweight) + outb * bweight
+                ox = ox + out * rmask2
+
+            if self.usebase:
+                rmask = self.regbase
+                rmask2 = ftrans(rmask.reshape([1, *rmask.shape])) # Requires dimensions N,C,{d}.
+                rmask2 = rmask2.reshape(1, dsh, dsw, 1)
+                ox = ox + outb * rmask2
+            ox = ox.reshape(x.size()[0],x.size()[1],x.size()[2]) # Restore to 3d source.  
+            return ox
+
+        def promptsepcalc(x, contexts, mask, pn,divide):
+            h_states = []
+
+            tll = self.pt if pn else self.nt
+            db(self,f"in PromptSepCalc")
+            db(self,f"tokens : {tll},pn : {pn}")
+
+            for i, tl in enumerate(tll):
+                context = contexts[:, tl[0] * TOKENSCON : tl[1] * TOKENSCON, :]
+                # SBM Controlnet sends extra conds at the end of context, apply it to all regions.
+                cnet_ext = contexts.shape[1] - (contexts.shape[1] // TOKENSCON) * TOKENSCON
+                if cnet_ext > 0:
+                    context = torch.cat([context,contexts[:,-cnet_ext:,:]],dim = 1)
+                
+                db(self,f"tokens3 : {tl[0]*TOKENSCON}-{tl[1]*TOKENSCON}")
+                db(self,f"extra-tokens : {cnet_ext}")
+
+                userpp = pn and i == 0
+
+                negpip = negpipdealer(self.condi,pn) if "La" in self.calc else negpipdealer(i,pn)
+
+                out = main_forward(module, x, context, mask, divide, self.isvanilla, userpp = userpp, width = dsw, height = dsh,
+                                                 tokens = self.pe, step = self.step, is_sdxl = self.is_sdxl, negpip = negpip, inhr = self.in_hr)
+
+                if (len(self.nt) == 1 and not pn) or ("Pro" in self.mode and "La" in self.calc):
+                    db(self,"return out for NP or Latent")
+                    return out
+
+                db(self,[scale, dsh, dsw, dsh * dsw, x.size()[1]])
+
+                if i == 0:
+                    outb = out.clone()
+                    continue
+                else:
+                    h_states.append(out)
+
+            if self.debug and self.count == 0:
+                for h in h_states :
+                    print(f"divided : {h.size()}")
+                print(pmaskshw)
+
+            if pmaskshw == []:
+                return outb
+
+            ox = outb.clone() if self.ex else outb * 0
+
+            db(self,[pmaskshw,maskready,(dsh,dsw) in pmaskshw and maskready,len(pmasksf),len(h_states)])
+
+            if (dsh,dsw) in pmaskshw and maskready:
+                depth = pmaskshw.index((dsh,dsw))
+                maskb = None
+                for masks , state in zip(pmasksf.values(),h_states):
+                    mask = masks[depth]
+                    masked = torch.multiply(state, mask)
+                    if self.ex:
+                        ox = torch.where(masked !=0 , masked, ox)
+                    else:
+                        ox = ox + masked
+                    maskb = maskb + mask if maskb is not None else mask
+                maskb = 1 - maskb
+                if not self.ex : ox = ox + torch.multiply(outb, maskb)
+                return ox
+            else:
+                return outb
+
+        if self.eq:
+            db(self,"same token size and divisions")
+            if "Mas" in self.mode:
+                ox = masksepcalc(x, contexts, mask, True, 1)
+            elif "Pro" in self.mode:
+                ox = promptsepcalc(x, contexts, mask, True, 1)
+            else:
+                ox = matsepcalc(x, contexts, mask, True, 1)
+        elif x.size()[0] == 1 * self.batch_size:
+            db(self,"different tokens size")
+            if "Mas" in self.mode:
+                ox = masksepcalc(x, contexts, mask, self.pn, 1)
+            elif "Pro" in self.mode:
+                ox = promptsepcalc(x, contexts, mask, self.pn, 1)
+            else:
+                ox = matsepcalc(x, contexts, mask, self.pn, 1)
+        else:
+            db(self,"same token size and different divisions")
+            # SBM You get 2 layers of x, context for pos/neg.
+            # Each should be forwarded separately, pairing them up together.
+            if self.isvanilla: # SBM Ddim reverses cond/uncond.
+                nx, px = x.chunk(2)
+                conn,conp = contexts.chunk(2)
+            else:
+                px, nx = x.chunk(2)
+                conp,conn = contexts.chunk(2)
+            if "Mas" in self.mode:
+                opx = masksepcalc(px, conp, mask, True, 2)
+                onx = masksepcalc(nx, conn, mask, False, 2)
+            elif "Pro" in self.mode:
+                opx = promptsepcalc(px, conp, mask, True, 2)
+                onx = promptsepcalc(nx, conn, mask, False, 2)
+            else:
+                # SBM I think division may have been an incorrect patch.
+                # But I'm not sure, haven't tested beyond DDIM / PLMS.
+                opx = matsepcalc(px, conp, mask, True, 2)
+                onx = matsepcalc(nx, conn, mask, False, 2)
+            if self.isvanilla: # SBM Ddim reverses cond/uncond.
+                ox = torch.cat([onx, opx])
+            else:
+                ox = torch.cat([opx, onx])  
+
+        self.count += 1
+
+        limit = 70 if self.is_sdxl else 16
+
+        if self.count == limit:
+            self.pn = not self.pn
+            self.count = 0
+            self.condi += 1
+        db(self,f"output : {ox.size()}")
+        return ox
+
+    return forward
+
+def split_dims(xs, height, width, self = None):
+    """Split an attention layer dimension to height + width.
+    
+    Originally, the estimate was dsh = sqrt(hw_ratio*xs),
+    rounding to the nearest value. But this proved inaccurate.
+    What seems to be the actual operation is as follows:
+    - Divide h,w by 8, rounding DOWN. 
+      (However, webui forces dims to be divisible by 8 unless set explicitly.)
+    - For every new layer (of 4), divide both by 2 and round UP (then back up)
+    - Multiply h*w to yield xs.
+    There is no inverse function to this set of operations,
+    so instead we mimic them sans the multiplication part with orig h+w.
+    The only alternative is brute forcing integer guesses,
+    which might be inaccurate too.
+    No known checkpoints follow a different system of layering,
+    but it's theoretically possible. Please report if encountered.
+    """
+    # OLD METHOD.
+    # scale = round(math.sqrt(height*width/xs))
+    # dsh = round_dim(height, scale)
+    # dsw = round_dim(width, scale) 
+    scale = math.ceil(math.log2(math.sqrt(height * width / xs)))
+    dsh = repeat_div(height,scale)
+    dsw = repeat_div(width,scale)
+    if xs > dsh * dsw and hasattr(self,"nei_multi"):
+        dsh, dsw = self.nei_multi[1], self.nei_multi[0] 
+        max_iter = 20 
+        iter_count = 0
+        while dsh * dsw != xs and iter_count < max_iter:
+            dsh, dsw = dsh // 2, dsw // 2
+            iter_count += 1
+            if iter_count == max_iter:
+                raise RuntimeError(f"Error in Regional Pronpter, cannot resolve divisions{dsh}, {dsw}, {xs}")
+
+    if self is not None:
+        if self.debug and self.count == 0: print(scale,dsh,dsw,dsh*dsw,xs, height, width)
+
+    return dsh,dsw
+
+def repeat_div(x,y):
+    """Imitates dimension halving common in convolution operations.
+    
+    This is a pretty big assumption of the model,
+    but then if some model doesn't work like that it will be easy to spot.
+    """
+    while y > 0:
+        x = math.ceil(x / 2)
+        y = y - 1
+    return x
+
+#################################################################################
+##### for Prompt mode
+pmasks = {}              #maked from attention maps
+pmaskshw =[]            #height,width set of u-net blocks
+pmasksf = {}             #maked from pmasks for regions
+maskready = False
+hiresfinished = False
+
+def reset_pmasks(self): # init parameters in every batch
+    global pmasks, pmaskshw, pmasksf, maskready, hiresfinished, pmaskshw_o
+    self.step = 0
+    pmasks = {}
+    pmaskshw =[]
+    pmaskshw_o =[]
+    pmasksf = {}
+    maskready = False
+    hiresfinished = False
+    self.x = None
+    self.rebacked = False
+
+def savepmasks(self,processed):
+    for mask ,th in zip(pmasks.values(),self.th):
+        img, _ , _= makepmask(mask, self.h, self.w,th, self.step, self.total_step, self.is_sdxl)
+        processed.images.append(img)
+    return processed
+
+def hiresscaler(new_h,new_w,attn, head):
+    global pmaskshw,pmasks,pmasksf,pmaskshw_o, hiresfinished
+    nset = (new_h,new_w)
+    (old_h, old_w) = pmaskshw[0]
+    if new_h > pmaskshw[0][0]:
+        pmaskshw_o = pmaskshw.copy()
+        del pmaskshw
+        pmaskshw = [nset]
+        hiresmask(pmasks,old_h, old_w, new_h, new_w,head,at = attn[:,:,0])
+        hiresmask(pmasksf,old_h, old_w, new_h, new_w,head,i = 0)
+    if nset not in pmaskshw:
+        index = len(pmaskshw)
+        pmaskshw.append(nset)
+        old_h, old_w = pmaskshw_o[index]
+        hiresmask(pmasksf,old_h, old_w, new_h, new_w,head,i = index)
+        if index == 3: hiresfinished = True
+
+def hiresmask(masks,oh,ow,nh,nw,head,at = None,i = None):
+    for key in masks.keys():
+        mask = masks[key] if i is None else masks[key][i]
+        mask = mask.view(head if i is None else 1,oh,ow)
+        mask = F.resize(mask,(nh,nw))
+        mask = mask.reshape_as(at) if at is not None else mask.reshape(1,mask.shape[1] * mask.shape[2],1)
+        if i is None:
+            masks[key] = mask
+        else:
+            masks[key][i] = mask
+
+def makepmask(mask, h, w, th, step, total_step, is_sdxl, bratio = 1): # make masks from attention cache return [for preview, for attention, for Latent]
+    th = th - step * 0.005 
+    bratio = 1 - bratio
+    mask = torch.mean(mask,dim=0)
+    mask = mask / mask.max().item() * (0.85 if is_sdxl else 1)
+    mask = torch.where(mask > th, torch.ones_like(mask), torch.zeros_like(mask))
+    mask = mask.float()
+    mask = mask.view(1,pmaskshw[0][0],pmaskshw[0][1]) 
+    img = torchvision.transforms.functional.to_pil_image(mask)
+    img = img.resize((w,h))
+    mask = F.resize(mask,(h,w),interpolation=F.InterpolationMode.NEAREST)
+    lmask = mask
+    mask = mask.reshape(h*w)
+    mask = torch.where(mask > 0.1 ,1,0)
+    return img,mask * bratio , lmask * bratio
+
+def makerrandman(mask, h, w, latent = False): # make masks from attention cache return [for preview, for attention, for Latent]
+    mask = mask.float()
+    mask = mask.view(1,mask.shape[0],mask.shape[1]) 
+    img = torchvision.transforms.functional.to_pil_image(mask)
+    img = img.resize((w,h))
+    mask = F.resize(mask,(h,w),interpolation=F.InterpolationMode.NEAREST)
+    if latent: return mask
+    mask = mask.reshape(h*w)
+    mask = torch.round(mask).long()
+    return mask
+
+def negpipdealer(i,pn):
+    negpip = None
+    from modules.scripts import scripts_txt2img
+    for script in scripts_txt2img.alwayson_scripts:
+        if "negpip.py" in script.filename:
+            negpip = script
+
+    if negpip:
+        conds = negpip.conds if pn else negpip.unconds
+        tokens = negpip.contokens if pn else negpip.untokens
+        if conds and len(conds) >= i + 1:
+            if conds[i] is not None:
+                return [conds[i],tokens[i]]
+        else:
+            return None
+    else:
+        return None
+
+def pndealer(self,context):
+    if context is None:return
+    if context.shape[0] == self.batch_size * 2:
+        return
+    shape = context.shape[1]
+    if shape == self.cshape and shape != self.ucshape:
+        self.pn = True
+    if shape == self.ucshape and shape != self.cshape:
+        self.pn = False   

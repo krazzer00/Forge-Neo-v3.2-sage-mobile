@@ -1,0 +1,699 @@
+{
+  "models": [
+    {
+      "path": "webui/extensions/forge2_cleaner/models/big-lama.safetensors",
+      "size": 496800380,
+      "sha256": "f8fcaae73ca8a96e463bf29c7583ea84a3c99075cb58ff90ceed6816243a1f09",
+      "urls": [
+        "https://huggingface.co/anyisalin/big-lama/resolve/main/big-lama.safetensors"
+      ]
+    },
+    {
+      "path": "webui/models/BLIP/model_base_caption_capfilt_large.pth",
+      "size": 896081425,
+      "sha256": "96ac8749bd0a568c274ebe302b3a3748ab9be614c737f3d8c529697139174086",
+      "urls": [
+        "https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_caption_capfilt_large.pth"
+      ]
+    },
+    {
+      "path": "webui/models/Codeformer/codeformer-v0.1.0.pth",
+      "size": 376637898,
+      "sha256": "1009e537e0c2a07d4cabce6355f53cb66767cd4b4297ec7a4a64ca4b8a5684b7",
+      "urls": [
+        "https://huggingface.co/uwg/upscaler/resolve/main/Face_Restore/codeformer.pth",
+        "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/facerestore_models/codeformer-v0.1.0.pth",
+        "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth"
+      ]
+    },
+    {
+      "path": "webui/models/ControlNet/control_v11p_sd15_inpaint.pth",
+      "size": 1445235365,
+      "sha256": "a2a0ff91882a0fbacbded5edeca7babdb6d1bd8f770880a91c177bd44cd58633",
+      "urls": [
+        "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth"
+      ]
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXLCanny_v10.safetensors",
+      "size": 5004167832,
+      "sha256": "e14d12e39587f3269f73f62c16734262b8ded6f47f102b953a708a6b4c6e5974",
+      "urls": [
+        "https://civitai.com/api/download/models/1053985?fileId=959944"
+      ],
+      "page": "https://civitai.com/models/941482?modelVersionId=1053985"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXLDepth_v20.safetensors",
+      "size": 5004167832,
+      "sha256": "e64a79fe45aedcb2f66d7beecf9b3b2f2eec79edac675be63c67586c91018854",
+      "urls": [
+        "https://civitai.com/api/download/models/1480637?fileId=1382128"
+      ],
+      "page": "https://civitai.com/models/1023507?modelVersionId=1480637"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXLLineart_v10 (1).safetensors",
+      "size": 5004167832,
+      "sha256": "dd9f4356c575d548603c5581cf908e94f84c5170eae81eff74a405e278c46d0b",
+      "urls": [
+        "https://civitai.com/api/download/models/1144231?fileId=1049265"
+      ],
+      "page": "https://civitai.com/models/1020431?modelVersionId=1144231"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXLLineart_v10.safetensors",
+      "size": 5004167832,
+      "sha256": "604dbdd8b8a95c78847169e201076d1bf51d4b252f20f4f27ff53b40bdf65e75",
+      "urls": [
+        "https://civitai.com/api/download/models/1152493?fileId=1057571"
+      ],
+      "page": "https://civitai.com/models/1027649?modelVersionId=1152493"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXLShuffle_v10.safetensors",
+      "size": 5004167832,
+      "sha256": "26c66ba7f5e7a58df1ec9a6ee836cf69b85831cac4a92dfb3e70cf201bdd0136",
+      "urls": [
+        "https://civitai.com/api/download/models/1159272?fileId=1064393"
+      ],
+      "page": "https://civitai.com/models/1033610?modelVersionId=1159272"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXLSoftedge_v10.safetensors",
+      "size": 5004167832,
+      "sha256": "6997f9d16c3264dee8e1cccdf32a46d148efa1ebeb7db44a9310d280aa41e059",
+      "urls": [
+        "https://civitai.com/api/download/models/1151311?fileId=1056358"
+      ],
+      "page": "https://civitai.com/models/1026607?modelVersionId=1151311"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXLTile_v10.safetensors",
+      "size": 5004167832,
+      "sha256": "c08c8a9cdfd3625797501de0ba37debe19531942ccc1d06238acdb4f7e86795e",
+      "urls": [
+        "https://civitai.com/api/download/models/1238604?fileId=1143991"
+      ],
+      "page": "https://civitai.com/models/1102581?modelVersionId=1238604"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousXL_v10.safetensors",
+      "size": 2502140008,
+      "sha256": "0d8bacf24534dc6f2716f5d0ffa6085571928776f8687565ef290a17d9f3615c",
+      "urls": [
+        "https://civitai.com/api/download/models/1274546?fileId=1179489"
+      ],
+      "page": "https://civitai.com/models/136070?modelVersionId=1274546"
+    },
+    {
+      "path": "webui/models/ControlNet/illustriousxlV01_inpainting.safetensors",
+      "size": 2502139104,
+      "sha256": "61794b6bb2ca0a1db33f66233344e86858796cc20181093c130ae82ca917f562",
+      "urls": [
+        "https://civitai.com/api/download/models/1727510?fileId=1628125"
+      ],
+      "page": "https://civitai.com/models/1526830?modelVersionId=1727510"
+    },
+    {
+      "path": "webui/models/ControlNet/noobaiXLControlnet_epsTileFP16.safetensors",
+      "size": 2502139104,
+      "sha256": "66fab991f089dbaf484e91b11d2105aa0d93d49d37489e62b679a342608fd7e2",
+      "urls": [
+        "https://civitai.com/api/download/models/1325465?fileId=1229430"
+      ],
+      "page": "https://civitai.com/models/1177913?modelVersionId=1325465"
+    },
+    {
+      "path": "webui/models/ESRGAN/4x-AnimeSharp.pth",
+      "size": 67010245,
+      "sha256": "e7a7de2dafd7331c1992862bbbcd9e9712a9f9f8e6303f0aaa59b4341d359bab",
+      "urls": [
+        "https://huggingface.co/Kim2091/AnimeSharp/resolve/main/4x-AnimeSharp.pth",
+        "https://huggingface.co/Isi99999/Upscalers/resolve/main/4x-AnimeSharp.pth"
+      ]
+    },
+    {
+      "path": "webui/models/ESRGAN/4x-UltraSharp.pth",
+      "size": 66961958,
+      "sha256": "a5812231fc936b42af08a5edba784195495d303d5b3248c24489ef0c4021fe01",
+      "urls": [
+        "https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.pth",
+        "https://huggingface.co/lokCX/4x-Ultrasharp/resolve/main/4x-UltraSharp.pth",
+        "https://huggingface.co/uwg/upscaler/resolve/main/ESRGAN/4x-UltraSharp.pth",
+        "https://huggingface.co/Isi99999/Upscalers/resolve/main/4x-UltraSharp.pth",
+        "https://civitai.com/api/download/models/125843?fileId=90900"
+      ],
+      "page": "https://civitai.com/models/116225?modelVersionId=125843"
+    },
+    {
+      "path": "webui/models/ESRGAN/4x_NMKD-Siax_200k.pth",
+      "size": 66957746,
+      "sha256": "560424d9f68625713fc47e9e7289a98aabe1d744e1cd6a9ae5a35e9957fd127e",
+      "urls": [
+        "https://huggingface.co/uwg/upscaler/resolve/main/ESRGAN/4x_NMKD-Siax_200k.pth",
+        "https://civitai.com/api/download/models/2052724?fileId=1949541"
+      ],
+      "page": "https://civitai.com/models/1813922?modelVersionId=2052724"
+    },
+    {
+      "path": "webui/models/ESRGAN/ESRGAN_4x.pth",
+      "size": 66929193,
+      "sha256": "65fece06e1ccb48853242aa972bdf00ad07a7dd8938d2dcbdf4221b59f6372ce",
+      "urls": [
+        "https://github.com/cszn/KAIR/releases/download/v1.0/ESRGAN.pth"
+      ]
+    },
+    {
+      "path": "webui/models/GFPGAN/GFPGANv1.4.pth",
+      "size": 348632874,
+      "sha256": "e2cd4703ab14f4d01fd1383a8a8b266f9a5833dacee8e6a79d3bf21a1b6be5ad",
+      "urls": [
+        "https://huggingface.co/uwg/upscaler/resolve/main/Face_Restore/GFPGANv1.4.pth",
+        "https://huggingface.co/uwg/upscaler/resolve/main/GFPGAN/GFPGANv1.4.pth",
+        "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/facerestore_models/GFPGANv1.4.pth",
+        "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth"
+      ]
+    },
+    {
+      "path": "webui/models/GFPGAN/detection_Resnet50_Final.pth",
+      "size": 109497761,
+      "sha256": "6d1de9c2944f2ccddca5f5e010ea5ae64a39845a86311af6fdf30841b0a5a16d",
+      "urls": [
+        "https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth"
+      ]
+    },
+    {
+      "path": "webui/models/GFPGAN/parsing_parsenet.pth",
+      "size": 85331193,
+      "sha256": "3d558d8d0e42c20224f13cf5a29c79eba2d59913419f945545d8cf7b72920de2",
+      "urls": [
+        "https://github.com/xinntao/facexlib/releases/download/v0.2.2/parsing_parsenet.pth",
+        "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/parsing_parsenet.pth"
+      ]
+    },
+    {
+      "path": "webui/models/LDSR/model.ckpt",
+      "size": 124664000,
+      "sha256": "70311d92041127557ee21511763481eb9ab2b466c5422c6df182fa99fa994840",
+      "urls": [
+        "github-release:system-v1/LDSR-model.ckpt"
+      ]
+    },
+    {
+      "path": "webui/models/RealESRGAN/RealESRGAN_x4plus.pth",
+      "size": 67040989,
+      "sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+      "urls": [
+        "https://huggingface.co/lllyasviel/Annotators/resolve/main/RealESRGAN_x4plus.pth",
+        "https://huggingface.co/uwg/upscaler/resolve/main/Face_Restore/FaceFusion/real_esrgan_x4plus.pth",
+        "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+        "https://civitai.com/api/download/models/164898?fileId=124730"
+      ],
+      "page": "https://civitai.com/models/147817?modelVersionId=164898"
+    },
+    {
+      "path": "webui/models/RealESRGAN/RealESRGAN_x4plus_anime_6B.pth",
+      "size": 17938799,
+      "sha256": "f872d837d3c90ed2e05227bed711af5671a6fd1c9f7d7e91c911a61f155e99da",
+      "urls": [
+        "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth",
+        "https://civitai.com/api/download/models/164904?fileId=124735"
+      ],
+      "page": "https://civitai.com/models/147821?modelVersionId=164904"
+    },
+    {
+      "path": "webui/models/ScuNET/ScuNET.pth",
+      "size": 71982835,
+      "sha256": "892c83f812c59173273b74f4f34a14ecaf57a2fdb68df056664589beb55c966e",
+      "urls": [
+        "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_gan.pth"
+      ]
+    },
+    {
+      "path": "webui/models/Stable-diffusion/KLEIN/flux-2-klein-9b-fp8.safetensors",
+      "size": 9433061528,
+      "sha256": "865ba09f5b4c3cbd3468a4bd3acb9fcb2f8740c54317482f0bcd4ed1d3655cee",
+      "urls": [
+        "https://civitai.com/api/download/models/2658598?fileId=2545829"
+      ],
+      "page": "https://civitai.com/models/2363950?modelVersionId=2658598"
+    },
+    {
+      "path": "webui/models/Stable-diffusion/KLEIN/moodyDesireMix_v30.safetensors",
+      "size": 9078608856,
+      "sha256": "4c41e09e4113e6ee6138c937a0465973da0fe20d4bb1727e8c07b66643b81fdf",
+      "urls": [
+        "https://civitai.com/api/download/models/3063794?fileId=2943495"
+      ],
+      "page": "https://civitai.com/models/2519616?modelVersionId=3063794"
+    },
+    {
+      "path": "webui/models/SwinIR/SwinIR_4x.pth",
+      "size": 142473939,
+      "sha256": "99adfa91350a84c99e946c1eb3d8fce34bc28f57d807b09dc8fe40a316328c0a",
+      "urls": [
+        "https://github.com/JingyunLiang/SwinIR/releases/download/v0.0/003_realSR_BSRGAN_DFOWMFC_s64w8_SwinIR-L_x4_GAN.pth"
+      ]
+    },
+    {
+      "path": "webui/models/VAE/flux2-vae.safetensors",
+      "size": 336211292,
+      "sha256": "868fe7b343cc8f3a19dbcfcafbc3d5f888802be3f89bd81b65b3621a066ce8f3",
+      "urls": [
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://civitai.com/api/download/models/3301268?fileId=3186294"
+      ],
+      "page": "https://civitai.com/models/2918004?modelVersionId=3301268"
+    },
+    {
+      "path": "webui/models/VAE/illustriousXLV20_v10.safetensors",
+      "size": 167333134,
+      "sha256": "d7ed5ca5fd33ff846cf65f2efbb36d7a259258cbb70da71e711b2c612694ac00",
+      "urls": [
+        "https://civitai.com/api/download/models/2924538?fileId=2803197"
+      ],
+      "page": "https://civitai.com/models/2604533?modelVersionId=2924538"
+    },
+    {
+      "path": "webui/models/adetailer/face_landmarker.task",
+      "size": 3758596,
+      "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+      "urls": [
+        "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task",
+        "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/face_yolov8n.pt",
+      "size": 6230011,
+      "sha256": "70b640f8f60b1cf0dcc72f30caf3da9495eb2fb6509da48c53374ad6806e6a9c",
+      "urls": [
+        "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8n.pt"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/face_yolov8s.pt",
+      "size": 22507707,
+      "sha256": "c7237eff25787377de196961140ceaed324d859ee8de5a775d93d33a0e3fab78",
+      "urls": [
+        "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8s.pt"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/hand_yolov8n.pt",
+      "size": 6237883,
+      "sha256": "3991202eb69e9ddcb3b9ba80cdeb41e734ffaf844403d6c9f47d515cd88c6f29",
+      "urls": [
+        "https://huggingface.co/Bingsu/adetailer/resolve/main/hand_yolov8n.pt"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/hand_yolov8s.pt",
+      "size": 22507643,
+      "sha256": "70b540063fbc385736d8258970744a4afbc4cbf7932134bae3b24cdadeadec06",
+      "urls": [
+        "https://huggingface.co/Bingsu/adetailer/resolve/main/hand_yolov8s.pt"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/mediapipe_face_full.tflite",
+      "size": 1083786,
+      "sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "urls": [
+        "https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_full_range/float16/latest/blaze_face_full_range.tflite"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/person_yolov8n-seg.pt",
+      "size": 6777003,
+      "sha256": "38fc8aaae97cb6e70be4ec44770005b26ed473471362afcda62a0037d7ccf432",
+      "urls": [
+        "https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8n-seg.pt"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/person_yolov8s-seg.pt",
+      "size": 23850731,
+      "sha256": "53c54aec2239355faffc6c5b70d0f3d05042f386f956cbec39cec46ad456f050",
+      "urls": [
+        "https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8s-seg.pt"
+      ]
+    },
+    {
+      "path": "webui/models/adetailer/yolov8x-worldv2.pt",
+      "size": 146355704,
+      "sha256": "41e771bfbbb8894dd857f3fef7cac3b3578dffd49fd3547101efa6a606a02a0e",
+      "urls": [
+        "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8x-worldv2.pt",
+        "https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8x-worldv2.pt"
+      ]
+    },
+    {
+      "path": "webui/models/insightface/inswapper_128.onnx",
+      "size": 554253681,
+      "sha256": "e4a3f08c753cb72d04e10aa0f7dbe3deebbf39567d4ead6dce08e98aa49e16af",
+      "urls": [
+        "https://huggingface.co/uwg/upscaler/resolve/main/Face_Restore/FaceFusion/inswapper_128.onnx",
+        "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/inswapper_128.onnx",
+        "https://civitai.com/api/download/models/85159?fileId=58147"
+      ],
+      "page": "https://civitai.com/models/80324?modelVersionId=85159"
+    },
+    {
+      "path": "webui/models/insightface/models/buffalo_l/1k3d68.onnx",
+      "size": 143607619,
+      "sha256": "df5c06b8a0c12e422b2ed8947b8869faa4105387f199c477af038aa01f9a45cc",
+      "urls": [
+        "https://huggingface.co/public-data/insightface/resolve/main/models/buffalo_l/1k3d68.onnx",
+        "https://huggingface.co/OwlMaster/AllFilesRope/resolve/main/1k3d68.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/insightface/models/buffalo_l/2d106det.onnx",
+      "size": 5030888,
+      "sha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+      "urls": [
+        "https://huggingface.co/public-data/insightface/resolve/main/models/buffalo_l/2d106det.onnx",
+        "https://huggingface.co/OwlMaster/AllFilesRope/resolve/main/2d106det.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/insightface/models/buffalo_l/det_10g.onnx",
+      "size": 16923827,
+      "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+      "urls": [
+        "https://huggingface.co/uwg/upscaler/resolve/main/Face_Restore/FaceFusion/retinaface_10g.onnx",
+        "https://huggingface.co/public-data/insightface/resolve/main/models/buffalo_l/det_10g.onnx",
+        "https://huggingface.co/OwlMaster/AllFilesRope/resolve/main/det_10g.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/insightface/models/buffalo_l/genderage.onnx",
+      "size": 1322532,
+      "sha256": "4fde69b1c810857b88c64a335084f1c3fe8f01246c9a191b48c7bb756d6652fb",
+      "urls": [
+        "https://huggingface.co/uwg/upscaler/resolve/main/Face_Restore/FaceFusion/gender_age.onnx",
+        "https://huggingface.co/public-data/insightface/resolve/main/models/buffalo_l/genderage.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/insightface/models/buffalo_l/w600k_r50.onnx",
+      "size": 174383860,
+      "sha256": "4c06341c33c2ca1f86781dab0e829f88ad5b64be9fba56e56bc9ebdefc619e43",
+      "urls": [
+        "https://huggingface.co/uwg/upscaler/resolve/main/Face_Restore/FaceFusion/arcface_w600k_r50.onnx",
+        "https://huggingface.co/public-data/insightface/resolve/main/models/buffalo_l/w600k_r50.onnx",
+        "https://huggingface.co/OwlMaster/AllFilesRope/resolve/main/w600k_r50.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/interrogators/models--SmilingWolf--wd-v1-4-moat-tagger-v2/snapshots/8452cddf280b952281b6e102411c50e981cb2908/model.onnx",
+      "size": 326197340,
+      "sha256": "b8cef913be4c9e8d93f9f903e74271416502ce0b4b04df0ff1e2f00df488aa03",
+      "urls": [
+        "https://huggingface.co/SmilingWolf/wd-v1-4-moat-tagger-v2/resolve/main/model.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/interrogators/models--deepghs--ml-danbooru-onnx/snapshots/60009d1a5989970203364a2b27c887e0fa2747f2/TResnet-D-FLq_ema_6-30000.onnx",
+      "size": 235546500,
+      "sha256": "594c26e2cb72637c343f0492ba9d76b642e751201bcf61ff43f02ddeab3abcb9",
+      "urls": [
+        "https://huggingface.co/deepghs/ml-danbooru-onnx/resolve/main/TResnet-D-FLq_ema_6-30000.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/midas/dpt_hybrid-midas-501f0c75.pt",
+      "size": 492757791,
+      "sha256": "501f0c75b3bca7daec6b3682c5054c09b366765aef6fa3a09d03a5cb4b230853",
+      "urls": [
+        "https://huggingface.co/lllyasviel/Annotators/resolve/main/dpt_hybrid-midas-501f0c75.pt",
+        "https://huggingface.co/lllyasviel/ControlNet/resolve/main/annotator/ckpts/dpt_hybrid-midas-501f0c75.pt",
+        "https://github.com/intel-isl/DPT/releases/download/1_0/dpt_hybrid-midas-501f0c75.pt"
+      ]
+    },
+    {
+      "path": "webui/models/text_encoder/qwen_3_8b.safetensors",
+      "size": 16381517176,
+      "sha256": "f0ff9239d56269ca1d05e5f86da6a79fac111af464955681f11c7ab0ec5ef6c1",
+      "urls": [
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b.safetensors",
+        "https://civitai.com/api/download/models/2597527?fileId=2484889"
+      ],
+      "page": "https://civitai.com/models/2308682?modelVersionId=2597527"
+    },
+    {
+      "path": "webui/models/torch_deepdanbooru/model-resnet_custom_v3.pt",
+      "size": 644144887,
+      "sha256": "3841542cda4dd037da12a565e854b3347bb2eec8fbcd95ea3941b2c68990a355",
+      "urls": [
+        "https://github.com/AUTOMATIC1111/TorchDeepDanbooru/releases/download/v1/model-resnet_custom_v3.pt"
+      ]
+    },
+    {
+      "path": "webui/models/u2net/isnet-anime.onnx",
+      "size": 176069933,
+      "sha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+      "urls": [
+        "https://huggingface.co/tomjackson2023/rembg/resolve/main/isnet-anime.onnx",
+        "https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/u2net/isnet-general-use.onnx",
+      "size": 178648008,
+      "sha256": "60920e99c45464f2ba57bee2ad08c919a52bbf852739e96947fbb4358c0d964a",
+      "urls": [
+        "https://huggingface.co/tomjackson2023/rembg/resolve/main/isnet-general-use.onnx",
+        "https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/u2net/silueta.onnx",
+      "size": 44173029,
+      "sha256": "75da6c8d2f8096ec743d071951be73b4a8bc7b3e51d9a6625d63644f90ffeedb",
+      "urls": [
+        "https://huggingface.co/tomjackson2023/rembg/resolve/main/silueta.onnx",
+        "https://github.com/danielgatis/rembg/releases/download/v0.0.0/silueta.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/u2net/u2net.onnx",
+      "size": 175997641,
+      "sha256": "8d10d2f3bb75ae3b6d527c77944fc5e7dcd94b29809d47a739a7a728a912b491",
+      "urls": [
+        "https://huggingface.co/tomjackson2023/rembg/resolve/main/u2net.onnx",
+        "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx"
+      ]
+    },
+    {
+      "path": "webui/models/u2net/u2net_human_seg.onnx",
+      "size": 175997641,
+      "sha256": "01eb6a29a5c4d8edb30b56adad9bb3a2a0535338e480724a213e0acfd2d1c73c",
+      "urls": [
+        "https://huggingface.co/tomjackson2023/rembg/resolve/main/u2net_human_seg.onnx",
+        "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_human_seg.onnx"
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "name": "face_checkpoints.zip",
+      "size": 684354563,
+      "urls": [
+        "https://github.com/Haoming02/sd-webui-old-photo-restoration/releases/download/1.0/face_checkpoints.zip"
+      ],
+      "members": [
+        {
+          "name": "checkpoints/FaceSR_512/latest_net_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Face_Enhancement/checkpoints/FaceSR_512/latest_net_G.pth",
+          "size": 368779463,
+          "sha256": "3b3dc71f29cc98a61d9a7ccc48f329726feca19b67c2d3710b69b2deb96aef22"
+        },
+        {
+          "name": "checkpoints/Setting_9_epoch_100/latest_net_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Face_Enhancement/checkpoints/Setting_9_epoch_100/latest_net_G.pth",
+          "size": 368738923,
+          "sha256": "eaafe424c22225891f60e672f331e14521bef870e6ce490f988ce6ada4068569"
+        }
+      ]
+    },
+    {
+      "name": "global_checkpoints.zip",
+      "size": 2036400762,
+      "urls": [
+        "https://github.com/Haoming02/sd-webui-old-photo-restoration/releases/download/1.0/global_checkpoints.zip"
+      ],
+      "members": [
+        {
+          "name": "checkpoints/detection/FT_Epoch_latest.pt",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/detection/FT_Epoch_latest.pt",
+          "size": 451663663,
+          "sha256": "b2d7ab04e9b3885c6b1991bb7a0b823129dd6e3ac078a9fd059ebd2a7ba59a95"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_A_quality/latest_net_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_A_quality/latest_net_D.pth",
+          "size": 22121817,
+          "sha256": "9dc693d9430cdf62e6a2a0e140625ad43426e43b38302afab2720561e61629df"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_A_quality/latest_net_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_A_quality/latest_net_G.pth",
+          "size": 3498887,
+          "sha256": "de39b6d0081746995afd2393a94a11a10ae052fd9484b4fb06b7fa6bd28dcf5d"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_A_quality/latest_net_featD.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_A_quality/latest_net_featD.pth",
+          "size": 11310935,
+          "sha256": "24cfb20648f52d454f8ab3f6c31323e1ae46348334139141ccc16fbf817abf82"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_A_quality/latest_optimizer_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_A_quality/latest_optimizer_D.pth",
+          "size": 44241647,
+          "sha256": "23c154620cf57c9874b11baeb79406bc3f24afec7c1494046e83653c83d5dc84"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_A_quality/latest_optimizer_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_A_quality/latest_optimizer_G.pth",
+          "size": 6990137,
+          "sha256": "b9a84773dad2b877c69f514b5690353016da24803efb953a30bfdd3acb2b03b0"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_A_quality/latest_optimizer_featD.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_A_quality/latest_optimizer_featD.pth",
+          "size": 22620608,
+          "sha256": "8e80ceba67a0a50149dc1b00636987a6e3f2e88555d612ae88a44b9a786a2b54"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_quality/latest_net_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_quality/latest_net_D.pth",
+          "size": 22121817,
+          "sha256": "5badf02e2ee96f74636bc0c02b92b315b83c927d49bdbe7cb163613ed9c5dc5a"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_quality/latest_net_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_quality/latest_net_G.pth",
+          "size": 3498887,
+          "sha256": "0e40d6ea7acf27f1420abd29197086c21d0c2a7b8fe98a9e09c60a339457a830"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_quality/latest_optimizer_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_quality/latest_optimizer_D.pth",
+          "size": 44241647,
+          "sha256": "5d60fc7c0a6f5dfeaa2a98b4afb59a552ea41cc370c260ac640d12a7b64d71cc"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_quality/latest_optimizer_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_quality/latest_optimizer_G.pth",
+          "size": 6990137,
+          "sha256": "603e46ce9aec73a0e385b90d3410cedfe5dcd3256ee4f7b12e1f6eee6d894fb3"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_scratch/latest_net_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_scratch/latest_net_D.pth",
+          "size": 22121817,
+          "sha256": "63a72c03537bfe061f24d6497e995f544215fa768f204575646ad7ef195b903b"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_scratch/latest_net_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_scratch/latest_net_G.pth",
+          "size": 3498887,
+          "sha256": "e22bd7274229beaabf27427646d4623c7b5a302829dd9d466514ff639ba40f6a"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_scratch/latest_optimizer_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_scratch/latest_optimizer_D.pth",
+          "size": 44241647,
+          "sha256": "413edec10026fbd9b94f89b03d46c84e191bbea4d1c4e57acbc5d7d771ecbecb"
+        },
+        {
+          "name": "checkpoints/restoration/VAE_B_scratch/latest_optimizer_G.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/VAE_B_scratch/latest_optimizer_G.pth",
+          "size": 6990137,
+          "sha256": "e45d80c7ff0a6065be95ebdc583d962f222ba26de0af0ac0a610b637dcaae221"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_Patch_Attention/latest_net_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_Patch_Attention/latest_net_D.pth",
+          "size": 22288280,
+          "sha256": "76228629177a342a95793a4dcf4b3810b00d64f2a918ebe46c27d5740ac3fff6"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_Patch_Attention/latest_net_mapping_net.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_Patch_Attention/latest_net_mapping_net.pth",
+          "size": 295645915,
+          "sha256": "15f7a145b4eb94565d2f5988f6ca9948d04cef1599f4ca6eb99429e7d2c7d783"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_quality/latest_net_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_quality/latest_net_D.pth",
+          "size": 22146393,
+          "sha256": "619fb1391d32a930bfef1f09f36ed9eaa7868af32d827cb022cea50a25345d4c"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_quality/latest_net_mapping_net.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_quality/latest_net_mapping_net.pth",
+          "size": 144549781,
+          "sha256": "bb193cc0c82a6f4ed1c746beec5366c8a1e4a1b8dad3c83148afd0f93814624b"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_quality/latest_optimizer_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_quality/latest_optimizer_D.pth",
+          "size": 44290799,
+          "sha256": "776741c0d226674a5eb5b620c097f54da33d81cb41561a1e6b248cc711834c8b"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_quality/latest_optimizer_mapping_net.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_quality/latest_optimizer_mapping_net.pth",
+          "size": 289093935,
+          "sha256": "8089a1d0126784648649c2cf79ce517ff8a937526edaafaad6293090261fedb6"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_scratch/latest_net_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_scratch/latest_net_D.pth",
+          "size": 22281214,
+          "sha256": "6a3ebb451229f0ffcabeee7f5fadf749b758fc6f4c4f4847f4fa145826cc4a56"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_scratch/latest_net_mapping_net.pth",
+          "size": 205392667,
+          "sha256": "a63f9e33802a262fa62b160785fa3c53166f3d1449046ad9afc742848e195578"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_scratch/latest_optimizer_D.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_scratch/latest_optimizer_D.pth",
+          "size": 44290839,
+          "sha256": "b6aa331e4438c2845eb61b48a8483b8ce92a598b6a5ad39a26e22bbb136a8ac5"
+        },
+        {
+          "name": "checkpoints/restoration/mapping_scratch/latest_optimizer_mapping_net.pth",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Global/checkpoints/restoration/mapping_scratch/latest_optimizer_mapping_net.pth",
+          "size": 410776011,
+          "sha256": "4ab84a0aacb687cb6fe35870bca2b27201a8a34ed1f753c1e0c8eba0865e278e"
+        }
+      ]
+    },
+    {
+      "name": "shape_predictor_68_face_landmarks.zip",
+      "size": 71908135,
+      "urls": [
+        "https://github.com/Haoming02/sd-webui-old-photo-restoration/releases/download/1.0/shape_predictor_68_face_landmarks.zip"
+      ],
+      "members": [
+        {
+          "name": "shape_predictor_68_face_landmarks.dat",
+          "path": "webui/extensions/sd-webui-old-photo-restoration/lib_bopb2l/Face_Detection/shape_predictor_68_face_landmarks.dat",
+          "size": 99693937,
+          "sha256": "fbdc2cb80eb9aa7a758672cbfdda32ba6300efe9b6e6c7a299ff7e736b11b92f"
+        }
+      ]
+    }
+  ]
+}

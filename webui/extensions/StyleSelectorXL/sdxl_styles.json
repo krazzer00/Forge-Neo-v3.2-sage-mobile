@@ -1,0 +1,548 @@
+[
+  {
+    "name": "base",
+    "prompt": "{prompt}",
+    "negative_prompt": ""
+  },
+  {
+    "name": "3D Model",
+    "prompt": "professional 3d model {prompt} . octane render, highly detailed, volumetric, dramatic lighting",
+    "negative_prompt": "ugly, deformed, noisy, low poly, blurry, painting"
+  },
+  {
+    "name": "Anime",
+    "prompt": "anime artwork {prompt} . anime style, key visual, vibrant, studio anime,  highly detailed",
+    "negative_prompt": "photo, deformed, black and white, realism, disfigured, low contrast"
+  },
+  {
+    "name": "Cinematic",
+    "prompt": "cinematic film still {prompt} . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy",
+    "negative_prompt": "anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured"
+  },
+  {
+    "name": "Comic Book",
+    "prompt": "comic {prompt} . graphic illustration, comic art, graphic novel art, vibrant, highly detailed",
+    "negative_prompt": "photograph, deformed, glitch, noisy, realistic, stock photo"
+  },
+  {
+    "name": "Craft Clay",
+    "prompt": "play-doh style {prompt} . sculpture, clay art, centered composition, Claymation",
+    "negative_prompt": "sloppy, messy, grainy, highly detailed, ultra textured, photo"
+  },
+  {
+    "name": "Enhance",
+    "prompt": "breathtaking {prompt} . award-winning, professional, highly detailed",
+    "negative_prompt": "ugly, deformed, noisy, blurry, distorted, grainy"
+  },
+  {
+    "name": "Fantasy Art",
+    "prompt": "ethereal fantasy concept art of  {prompt} . magnificent, celestial, ethereal, painterly, epic, majestic, magical, fantasy art, cover art, dreamy",
+    "negative_prompt": "photographic, realistic, realism, 35mm film, dslr, cropped, frame, text, deformed, glitch, noise, noisy, off-center, deformed, cross-eyed, closed eyes, bad anatomy, ugly, disfigured, sloppy, duplicate, mutated, black and white"
+  },
+  {
+    "name": "Isometric Style",
+    "prompt": "isometric style {prompt} . vibrant, beautiful, crisp, detailed, ultra detailed, intricate",
+    "negative_prompt": "deformed, mutated, ugly, disfigured, blur, blurry, noise, noisy, realistic, photographic"
+  },
+  {
+    "name": "Line Art",
+    "prompt": "line art drawing {prompt} . professional, sleek, modern, minimalist, graphic, line art, vector graphics",
+    "negative_prompt": "anime, photorealistic, 35mm film, deformed, glitch, blurry, noisy, off-center, deformed, cross-eyed, closed eyes, bad anatomy, ugly, disfigured, mutated, realism, realistic, impressionism, expressionism, oil, acrylic"
+  },
+  {
+    "name": "Lowpoly",
+    "prompt": "low-poly style {prompt} . low-poly game art, polygon mesh, jagged, blocky, wireframe edges, centered composition",
+    "negative_prompt": "noisy, sloppy, messy, grainy, highly detailed, ultra textured, photo"
+  },
+  {
+    "name": "Neon Punk",
+    "prompt": "neonpunk style {prompt} . cyberpunk, vaporwave, neon, vibes, vibrant, stunningly beautiful, crisp, detailed, sleek, ultramodern, magenta highlights, dark purple shadows, high contrast, cinematic, ultra detailed, intricate, professional",
+    "negative_prompt": "painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured"
+  },
+  {
+    "name": "Origami",
+    "prompt": "origami style {prompt} . paper art, pleated paper, folded, origami art, pleats, cut and fold, centered composition",
+    "negative_prompt": "noisy, sloppy, messy, grainy, highly detailed, ultra textured, photo"
+  },
+  {
+    "name": "Photographic",
+    "prompt": "cinematic photo {prompt} . 35mm photograph, film, bokeh, professional, 4k, highly detailed",
+    "negative_prompt": "drawing, painting, crayon, sketch, graphite, impressionist, noisy, blurry, soft, deformed, ugly"
+  },
+  {
+    "name": "Pixel Art",
+    "prompt": "pixel-art {prompt} . low-res, blocky, pixel art style, 8-bit graphics",
+    "negative_prompt": "sloppy, messy, blurry, noisy, highly detailed, ultra textured, photo, realistic"
+  },
+  {
+    "name": "Texture",
+    "prompt": "texture {prompt} top down close-up",
+    "negative_prompt": "ugly, deformed, noisy, blurry"
+  },
+  {
+    "name": "Advertising",
+    "prompt": "Advertising poster style {prompt} . Professional, modern, product-focused, commercial, eye-catching, highly detailed",
+    "negative_prompt": "noisy, blurry, amateurish, sloppy, unattractive"
+  },
+  {
+    "name": "Food Photography",
+    "prompt": "Food photography style {prompt} . Appetizing, professional, culinary, high-resolution, commercial, highly detailed",
+    "negative_prompt": "unappetizing, sloppy, unprofessional, noisy, blurry"
+  },
+  {
+    "name": "Cubist",
+    "prompt": "Cubist artwork {prompt} . Geometric shapes, abstract, innovative, revolutionary",
+    "negative_prompt": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+  },
+  {
+    "name": "Graffiti",
+    "prompt": "Graffiti style {prompt} . Street art, vibrant, urban, detailed, tag, mural",
+    "negative_prompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+  },
+  {
+    "name": "Hyperrealism",
+    "prompt": "Hyperrealistic art {prompt} . Extremely high-resolution details, photographic, realism pushed to extreme, fine texture, incredibly lifelike",
+    "negative_prompt": "simplified, abstract, unrealistic, impressionistic, low resolution"
+  },
+  {
+    "name": "Impressionist",
+    "prompt": "Impressionist painting {prompt} . Loose brushwork, vibrant color, light and shadow play, captures feeling over form",
+    "negative_prompt": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+  },
+  {
+    "name": "Pop Art",
+    "prompt": "Pop Art style {prompt} . Bright colors, bold outlines, popular culture themes, ironic or kitsch",
+    "negative_prompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, minimalist"
+  },
+  {
+    "name": "Renaissance",
+    "prompt": "Renaissance style {prompt} . Realistic, perspective, light and shadow, religious or mythological themes, highly detailed",
+    "negative_prompt": "ugly, deformed, noisy, blurry, low contrast, modernist, minimalist, abstract"
+  },
+  {
+    "name": "Steampunk",
+    "prompt": "Steampunk style {prompt} . Antique, mechanical, brass and copper tones, gears, intricate, detailed",
+    "negative_prompt": "deformed, glitch, noisy, low contrast, anime, photorealistic"
+  },
+  {
+    "name": "Surrealist",
+    "prompt": "Surrealist art {prompt} . Dreamlike, mysterious, provocative, symbolic, intricate, detailed",
+    "negative_prompt": "anime, photorealistic, realistic, deformed, glitch, noisy, low contrast"
+  },
+  {
+    "name": "Typography",
+    "prompt": "Typographic art {prompt} . Stylized, intricate, detailed, artistic, text-based",
+    "negative_prompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+  },
+  {
+    "name": "Watercolor",
+    "prompt": "Watercolor painting {prompt} . Vibrant, beautiful, painterly, detailed, textural, artistic",
+    "negative_prompt": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+  },
+  {
+    "name": "Fighting Game",
+    "prompt": "Fighting game style {prompt} . Dynamic, vibrant, action-packed, detailed character design, reminiscent of fighting video games",
+    "negative_prompt": "peaceful, calm, minimalist, photorealistic"
+  },
+  {
+    "name": "GTA",
+    "prompt": "GTA-style artwork {prompt} . Satirical, exaggerated, pop art style, vibrant colors, iconic characters, action-packed",
+    "negative_prompt": "realistic, black and white, low contrast, impressionist, cubist, noisy, blurry, deformed"
+  },
+  {
+    "name": "Super Mario",
+    "prompt": "Super Mario style {prompt} . Vibrant, cute, cartoony, fantasy, playful, reminiscent of Super Mario series",
+    "negative_prompt": "realistic, modern, horror, dystopian, violent"
+  },
+  {
+    "name": "Minecraft",
+    "prompt": "Minecraft style {prompt} . Blocky, pixelated, vibrant colors, recognizable characters and objects, game assets",
+    "negative_prompt": "smooth, realistic, detailed, photorealistic, noise, blurry, deformed"
+  },
+  {
+    "name": "Pokémon",
+    "prompt": "Pokémon style {prompt} . Vibrant, cute, anime, fantasy, reminiscent of Pokémon series",
+    "negative_prompt": "realistic, modern, horror, dystopian, violent"
+  },
+  {
+    "name": "Retro Arcade",
+    "prompt": "Retro arcade style {prompt} . 8-bit, pixelated, vibrant, classic video game, old school gaming, reminiscent of 80s and 90s arcade games",
+    "negative_prompt": "modern, ultra-high resolution, photorealistic, 3D"
+  },
+  {
+    "name": "RPG Fantasy Game",
+    "prompt": "Role-playing game (RPG) style fantasy {prompt} . Detailed, vibrant, immersive, reminiscent of high fantasy RPG games",
+    "negative_prompt": "sci-fi, modern, urban, futuristic, low detailed"
+  },
+  {
+    "name": "Strategy Game",
+    "prompt": "Strategy game style {prompt} . Overhead view, detailed map, units, reminiscent of real-time strategy video games",
+    "negative_prompt": "first-person view, modern, photorealistic"
+  },
+  {
+    "name": "Street Fighter",
+    "prompt": "Street Fighter style {prompt} . Vibrant, dynamic, arcade, 2D fighting game, highly detailed, reminiscent of Street Fighter series",
+    "negative_prompt": "3D, realistic, modern, photorealistic, turn-based strategy"
+  },
+  {
+    "name": "Legend of Zelda",
+    "prompt": "Legend of Zelda style {prompt} . Vibrant, fantasy, detailed, epic, heroic, reminiscent of The Legend of Zelda series",
+    "negative_prompt": "sci-fi, modern, realistic, horror"
+  },
+  {
+    "name": "Disco",
+    "prompt": "Disco-themed {prompt} . Vibrant, groovy, retro 70s style, shiny disco balls, neon lights, dance floor, highly detailed",
+    "negative_prompt": "minimalist, rustic, monochrome, contemporary, simplistic"
+  },
+  {
+    "name": "Fairy Tale",
+    "prompt": "Fairy tale {prompt} . Magical, fantastical, enchanting, storybook style, highly detailed",
+    "negative_prompt": "realistic, modern, ordinary, mundane"
+  },
+  {
+    "name": "Grunge",
+    "prompt": "Grunge style {prompt} . Textured, distressed, vintage, edgy, punk rock vibe, dirty, noisy",
+    "negative_prompt": "smooth, clean, minimalist, sleek, modern, photorealistic"
+  },
+  {
+    "name": "Horror",
+    "prompt": "Horror-themed {prompt} . Eerie, unsettling, dark, spooky, suspenseful, grim, highly detailed",
+    "negative_prompt": "cheerful, bright, vibrant, light-hearted, cute"
+  },
+  {
+    "name": "Minimalist",
+    "prompt": "Minimalist style {prompt} . Simple, clean, uncluttered, modern, elegant",
+    "negative_prompt": "ornate, complicated, highly detailed, cluttered, disordered, messy, noisy"
+  },
+  {
+    "name": "Monochrome",
+    "prompt": "Monochrome {prompt} . Black and white, contrast, tone, texture, detailed",
+    "negative_prompt": "colorful, vibrant, noisy, blurry, deformed"
+  },
+  {
+    "name": "Nautical",
+    "prompt": "Nautical-themed {prompt} . Sea, ocean, ships, maritime, beach, marine life, highly detailed",
+    "negative_prompt": "landlocked, desert, mountains, urban, rustic"
+  },
+  {
+    "name": "Space",
+    "prompt": "Space-themed {prompt} . Cosmic, celestial, stars, galaxies, nebulas, planets, science fiction, highly detailed",
+    "negative_prompt": "earthly, mundane, ground-based, realism"
+  },
+  {
+    "name": "Stained Glass",
+    "prompt": "Stained glass style {prompt} . Vibrant, beautiful, translucent, intricate, detailed",
+    "negative_prompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+  },
+  {
+    "name": "Techwear Fashion",
+    "prompt": "Techwear fashion {prompt} . Futuristic, cyberpunk, urban, tactical, sleek, dark, highly detailed",
+    "negative_prompt": "vintage, rural, colorful, low contrast, realism, sketch, watercolor"
+  },
+  {
+    "name": "Tribal",
+    "prompt": "Tribal style {prompt} . Indigenous, ethnic, traditional patterns, bold, natural colors, highly detailed",
+    "negative_prompt": "modern, futuristic, minimalist, pastel"
+  },
+  {
+    "name": "Zentangle",
+    "prompt": "Zentangle {prompt} . Intricate, abstract, monochrome, patterns, meditative, highly detailed",
+    "negative_prompt": "colorful, representative, simplistic, large fields of color"
+  },
+  {
+    "name": "Collage",
+    "prompt": "Collage style {prompt} . Mixed media, layered, textural, detailed, artistic",
+    "negative_prompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic"
+  },
+  {
+    "name": "Flat Papercut",
+    "prompt": "Flat papercut style {prompt} . Silhouette, clean cuts, paper, sharp edges, minimalist, color block",
+    "negative_prompt": "3D, high detail, noise, grainy, blurry, painting, drawing, photo, disfigured"
+  },
+  {
+    "name": "Kirigami",
+    "prompt": "Kirigami representation of {prompt} . 3D, paper folding, paper cutting, Japanese, intricate, symmetrical, precision, clean lines",
+    "negative_prompt": "painting, drawing, 2D, noisy, blurry, deformed"
+  },
+  {
+    "name": "Paper Quilling",
+    "prompt": "Paper quilling art of {prompt} . Intricate, delicate, curling, rolling, shaping, coiling, loops, 3D, dimensional, ornamental",
+    "negative_prompt": "photo, painting, drawing, 2D, flat, deformed, noisy, blurry"
+  },
+  {
+    "name": "Papercut Collage",
+    "prompt": "Papercut collage of {prompt} . Mixed media, textured paper, overlapping, asymmetrical, abstract, vibrant",
+    "negative_prompt": "photo, 3D, realistic, drawing, painting, high detail, disfigured"
+  },
+  {
+    "name": "Alien",
+    "prompt": "Alien-themed {prompt} . Extraterrestrial, cosmic, otherworldly, mysterious, sci-fi, highly detailed",
+    "negative_prompt": "earthly, mundane, common, realistic, simple"
+  },
+  {
+    "name": "HDR",
+    "prompt": "HDR photo of {prompt} . High dynamic range, vivid, rich details, clear shadows and highlights, realistic, intense, enhanced contrast, highly detailed",
+    "negative_prompt": "flat, low contrast, oversaturated, underexposed, overexposed, blurred, noisy"
+  },
+  {
+    "name": "Long Exposure",
+    "prompt": "Long exposure photo of {prompt} . Blurred motion, streaks of light, surreal, dreamy, ghosting effect, highly detailed",
+    "negative_prompt": "static, noisy, deformed, shaky, abrupt, flat, low contrast"
+  },
+  {
+    "name": "Neon Noir",
+    "prompt": "Neon noir {prompt} . Cyberpunk, dark, rainy streets, neon signs, high contrast, low light, vibrant, highly detailed",
+    "negative_prompt": "bright, sunny, daytime, low contrast, black and white, sketch, watercolor"
+  },
+  {
+    "name": "Silhouette",
+    "prompt": "Silhouette style {prompt} . High contrast, minimalistic, black and white, stark, dramatic",
+    "negative_prompt": "ugly, deformed, noisy, blurry, low contrast, color, realism, photorealistic"
+  },
+  {
+    "name": "Tilt-Shift",
+    "prompt": "Tilt-shift photo of {prompt} . Selective focus, miniature effect, blurred background, highly detailed, vibrant, perspective control",
+    "negative_prompt": "blurry, noisy, deformed, flat, low contrast, unrealistic, oversaturated, underexposed"
+  },
+  {
+    "name": "X Painting",
+    "prompt": "A bright colorful painting, {prompt}, a sky with clouds illuminated by the setting sun, in the style of James R. Eads, acrylic, splashes of paint, colorful, fantastic, realistic surrealism, neo-Romanticism, complex details, high detail, octane, 8K<lora:xl_more_art-full_v1:0.5>",
+    "negative_prompt": "ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, body out of frame, blurry, bad anatomy, blurred, watermark, grainy, signature, cut off, draft, closed eyes, text, logo"
+  },
+  {
+    "name": "X PaintSpace",
+    "prompt": "space, {prompt}, magical, wandering and imaginary world, neon light art, in the dark of night, moonlit seas, clouds, moon, stars, colorful, detailed, storybook illustration, night, moonlight",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X VanGoge",
+    "prompt": "magical masterpiece, {prompt}, detailed panorama blending the pointillism of Seurat with the vivid color palette of Van Gogh, celestial dreamscape, intricate starry sky background",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X PaintPortrait",
+    "prompt": "Insanely detailed portrait of {prompt}, white lab coat, rather detailed face, realistic, vintage photography, beautiful, glass aesthetics, retro vintage style, hd photography, hyperrealism, retro movie style, blurred and dim colors, warm colors, ray trassing, high resolution, , trending on artstation, overcast, beautiful watercolor portrait, realistic, watercolor portrait by harumi hironaka agnes cecile, detailed, watercolor portrait, fine art",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X ReligionPaint",
+    "prompt": "oil paint, {prompt}, wearing a white clothes and walking in jerusalem in a mystical magical landscape",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X VectorArt",
+    "prompt": "vector art, close-up, portrait of {prompt}, intricate details, a lot of color, many small strokes, 8k, breathtaking, extremely detailed, beautiful, artistic, hyperrealistic",
+    "negative_prompt": "photo, cartoon, 3d, oil paint,(deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X SpeedPaint",
+    "prompt": "expressionist Darkfall Sandman, speed paint, {prompt}, glitch style, detailed, dynamic, raw, emotional, dynamic, distortion for emotional effect, vibrant, use of unusual colors, detailed",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X SeaPaint",
+    "prompt": "(masterpiece:1.2), (best quality:1.2), extremely detailed, (perfect face), (perfect hands), highres, fishytech, scifi, FishyMagic, ({prompt}), sea, full body",
+    "negative_prompt": "3d render, grayscale, too dark, doll, not realistic, bad quality, low quality, drawing, sketch, simple, backlit, backlight, underexposure, underexposed, repetitive, tiled, cloned, child, copied, cartoon, (low quality:1.3), blurry, ugly, tiling, poorly drawn"
+  },
+  {
+    "name": "X InkDraw",
+    "prompt": "ink drawing of a sketched by {prompt}, suns, spray, rough paper, dentist, the texture of the canvas",
+    "negative_prompt": ""
+  },
+  {
+    "name": "X MilitaryPaint",
+    "prompt": "Watercolor drawing, {prompt}, Dusk, Shipwreck, Disquieting, Phantom-like, Dark omninous sky, (Monochromatic:1.1), (Isolation:1.1), (Chiaroscuro:1.1), (Strobe light:1.2), Marble, Polygon, ((Romantic, soft, passionate, tender:0.99), (Rule of Thirds, balanced, offset focus, Rough, gritty, coarse, rugged, Hard Light, sharp, strong contrast, defined:0.75), (Cinma Vrit, naturalistic, observational, unobtrusive:0.99):0.5), ultra detailed, intricate, oil on canvas, dry brush, (surrealism:1.1), (disturbing:1.1)",
+    "negative_prompt": "realistic, joyful, frame, portrait, symmetry"
+  },
+  {
+    "name": "X PosterPaint",
+    "prompt": "A ultra realistic poster of {prompt}, by Daniel Castan, Carne Griffiths, Andreas Lie, Russ Mills, Leonid Afremov, dark background, cinematic, ultra detail, vibrant, 3d render, illustration <lora:xl_more_art-full_v1:1>, full body",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X FractalSilhouette",
+    "prompt": "cinematic photo thin,  fine fractal glossy vivid colored ink sketch shiny contours outlines of a perfect physique {prompt} silhouette . 35mm photograph,  film,  bokeh,  professional,  4k,  highly detailed",
+    "negative_prompt": "Faded colors,  matte,  bad quality,  worst quality,  low quality,  doll,  nipples,  dark,  drawing,  painting,  crayon,  sketch,  graphite,  impressionist,  noisy,  blurry,  soft,  deformed,  ugly"
+  },
+  {
+    "name": "X StarCraft",
+    "prompt": "",
+    "negative_prompt": "cartoon, painting, illustration, (worst quality, low quality, normal quality:2), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X PosterCar",
+    "prompt": "(masterpiece, best quality:1.3), english text, cover, {prompt}, road, simple background",
+    "negative_prompt": "(muted colors:1.4). simple background, (extra fingers, deformed hands, polydactyl:1.3), ugly, (worst quality, low quality, poor quality, bad quality:1.35), artist logo, signature"
+  },
+  {
+    "name": "X CrystalAnimal",
+    "prompt": "A clear white crystal {prompt} in swarovski style, high detail, detailed behance instagram underground 4k",
+    "negative_prompt": ""
+  },
+  {
+    "name": "X Silhouette",
+    "prompt": "cinematic photo thin,  fine fractal glossy vivid colored ink sketch shiny contours outlines of a perfect physique {prompt} silhouette . 35mm photograph,  film,  bokeh,  professional,  4k,  highly detailed",
+    "negative_prompt": "Faded colors,  matte,  bad quality,  worst quality,  low quality,  doll,  nipples,  dark,  drawing,  painting,  crayon,  sketch,  graphite,  impressionist,  noisy,  blurry,  soft,  deformed,  ugly"
+  }
+  ,
+  {
+    "name": "X Ink",
+    "prompt": "black and white engraving of a {prompt}, symbol, vector graphics, (white background:1.1), (ink:1.2)",
+    "negative_prompt": "(worst quality, low quality:1.3), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X FractalRibbons",
+    "prompt": "(landscape:1.2), {prompt}, (golden and blue fractal, thousands of ribbons, spirals:1.2):0.6, dreamlike, muted colors, (dramatic light, hyperrealistic detailed, intricate, photography:1.2), (soft light, rim light:1.2)",
+    "negative_prompt": "EasyNegative"
+  },
+  {
+    "name": "X WhiteMarionette",
+    "prompt": "shiny white and matt {prompt} marionette showing cracked inner working, tiny white flowers growing from within, light from within all white sterile minimal empty street",
+    "negative_prompt": "EasyNegative"
+  },
+  {
+    "name": "X Portrait-Sticker",
+    "prompt": "(vector art style:1.3), Portrait of an angry ({prompt}) with open mouth, (Flat style:1.5), flat background, artstation, (sticker:0.4)",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X BW-Portrait",
+    "prompt": "raw photo, black and white, portrait of {prompt}, hyper detailed eyes, solemn face, immaculate shading, by Mary Corkling, hyperrealistic picture, (film grain:1.6)",
+    "negative_prompt": "(bad skin), close-up, darkseid as mini figure, getter robo, flat color, happy wise. he has bouncy belly, synthwave colors!!, medical mecha canine, wearing black latex outfit, scifi colors, pixeled stretching"
+  },
+  {
+    "name": "X Blots-Portrait",
+    "prompt": "ink drawing of a {prompt} sketched by blots, suns, spray, rough paper, dentist, RAW photo, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3",
+    "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  },
+  {
+    "name": "X Poster-Daniel Castan",
+    "prompt": "A ultra realistic poster of {prompt}, by Daniel Castan, Carne Griffiths, Andreas Lie, Russ Mills, Leonid Afremov, dark background, cinematic, ultra detail, vibrant, 3d render, illustration, <lora:xl_more_art-full_v1:1>, full body",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X Icon",
+    "prompt": "colored icon, ({prompt}), details",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X BubbleArt",
+    "prompt": "Bubble art, Cyberpunk weird anthropomorphic {prompt} in style, neon glow, realistic, by Anna Dittmann and Carne griffiths, dark shot, global illumination, Wide-angle",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, watermark, text"
+  },
+  {
+    "name": "X OrangeGirl",
+    "prompt": "computer graphics, {prompt} in orange tight dress, blonde hair, Combat color, dramatic light, RAW photo, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3",
+    "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  },
+  {
+    "name": "X SteamPunk",
+    "prompt": "(masterpiece), best quality, absurdres, {prompt}, forest in the background, sun light, (steampunk:0.6), dynamic pose, RAW photo, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3",
+    "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  },
+  {
+    "name": "X CartoonHero",
+    "prompt": "Art by jarosław jaśnikowski, thick hip hop cartoon of adorable anthropomorphic stupid {prompt} wearing sneakers, Bokeh, intricate details, ultrarealistic, wallpaper, best quality, ultra detailed",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X Macro",
+    "prompt": "realistic detailed image, (({prompt})), lilligant, [sunny iridescence on dew drops], epic, cinematic photography with a clear focus, 16k hdr, volumetric lighting, depth of field, hyperrealism of fog and haze, bright colors and textures, unique patterns of nature as an artist, very stunning landscapes",
+    "negative_prompt": ""
+  },
+  {
+    "name": "X OutlineLogo",
+    "prompt": "logo concept (Line Art:1.1), {prompt}, a storybook illustration by (Christina Schmidhofer) white background, Simple vector line drawing, outline people clean vector daytime, illustration, 6 colors, (isometric:0.9), dynamic composition",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X RealisticSkin",
+    "prompt": "RAW photo, portrait, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3",
+    "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  },
+  {
+    "name": "X ParadiseLandscape",
+    "prompt": "{prompt}, view from above, flowers and leaves, glowing path, oil on canvas, insanely detailed, 8k, Movie Poster, intricate, beksinski, production cinematic character render, artstation trends, sharp focus, realism, expert, sunset, by Drew Struzan, two moons, soft impressionist",
+    "negative_prompt": "2d art, 3d art, blured, ((illustration)), anime, cartoon, bad_pictures, bad-artist, EasyNegative, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username, artist name, conjoined fingers, deformed fingers, ugly eyes, imperfect eyes, skewed eyes, unnatural face, unnatural body, error, bad image, bad photo"
+  },
+  {
+    "name": "X 3ColorArt",
+    "prompt": "(best quality:1.2), (ink drawing:1.1), black and white with red details, {prompt}, autumn forest, short black hair, falling leaves, monochrome",
+    "negative_prompt": "(worst quality:1.2), ugly, frame, text, blurry, deformed limbs, deformed eyes, old woman, child, deformed hands, deformed fingers, anime, cartoon"
+  },
+  {
+    "name": "X AlchemistRussMills",
+    "prompt": "Surreal Alchemist, {prompt} portrait, master alchemist, alchemical symbols, by Russ Mills",
+    "negative_prompt": "2d art, 3d art, ((illustration)), anime, cartoon, bad_pictures, bad-artist, EasyNegative, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username, artist name, conjoined fingers, deformed fingers, ugly eyes, imperfect eyes, skewed eyes, unnatural face, unnatural body, error, bad image, bad photo, picture frame, margins"
+  },
+  {
+    "name": "X Tattoo",
+    "prompt": "retail packaging style, (an tattoo), (((symmetric filigree))), {prompt}, soft black backdrop, (skin texture:1.2), vibrant and professional edge lighting, incredibly high-resolution details, incredibly realistic push realism to the extreme, vibrant, enticing, commercial, product-focused, eye-catching, professional, highly detailed",
+    "negative_prompt": "noisy, blurry, amateurish, sloppy, unattractive, (worst quality, low quality, normal quality, lowres, low details, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, bad photography, bad art:1.4), (watermark, signature, text font, username, error, logo, words, letters, digits, autograph, trademark, name:1.2), (blur, blurry, grainy), morbid, ugly, asymmetrical, mutated malformed, mutilated, poorly lit, bad shadow, draft, cropped, out of frame, cut off, censored, jpeg artifacts, out of focus, glitch, duplicate, (airbrushed, cartoon, anime, semi-realistic, cgi, render, blender, digital art, manga, amateur:1.3), (3D ,3D Game, 3D Game Scene, 3D Character:1.1), (bad hands, bad anatomy, bad body, bad face, bad teeth, bad arms, bad legs, deformities:1.3), ((extra toes))"
+  },
+  {
+    "name": "X WaterArt",
+    "prompt": "ethereal fantasy concept art of a ({prompt}:1.2) touching water surface, chaotic resonance, microdisplacement, watercore, bioluminescence, aetheric realm, chiaroscuro, symbolism, intricate details, style of (Leonid Afremov:1.1) and Anna Dittmann, <lora:xl_more_art-full_v1:0.5>, . magnificent, celestial, ethereal, painterly, epic, majestic, magical, fantasy art, cover art, dreamy",
+    "negative_prompt": "(text, watermark:2), gaussian noise, worst quality, lowres, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, bad photography, bad art, blur, blurry, grainy, morbid, ugly, asymmetrical, mutated, malformed, mutilated, poorly lit, bad shadow, draft, cropped, out of frame, cut off, censored, jpeg artifacts, out of focus, glitch, duplicate, pixelated, soft focus, color fringing, overprocessed, oversharpened, photographic, realistic, realism, 35mm film, dslr, cropped, frame, text, deformed, glitch, noise, noisy, off-center, deformed, cross-eyed, closed eyes, bad anatomy, ugly, disfigured, sloppy, duplicate, mutated, black and white"
+  },
+  {
+    "name": "X Synthwave",
+    "prompt": "Synthwave, ({prompt}), vectorized, synthwave, purple blue red orange, bright neon colors on a dark background",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X USSR-stamp",
+    "prompt": "vintage ussr Postage Stamp, ussr stamp, {prompt} full body, blue ink, line engraving, intaglio",
+    "negative_prompt": "(deformed, distorted, disfigured:1.3), stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  },
+  {
+    "name": "X Brushstrokes",
+    "prompt": "{prompt}, expressionist painting, thick and thin brushstrokes, emotional dynamic colors, brushwork to create movement and emotion in the scene, vibrant, detailed",
+    "negative_prompt": "worst quality, low quality, ugly, blurry, unaesthetic, dull colors, (watermark, signature), bad hands"
+  },
+  {
+    "name": "X TEXT N",
+    "prompt": "<lora:Harrlogos_v2.0:1>, ({prompt} text logo:1.3), metallic shiny reflective, lightning, speed blur, epic, dramatic, iconic, <lora:xl_more_art-full_v1:0.8>",
+    "negative_prompt": "worst quality, low quality, ugly, blurry, unaesthetic, dull colors, (watermark, signature), bad hands"
+  },
+  {
+    "name": "X FoggyForest",
+    "prompt": "epic fantasy, Casey Baugh, oil painting, night, {prompt}, in a foggy forest, volumetric fog, detailed composition, <lora:badhands:1>",
+    "negative_prompt": "worst quality, low quality, ugly, blurry, unaesthetic, dull colors, (watermark, signature), bad hands"
+  },
+  {
+    "name": "X Floral",
+    "prompt": "a detailed illustration of a vivid and cute {prompt} head print, fantasy flower splash, vintage t-shirt design, in the style of Studio Ghibli, pastel tetradic colors of white, lilac and navy blue flora, 3D vector art, cute and quirky, fantasy art, watercolor effect, bokeh, Adobe Illustrator, hand-drawn, digital painting, low-poly, soft lighting, overhead view, isometric style, retro aesthetic, character focus, 4K resolution, photorealistic rendering, using Cinema 4D",
+    "negative_prompt": "3d render, grayscale, too dark, doll, not realistic, bad quality, low quality, drawing, sketch, simple, backlit, backlight, underexposure, underexposed, repetitive, tiled, cloned, child, copied, cartoon, (low quality:1.3), blurry, ugly, tiling, poorly drawn"
+  },
+  {
+    "name": "X Psychedelic",
+    "prompt": "portrait pretty {prompt}, (Psychedelic style:1.2), drawing, Vibrant colors, swirling patterns, abstract forms, surreal, Cubist artwork, Geometric shapes, abstract, Video Art, dramatic angle, highly detailed, slender eyes",
+    "negative_prompt": "photo, (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, watermark, text"
+  },
+  {
+    "name": "X Watercolor",
+    "prompt": "beautiful pen and ink sketch of {prompt}, minimalist, colored, watercolor_(medium), Valentina Verlato",
+    "negative_prompt": "stacked torsos, totem pole, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, worst quality, low quality, ugly, unaesthetic, dull colors, (watermark, signature), bad hands"
+  },
+  {
+    "name": "X INK SKETCH",
+    "prompt": "{prompt}, eyes closed in delight, cute ink sketch style illustration",
+    "negative_prompt": "low quality"
+  },
+  {
+    "name": "X EMBROIDERY",
+    "prompt": "embroidery texture, {prompt}, logo, portrait",
+    "negative_prompt": "low quality"
+  },
+  {
+    "name": "X HYPERREAL",
+    "prompt": "hyperdetailed photography, European {prompt}, soft light, portrait, (white background:1.3), skin details, sharp and in focus, short wavy hair, frown, slim",
+    "negative_prompt": "blur, blurry, 3D Game, worst quality, low quality, normal quality, lowres, low details, grayscale, bw, watermark, signature, worst quality, low quality, normal quality, lowres, low details, mutated, ugly, poorly lit, cut off, draft"
+  },
+  {
+    "name": "X CINEMA-DARK",
+    "prompt": "cinematic film still portrait of a dark warrior alien mech {prompt}, cinematic, epic, battlefield and explosion behind, midnight, shallow depth of field, vignette, highly budget, bokeh, cinemascope, moody, gorgeous, film grain, grainy",
+    "negative_prompt": "mutant, teeth, cartoon, painting, illustration, (worst quality, low quality, normal quality:2), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation"
+  }
+]

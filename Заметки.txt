@@ -1,0 +1,7 @@
+SageAttention - работает не со всеми моделями, либо вообще не работает.
+На Z-Image в тестах не заметил прироста.
+
+Для установки triton и Sage перейдите в Additions\For Triton Install
+Установите все что нужно.
+Посмотрите это видео: https://rutube.ru/video/74739553ee565854e2199c9ae3ebf120/
+После этого запустите Install_Triton_&_Sage.bat

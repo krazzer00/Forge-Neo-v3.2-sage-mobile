@@ -1,0 +1,8 @@
+1. VC_redist.x64
+2.Установите VisualStudioSetup
+Выберите C++ и библиотеки отмеченые на изображении vs-pakage.png.
+3. Пропишите путь к cl.exe в переменные среды windows.
+4. Запустите Additions\Install_Triton_&_Sage.bat
+
+Подробная видео инструкция тут:
+https://rutube.ru/video/74739553ee565854e2199c9ae3ebf120/

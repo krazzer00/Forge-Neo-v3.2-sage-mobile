@@ -1,0 +1,1169 @@
+2025-09-07 23:58:09,326 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2025-09-07 23:58:09,329 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2025-09-07 23:58:09,330 - scripts.iib.logger - INFO - Total images in database: 0
+2025-09-07 23:58:09,330 - scripts.iib.logger - WARNING - Cannot get random images: total_count=0, requested_size=128
+2025-09-07 23:58:14,037 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2025-09-07 23:58:14,037 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2025-09-07 23:58:14,038 - scripts.iib.logger - INFO - Total images in database: 0
+2025-09-07 23:58:14,038 - scripts.iib.logger - WARNING - Cannot get random images: total_count=0, requested_size=128
+2026-02-19 11:29:25,399 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:29:25,414 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:29:25,428 - scripts.iib.logger - INFO - Total images in database: 0
+2026-02-19 11:29:25,428 - scripts.iib.logger - WARNING - Cannot get random images: total_count=0, requested_size=128
+2026-02-19 11:29:31,516 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:29:31,516 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:29:31,516 - scripts.iib.logger - INFO - Total images in database: 0
+2026-02-19 11:29:31,516 - scripts.iib.logger - WARNING - Cannot get random images: total_count=0, requested_size=128
+2026-02-19 11:29:55,154 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:29:55,154 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:29:55,154 - scripts.iib.logger - INFO - Total images in database: 0
+2026-02-19 11:29:55,154 - scripts.iib.logger - WARNING - Cannot get random images: total_count=0, requested_size=128
+2026-02-19 11:30:26,192 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:26,192 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:26,193 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:26,193 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:26,193 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:26,193 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 2
+2026-02-19 11:30:26,193 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 5
+2026-02-19 11:30:26,193 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 7
+2026-02-19 11:30:26,194 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 8
+2026-02-19 11:30:26,194 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 11
+2026-02-19 11:30:26,194 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 12
+2026-02-19 11:30:26,194 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 15
+2026-02-19 11:30:26,194 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 17
+2026-02-19 11:30:26,195 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:26,195 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 21
+2026-02-19 11:30:26,195 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 23
+2026-02-19 11:30:26,195 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 25
+2026-02-19 11:30:26,195 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 27
+2026-02-19 11:30:26,195 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 28
+2026-02-19 11:30:26,195 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 30
+2026-02-19 11:30:26,196 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 32
+2026-02-19 11:30:26,196 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 34
+2026-02-19 11:30:26,196 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 36
+2026-02-19 11:30:26,196 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 38
+2026-02-19 11:30:26,196 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 41
+2026-02-19 11:30:26,196 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 42
+2026-02-19 11:30:26,196 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 45
+2026-02-19 11:30:26,197 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 46
+2026-02-19 11:30:26,197 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 49
+2026-02-19 11:30:26,197 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 50
+2026-02-19 11:30:26,197 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 52
+2026-02-19 11:30:26,197 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 55
+2026-02-19 11:30:26,197 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 57
+2026-02-19 11:30:26,197 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 58
+2026-02-19 11:30:26,198 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 61
+2026-02-19 11:30:26,198 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 62
+2026-02-19 11:30:26,198 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 65
+2026-02-19 11:30:26,198 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 67
+2026-02-19 11:30:26,198 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 68
+2026-02-19 11:30:26,198 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 70
+2026-02-19 11:30:26,198 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 72
+2026-02-19 11:30:26,199 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 74
+2026-02-19 11:30:26,199 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 76
+2026-02-19 11:30:26,199 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 78
+2026-02-19 11:30:26,199 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 80
+2026-02-19 11:30:26,199 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 83
+2026-02-19 11:30:26,199 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 84
+2026-02-19 11:30:26,199 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 86
+2026-02-19 11:30:26,200 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 89
+2026-02-19 11:30:26,200 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 90
+2026-02-19 11:30:26,200 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 92
+2026-02-19 11:30:26,200 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 95
+2026-02-19 11:30:26,200 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 97
+2026-02-19 11:30:26,200 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 99
+2026-02-19 11:30:26,200 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 101
+2026-02-19 11:30:26,201 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 103
+2026-02-19 11:30:26,201 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 104
+2026-02-19 11:30:26,201 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 107
+2026-02-19 11:30:26,201 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 108
+2026-02-19 11:30:26,201 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 110
+2026-02-19 11:30:26,201 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 112
+2026-02-19 11:30:26,201 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 114
+2026-02-19 11:30:26,202 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 116
+2026-02-19 11:30:26,202 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 118
+2026-02-19 11:30:26,202 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 120
+2026-02-19 11:30:26,202 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 122
+2026-02-19 11:30:26,202 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 125
+2026-02-19 11:30:26,202 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 126
+2026-02-19 11:30:26,202 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 128
+2026-02-19 11:30:26,203 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 131
+2026-02-19 11:30:26,203 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 132
+2026-02-19 11:30:26,203 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 134
+2026-02-19 11:30:26,203 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 136
+2026-02-19 11:30:26,203 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 138
+2026-02-19 11:30:26,203 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 140
+2026-02-19 11:30:26,204 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 143
+2026-02-19 11:30:26,204 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 144
+2026-02-19 11:30:26,204 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 146
+2026-02-19 11:30:26,204 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 149
+2026-02-19 11:30:26,204 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 151
+2026-02-19 11:30:26,204 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 152
+2026-02-19 11:30:26,205 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 155
+2026-02-19 11:30:26,205 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 156
+2026-02-19 11:30:26,205 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 159
+2026-02-19 11:30:26,205 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 160
+2026-02-19 11:30:26,205 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 163
+2026-02-19 11:30:26,205 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 164
+2026-02-19 11:30:26,206 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 167
+2026-02-19 11:30:26,206 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 169
+2026-02-19 11:30:26,206 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 170
+2026-02-19 11:30:26,206 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 172
+2026-02-19 11:30:26,206 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 174
+2026-02-19 11:30:26,206 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 177
+2026-02-19 11:30:26,206 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 178
+2026-02-19 11:30:26,207 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 181
+2026-02-19 11:30:26,207 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 182
+2026-02-19 11:30:26,207 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 185
+2026-02-19 11:30:26,207 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 187
+2026-02-19 11:30:26,207 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 189
+2026-02-19 11:30:26,207 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 191
+2026-02-19 11:30:26,207 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 193
+2026-02-19 11:30:26,208 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 194
+2026-02-19 11:30:26,208 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 196
+2026-02-19 11:30:26,208 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 198
+2026-02-19 11:30:26,208 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 201
+2026-02-19 11:30:26,208 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 203
+2026-02-19 11:30:26,208 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 204
+2026-02-19 11:30:26,208 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 207
+2026-02-19 11:30:26,209 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 208
+2026-02-19 11:30:26,209 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 211
+2026-02-19 11:30:26,209 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 212
+2026-02-19 11:30:26,209 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 214
+2026-02-19 11:30:26,209 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 216
+2026-02-19 11:30:26,209 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 218
+2026-02-19 11:30:26,209 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 221
+2026-02-19 11:30:26,210 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 223
+2026-02-19 11:30:26,210 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 225
+2026-02-19 11:30:26,210 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 227
+2026-02-19 11:30:26,210 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 229
+2026-02-19 11:30:26,210 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 230
+2026-02-19 11:30:26,210 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 233
+2026-02-19 11:30:26,210 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 234
+2026-02-19 11:30:26,211 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 237
+2026-02-19 11:30:26,211 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 238
+2026-02-19 11:30:26,211 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 240
+2026-02-19 11:30:26,211 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 242
+2026-02-19 11:30:26,211 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 245
+2026-02-19 11:30:26,211 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 247
+2026-02-19 11:30:26,211 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 248
+2026-02-19 11:30:26,212 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 251
+2026-02-19 11:30:26,212 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 253
+2026-02-19 11:30:26,212 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 254
+2026-02-19 11:30:26,212 - scripts.iib.logger - INFO - Generated random index list: [1, 2, 5, 7, 8, 11, 12, 15, 17, 19, 21, 23, 25, 27, 28, 30, 32, 34, 36, 38, 41, 42, 45, 46, 49, 50, 52, 55, 57, 58, 61, 62, 65, 67, 68, 70, 72, 74, 76, 78, 80, 83, 84, 86, 89, 90, 92, 95, 97, 99, 101, 103, 104, 107, 108, 110, 112, 114, 116, 118, 120, 122, 125, 126, 128, 131, 132, 134, 136, 138, 140, 143, 144, 146, 149, 151, 152, 155, 156, 159, 160, 163, 164, 167, 169, 170, 172, 174, 177, 178, 181, 182, 185, 187, 189, 191, 193, 194, 196, 198, 201, 203, 204, 207, 208, 211, 212, 214, 216, 218, 221, 223, 225, 227, 229, 230, 233, 234, 237, 238, 240, 242, 245, 247, 248, 251, 253, 254]
+2026-02-19 11:30:26,212 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 2, 5, 7, 8, 11, 12, 15, 17, 19, 21, 23, 25, 27, 28, 30, 32, 34, 36, 38, 41, 42, 45, 46, 49, 50, 52, 55, 57, 58, 61, 62, 65, 67, 68, 70, 72, 74, 76, 78, 80, 83, 84, 86, 89, 90, 92, 95, 97, 99, 101, 103, 104, 107, 108, 110, 112, 114, 116, 118, 120, 122, 125, 126, 128, 131, 132, 134, 136, 138, 140, 143, 144, 146, 149, 151, 152, 155, 156, 159, 160, 163, 164, 167, 169, 170, 172, 174, 177, 178, 181, 182, 185, 187, 189, 191, 193, 194, 196, 198, 201, 203, 204, 207, 208, 211, 212, 214, 216, 218, 221, 223, 225, 227, 229, 230, 233, 234, 237, 238, 240, 242, 245, 247, 248, 251, 253, 254]
+2026-02-19 11:30:26,213 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:26,221 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:26,222 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:26,222 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-02-19 11:30:30,043 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:30,043 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:30,043 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:30,044 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:30,044 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:30,044 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 3
+2026-02-19 11:30:30,044 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 4
+2026-02-19 11:30:30,044 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 6
+2026-02-19 11:30:30,044 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 9
+2026-02-19 11:30:30,044 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 11
+2026-02-19 11:30:30,044 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 12
+2026-02-19 11:30:30,045 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 14
+2026-02-19 11:30:30,045 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 16
+2026-02-19 11:30:30,045 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:30,045 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 20
+2026-02-19 11:30:30,045 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 22
+2026-02-19 11:30:30,045 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 24
+2026-02-19 11:30:30,045 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 26
+2026-02-19 11:30:30,046 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 29
+2026-02-19 11:30:30,046 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 31
+2026-02-19 11:30:30,046 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 32
+2026-02-19 11:30:30,046 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 34
+2026-02-19 11:30:30,046 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 36
+2026-02-19 11:30:30,046 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 38
+2026-02-19 11:30:30,046 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 41
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 42
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 44
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 47
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 48
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 51
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 52
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 55
+2026-02-19 11:30:30,047 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 56
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 59
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 61
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 63
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 64
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 67
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 69
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 71
+2026-02-19 11:30:30,048 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 72
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 75
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 77
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 78
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 80
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 83
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 85
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 86
+2026-02-19 11:30:30,049 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 88
+2026-02-19 11:30:30,050 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 91
+2026-02-19 11:30:30,050 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 93
+2026-02-19 11:30:30,050 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 95
+2026-02-19 11:30:30,050 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 97
+2026-02-19 11:30:30,050 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 99
+2026-02-19 11:30:30,050 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 101
+2026-02-19 11:30:30,050 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 103
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 105
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 106
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 109
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 111
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 113
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 115
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 117
+2026-02-19 11:30:30,051 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 119
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 121
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 122
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 124
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 126
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 128
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 130
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 133
+2026-02-19 11:30:30,052 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 134
+2026-02-19 11:30:30,053 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 137
+2026-02-19 11:30:30,053 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 138
+2026-02-19 11:30:30,053 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 141
+2026-02-19 11:30:30,053 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 143
+2026-02-19 11:30:30,053 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 145
+2026-02-19 11:30:30,053 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 147
+2026-02-19 11:30:30,053 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 149
+2026-02-19 11:30:30,054 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 150
+2026-02-19 11:30:30,054 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 153
+2026-02-19 11:30:30,054 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 155
+2026-02-19 11:30:30,054 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 156
+2026-02-19 11:30:30,054 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 159
+2026-02-19 11:30:30,054 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 161
+2026-02-19 11:30:30,054 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 162
+2026-02-19 11:30:30,055 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 164
+2026-02-19 11:30:30,055 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 167
+2026-02-19 11:30:30,055 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 168
+2026-02-19 11:30:30,055 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 170
+2026-02-19 11:30:30,055 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 173
+2026-02-19 11:30:30,055 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 175
+2026-02-19 11:30:30,055 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 176
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 179
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 180
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 182
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 184
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 186
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 188
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 190
+2026-02-19 11:30:30,056 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 193
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 195
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 196
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 198
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 201
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 203
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 204
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 206
+2026-02-19 11:30:30,057 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 209
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 211
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 213
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 214
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 216
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 218
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 220
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 222
+2026-02-19 11:30:30,058 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 225
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 227
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 228
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 231
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 233
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 235
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 237
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 239
+2026-02-19 11:30:30,059 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 241
+2026-02-19 11:30:30,060 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 242
+2026-02-19 11:30:30,060 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 245
+2026-02-19 11:30:30,060 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 246
+2026-02-19 11:30:30,060 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 248
+2026-02-19 11:30:30,060 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 250
+2026-02-19 11:30:30,060 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 253
+2026-02-19 11:30:30,060 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 254
+2026-02-19 11:30:30,061 - scripts.iib.logger - INFO - Generated random index list: [1, 3, 4, 6, 9, 11, 12, 14, 16, 19, 20, 22, 24, 26, 29, 31, 32, 34, 36, 38, 41, 42, 44, 47, 48, 51, 52, 55, 56, 59, 61, 63, 64, 67, 69, 71, 72, 75, 77, 78, 80, 83, 85, 86, 88, 91, 93, 95, 97, 99, 101, 103, 105, 106, 109, 111, 113, 115, 117, 119, 121, 122, 124, 126, 128, 130, 133, 134, 137, 138, 141, 143, 145, 147, 149, 150, 153, 155, 156, 159, 161, 162, 164, 167, 168, 170, 173, 175, 176, 179, 180, 182, 184, 186, 188, 190, 193, 195, 196, 198, 201, 203, 204, 206, 209, 211, 213, 214, 216, 218, 220, 222, 225, 227, 228, 231, 233, 235, 237, 239, 241, 242, 245, 246, 248, 250, 253, 254]
+2026-02-19 11:30:30,061 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 3, 4, 6, 9, 11, 12, 14, 16, 19, 20, 22, 24, 26, 29, 31, 32, 34, 36, 38, 41, 42, 44, 47, 48, 51, 52, 55, 56, 59, 61, 63, 64, 67, 69, 71, 72, 75, 77, 78, 80, 83, 85, 86, 88, 91, 93, 95, 97, 99, 101, 103, 105, 106, 109, 111, 113, 115, 117, 119, 121, 122, 124, 126, 128, 130, 133, 134, 137, 138, 141, 143, 145, 147, 149, 150, 153, 155, 156, 159, 161, 162, 164, 167, 168, 170, 173, 175, 176, 179, 180, 182, 184, 186, 188, 190, 193, 195, 196, 198, 201, 203, 204, 206, 209, 211, 213, 214, 216, 218, 220, 222, 225, 227, 228, 231, 233, 235, 237, 239, 241, 242, 245, 246, 248, 250, 253, 254]
+2026-02-19 11:30:30,061 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:30,070 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:30,070 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:30,070 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-02-19 11:30:38,091 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:38,092 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:38,092 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:38,092 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:38,092 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:38,092 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 3
+2026-02-19 11:30:38,092 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 4
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 7
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 8
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 10
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 12
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 15
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 17
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:38,093 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 20
+2026-02-19 11:30:38,094 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 23
+2026-02-19 11:30:38,094 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 25
+2026-02-19 11:30:38,094 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 26
+2026-02-19 11:30:38,094 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 29
+2026-02-19 11:30:38,094 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 30
+2026-02-19 11:30:38,094 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 33
+2026-02-19 11:30:38,095 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 35
+2026-02-19 11:30:38,095 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 37
+2026-02-19 11:30:38,095 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 39
+2026-02-19 11:30:38,095 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 41
+2026-02-19 11:30:38,095 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 43
+2026-02-19 11:30:38,095 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 44
+2026-02-19 11:30:38,095 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 46
+2026-02-19 11:30:38,096 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 48
+2026-02-19 11:30:38,096 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 50
+2026-02-19 11:30:38,096 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 52
+2026-02-19 11:30:38,096 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 54
+2026-02-19 11:30:38,096 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 56
+2026-02-19 11:30:38,096 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 58
+2026-02-19 11:30:38,096 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 61
+2026-02-19 11:30:38,097 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 62
+2026-02-19 11:30:38,097 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 65
+2026-02-19 11:30:38,097 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 66
+2026-02-19 11:30:38,097 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 69
+2026-02-19 11:30:38,097 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 70
+2026-02-19 11:30:38,097 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 72
+2026-02-19 11:30:38,097 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 75
+2026-02-19 11:30:38,098 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 77
+2026-02-19 11:30:38,098 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 79
+2026-02-19 11:30:38,098 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 80
+2026-02-19 11:30:38,098 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 82
+2026-02-19 11:30:38,098 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 85
+2026-02-19 11:30:38,098 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 86
+2026-02-19 11:30:38,098 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 88
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 91
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 93
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 94
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 97
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 99
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 100
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 102
+2026-02-19 11:30:38,099 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 104
+2026-02-19 11:30:38,100 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 107
+2026-02-19 11:30:38,100 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 108
+2026-02-19 11:30:38,100 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 111
+2026-02-19 11:30:38,100 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 113
+2026-02-19 11:30:38,100 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 115
+2026-02-19 11:30:38,100 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 116
+2026-02-19 11:30:38,100 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 118
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 120
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 123
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 125
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 126
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 129
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 130
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 132
+2026-02-19 11:30:38,101 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 134
+2026-02-19 11:30:38,102 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 136
+2026-02-19 11:30:38,102 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 139
+2026-02-19 11:30:38,102 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 141
+2026-02-19 11:30:38,102 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 142
+2026-02-19 11:30:38,102 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 145
+2026-02-19 11:30:38,102 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 147
+2026-02-19 11:30:38,102 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 148
+2026-02-19 11:30:38,103 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 150
+2026-02-19 11:30:38,103 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 152
+2026-02-19 11:30:38,103 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 154
+2026-02-19 11:30:38,103 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 156
+2026-02-19 11:30:38,103 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 158
+2026-02-19 11:30:38,103 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 161
+2026-02-19 11:30:38,103 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 163
+2026-02-19 11:30:38,104 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 164
+2026-02-19 11:30:38,104 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 166
+2026-02-19 11:30:38,104 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 169
+2026-02-19 11:30:38,104 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 170
+2026-02-19 11:30:38,104 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 173
+2026-02-19 11:30:38,104 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 174
+2026-02-19 11:30:38,104 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 176
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 179
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 180
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 182
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 184
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 187
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 189
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 191
+2026-02-19 11:30:38,105 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 193
+2026-02-19 11:30:38,106 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 194
+2026-02-19 11:30:38,106 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 196
+2026-02-19 11:30:38,106 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 198
+2026-02-19 11:30:38,106 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 201
+2026-02-19 11:30:38,106 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 202
+2026-02-19 11:30:38,106 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 204
+2026-02-19 11:30:38,107 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 207
+2026-02-19 11:30:38,107 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 208
+2026-02-19 11:30:38,107 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 211
+2026-02-19 11:30:38,107 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 212
+2026-02-19 11:30:38,107 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 215
+2026-02-19 11:30:38,107 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 216
+2026-02-19 11:30:38,107 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 218
+2026-02-19 11:30:38,108 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 221
+2026-02-19 11:30:38,108 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 223
+2026-02-19 11:30:38,108 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 225
+2026-02-19 11:30:38,108 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 227
+2026-02-19 11:30:38,108 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 228
+2026-02-19 11:30:38,108 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 231
+2026-02-19 11:30:38,109 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 233
+2026-02-19 11:30:38,109 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 234
+2026-02-19 11:30:38,109 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 236
+2026-02-19 11:30:38,109 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 239
+2026-02-19 11:30:38,109 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 240
+2026-02-19 11:30:38,109 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 242
+2026-02-19 11:30:38,109 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 244
+2026-02-19 11:30:38,110 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 246
+2026-02-19 11:30:38,110 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 248
+2026-02-19 11:30:38,110 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 251
+2026-02-19 11:30:38,110 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 253
+2026-02-19 11:30:38,110 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 254
+2026-02-19 11:30:38,110 - scripts.iib.logger - INFO - Generated random index list: [1, 3, 4, 7, 8, 10, 12, 15, 17, 19, 20, 23, 25, 26, 29, 30, 33, 35, 37, 39, 41, 43, 44, 46, 48, 50, 52, 54, 56, 58, 61, 62, 65, 66, 69, 70, 72, 75, 77, 79, 80, 82, 85, 86, 88, 91, 93, 94, 97, 99, 100, 102, 104, 107, 108, 111, 113, 115, 116, 118, 120, 123, 125, 126, 129, 130, 132, 134, 136, 139, 141, 142, 145, 147, 148, 150, 152, 154, 156, 158, 161, 163, 164, 166, 169, 170, 173, 174, 176, 179, 180, 182, 184, 187, 189, 191, 193, 194, 196, 198, 201, 202, 204, 207, 208, 211, 212, 215, 216, 218, 221, 223, 225, 227, 228, 231, 233, 234, 236, 239, 240, 242, 244, 246, 248, 251, 253, 254]
+2026-02-19 11:30:38,110 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 3, 4, 7, 8, 10, 12, 15, 17, 19, 20, 23, 25, 26, 29, 30, 33, 35, 37, 39, 41, 43, 44, 46, 48, 50, 52, 54, 56, 58, 61, 62, 65, 66, 69, 70, 72, 75, 77, 79, 80, 82, 85, 86, 88, 91, 93, 94, 97, 99, 100, 102, 104, 107, 108, 111, 113, 115, 116, 118, 120, 123, 125, 126, 129, 130, 132, 134, 136, 139, 141, 142, 145, 147, 148, 150, 152, 154, 156, 158, 161, 163, 164, 166, 169, 170, 173, 174, 176, 179, 180, 182, 184, 187, 189, 191, 193, 194, 196, 198, 201, 202, 204, 207, 208, 211, 212, 215, 216, 218, 221, 223, 225, 227, 228, 231, 233, 234, 236, 239, 240, 242, 244, 246, 248, 251, 253, 254]
+2026-02-19 11:30:38,111 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:38,119 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:38,119 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:38,120 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-02-19 11:30:48,010 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:48,010 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:48,011 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:48,011 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:48,011 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:48,011 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 2
+2026-02-19 11:30:48,011 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 5
+2026-02-19 11:30:48,011 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 7
+2026-02-19 11:30:48,012 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 9
+2026-02-19 11:30:48,012 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 11
+2026-02-19 11:30:48,012 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 12
+2026-02-19 11:30:48,012 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 14
+2026-02-19 11:30:48,012 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 16
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 21
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 23
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 24
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 27
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 28
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 30
+2026-02-19 11:30:48,013 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 33
+2026-02-19 11:30:48,014 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 35
+2026-02-19 11:30:48,014 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 37
+2026-02-19 11:30:48,014 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 38
+2026-02-19 11:30:48,014 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 41
+2026-02-19 11:30:48,014 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 43
+2026-02-19 11:30:48,014 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 45
+2026-02-19 11:30:48,015 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 46
+2026-02-19 11:30:48,015 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 48
+2026-02-19 11:30:48,015 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 51
+2026-02-19 11:30:48,015 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 53
+2026-02-19 11:30:48,015 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 55
+2026-02-19 11:30:48,015 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 56
+2026-02-19 11:30:48,016 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 58
+2026-02-19 11:30:48,016 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 61
+2026-02-19 11:30:48,016 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 63
+2026-02-19 11:30:48,016 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 65
+2026-02-19 11:30:48,016 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 67
+2026-02-19 11:30:48,016 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 68
+2026-02-19 11:30:48,016 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 71
+2026-02-19 11:30:48,017 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 72
+2026-02-19 11:30:48,017 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 75
+2026-02-19 11:30:48,017 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 76
+2026-02-19 11:30:48,017 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 79
+2026-02-19 11:30:48,017 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 81
+2026-02-19 11:30:48,017 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 83
+2026-02-19 11:30:48,017 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 85
+2026-02-19 11:30:48,018 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 87
+2026-02-19 11:30:48,018 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 88
+2026-02-19 11:30:48,018 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 91
+2026-02-19 11:30:48,018 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 92
+2026-02-19 11:30:48,018 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 94
+2026-02-19 11:30:48,018 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 96
+2026-02-19 11:30:48,018 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 98
+2026-02-19 11:30:48,019 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 100
+2026-02-19 11:30:48,019 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 102
+2026-02-19 11:30:48,019 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 105
+2026-02-19 11:30:48,019 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 107
+2026-02-19 11:30:48,019 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 109
+2026-02-19 11:30:48,019 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 110
+2026-02-19 11:30:48,020 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 112
+2026-02-19 11:30:48,020 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 114
+2026-02-19 11:30:48,020 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 116
+2026-02-19 11:30:48,020 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 118
+2026-02-19 11:30:48,020 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 121
+2026-02-19 11:30:48,020 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 122
+2026-02-19 11:30:48,020 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 124
+2026-02-19 11:30:48,021 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 127
+2026-02-19 11:30:48,021 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 129
+2026-02-19 11:30:48,021 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 131
+2026-02-19 11:30:48,021 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 132
+2026-02-19 11:30:48,021 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 134
+2026-02-19 11:30:48,021 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 136
+2026-02-19 11:30:48,021 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 139
+2026-02-19 11:30:48,022 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 140
+2026-02-19 11:30:48,022 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 143
+2026-02-19 11:30:48,022 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 144
+2026-02-19 11:30:48,022 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 147
+2026-02-19 11:30:48,022 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 149
+2026-02-19 11:30:48,022 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 151
+2026-02-19 11:30:48,023 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 152
+2026-02-19 11:30:48,023 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 155
+2026-02-19 11:30:48,023 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 156
+2026-02-19 11:30:48,023 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 158
+2026-02-19 11:30:48,023 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 160
+2026-02-19 11:30:48,023 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 162
+2026-02-19 11:30:48,023 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 165
+2026-02-19 11:30:48,024 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 166
+2026-02-19 11:30:48,024 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 169
+2026-02-19 11:30:48,024 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 170
+2026-02-19 11:30:48,024 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 173
+2026-02-19 11:30:48,024 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 175
+2026-02-19 11:30:48,024 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 177
+2026-02-19 11:30:48,024 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 179
+2026-02-19 11:30:48,025 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 180
+2026-02-19 11:30:48,025 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 182
+2026-02-19 11:30:48,025 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 185
+2026-02-19 11:30:48,025 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 187
+2026-02-19 11:30:48,025 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 188
+2026-02-19 11:30:48,025 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 190
+2026-02-19 11:30:48,025 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 192
+2026-02-19 11:30:48,026 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 194
+2026-02-19 11:30:48,026 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 196
+2026-02-19 11:30:48,026 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 199
+2026-02-19 11:30:48,026 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 200
+2026-02-19 11:30:48,026 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 202
+2026-02-19 11:30:48,026 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 205
+2026-02-19 11:30:48,026 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 207
+2026-02-19 11:30:48,027 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 209
+2026-02-19 11:30:48,027 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 210
+2026-02-19 11:30:48,027 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 212
+2026-02-19 11:30:48,027 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 215
+2026-02-19 11:30:48,027 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 217
+2026-02-19 11:30:48,027 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 218
+2026-02-19 11:30:48,028 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 221
+2026-02-19 11:30:48,028 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 222
+2026-02-19 11:30:48,028 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 224
+2026-02-19 11:30:48,028 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 226
+2026-02-19 11:30:48,028 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 229
+2026-02-19 11:30:48,028 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 230
+2026-02-19 11:30:48,028 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 232
+2026-02-19 11:30:48,029 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 234
+2026-02-19 11:30:48,029 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 237
+2026-02-19 11:30:48,029 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 239
+2026-02-19 11:30:48,029 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 240
+2026-02-19 11:30:48,029 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 242
+2026-02-19 11:30:48,029 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 244
+2026-02-19 11:30:48,029 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 247
+2026-02-19 11:30:48,030 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 248
+2026-02-19 11:30:48,030 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 250
+2026-02-19 11:30:48,030 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 253
+2026-02-19 11:30:48,030 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 255
+2026-02-19 11:30:48,030 - scripts.iib.logger - INFO - Generated random index list: [1, 2, 5, 7, 9, 11, 12, 14, 16, 19, 21, 23, 24, 27, 28, 30, 33, 35, 37, 38, 41, 43, 45, 46, 48, 51, 53, 55, 56, 58, 61, 63, 65, 67, 68, 71, 72, 75, 76, 79, 81, 83, 85, 87, 88, 91, 92, 94, 96, 98, 100, 102, 105, 107, 109, 110, 112, 114, 116, 118, 121, 122, 124, 127, 129, 131, 132, 134, 136, 139, 140, 143, 144, 147, 149, 151, 152, 155, 156, 158, 160, 162, 165, 166, 169, 170, 173, 175, 177, 179, 180, 182, 185, 187, 188, 190, 192, 194, 196, 199, 200, 202, 205, 207, 209, 210, 212, 215, 217, 218, 221, 222, 224, 226, 229, 230, 232, 234, 237, 239, 240, 242, 244, 247, 248, 250, 253, 255]
+2026-02-19 11:30:48,030 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 2, 5, 7, 9, 11, 12, 14, 16, 19, 21, 23, 24, 27, 28, 30, 33, 35, 37, 38, 41, 43, 45, 46, 48, 51, 53, 55, 56, 58, 61, 63, 65, 67, 68, 71, 72, 75, 76, 79, 81, 83, 85, 87, 88, 91, 92, 94, 96, 98, 100, 102, 105, 107, 109, 110, 112, 114, 116, 118, 121, 122, 124, 127, 129, 131, 132, 134, 136, 139, 140, 143, 144, 147, 149, 151, 152, 155, 156, 158, 160, 162, 165, 166, 169, 170, 173, 175, 177, 179, 180, 182, 185, 187, 188, 190, 192, 194, 196, 199, 200, 202, 205, 207, 209, 210, 212, 215, 217, 218, 221, 222, 224, 226, 229, 230, 232, 234, 237, 239, 240, 242, 244, 247, 248, 250, 253, 255]
+2026-02-19 11:30:48,031 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:48,039 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:48,039 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:48,040 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-02-19 11:30:52,495 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:52,495 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:52,496 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:52,496 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:52,496 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:52,496 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 2
+2026-02-19 11:30:52,496 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 4
+2026-02-19 11:30:52,496 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 6
+2026-02-19 11:30:52,496 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 9
+2026-02-19 11:30:52,496 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 11
+2026-02-19 11:30:52,497 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 13
+2026-02-19 11:30:52,497 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 14
+2026-02-19 11:30:52,497 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 17
+2026-02-19 11:30:52,497 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:52,497 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 21
+2026-02-19 11:30:52,497 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 22
+2026-02-19 11:30:52,497 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 25
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 27
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 29
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 31
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 32
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 34
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 36
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 38
+2026-02-19 11:30:52,498 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 41
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 42
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 44
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 47
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 48
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 50
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 52
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 54
+2026-02-19 11:30:52,499 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 56
+2026-02-19 11:30:52,500 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 59
+2026-02-19 11:30:52,500 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 60
+2026-02-19 11:30:52,500 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 62
+2026-02-19 11:30:52,500 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 64
+2026-02-19 11:30:52,500 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 67
+2026-02-19 11:30:52,500 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 69
+2026-02-19 11:30:52,500 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 70
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 72
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 74
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 76
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 79
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 80
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 83
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 84
+2026-02-19 11:30:52,501 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 87
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 88
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 91
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 92
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 94
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 97
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 98
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 101
+2026-02-19 11:30:52,502 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 102
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 105
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 106
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 108
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 111
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 113
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 115
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 117
+2026-02-19 11:30:52,503 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 118
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 121
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 123
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 124
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 127
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 129
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 130
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 133
+2026-02-19 11:30:52,504 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 135
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 137
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 138
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 140
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 142
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 145
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 147
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 148
+2026-02-19 11:30:52,505 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 150
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 153
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 154
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 157
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 158
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 161
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 163
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 165
+2026-02-19 11:30:52,506 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 166
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 168
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 170
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 173
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 174
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 177
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 178
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 181
+2026-02-19 11:30:52,507 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 183
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 185
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 187
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 188
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 190
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 193
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 194
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 197
+2026-02-19 11:30:52,508 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 198
+2026-02-19 11:30:52,509 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 200
+2026-02-19 11:30:52,509 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 203
+2026-02-19 11:30:52,509 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 205
+2026-02-19 11:30:52,509 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 207
+2026-02-19 11:30:52,509 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 209
+2026-02-19 11:30:52,509 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 210
+2026-02-19 11:30:52,509 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 212
+2026-02-19 11:30:52,510 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 215
+2026-02-19 11:30:52,510 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 216
+2026-02-19 11:30:52,510 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 218
+2026-02-19 11:30:52,510 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 220
+2026-02-19 11:30:52,510 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 222
+2026-02-19 11:30:52,510 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 224
+2026-02-19 11:30:52,510 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 226
+2026-02-19 11:30:52,511 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 229
+2026-02-19 11:30:52,511 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 230
+2026-02-19 11:30:52,511 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 233
+2026-02-19 11:30:52,511 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 234
+2026-02-19 11:30:52,512 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 236
+2026-02-19 11:30:52,512 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 238
+2026-02-19 11:30:52,512 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 241
+2026-02-19 11:30:52,512 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 242
+2026-02-19 11:30:52,512 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 245
+2026-02-19 11:30:52,512 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 246
+2026-02-19 11:30:52,513 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 249
+2026-02-19 11:30:52,513 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 250
+2026-02-19 11:30:52,513 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 252
+2026-02-19 11:30:52,513 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 254
+2026-02-19 11:30:52,513 - scripts.iib.logger - INFO - Generated random index list: [1, 2, 4, 6, 9, 11, 13, 14, 17, 19, 21, 22, 25, 27, 29, 31, 32, 34, 36, 38, 41, 42, 44, 47, 48, 50, 52, 54, 56, 59, 60, 62, 64, 67, 69, 70, 72, 74, 76, 79, 80, 83, 84, 87, 88, 91, 92, 94, 97, 98, 101, 102, 105, 106, 108, 111, 113, 115, 117, 118, 121, 123, 124, 127, 129, 130, 133, 135, 137, 138, 140, 142, 145, 147, 148, 150, 153, 154, 157, 158, 161, 163, 165, 166, 168, 170, 173, 174, 177, 178, 181, 183, 185, 187, 188, 190, 193, 194, 197, 198, 200, 203, 205, 207, 209, 210, 212, 215, 216, 218, 220, 222, 224, 226, 229, 230, 233, 234, 236, 238, 241, 242, 245, 246, 249, 250, 252, 254]
+2026-02-19 11:30:52,513 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 2, 4, 6, 9, 11, 13, 14, 17, 19, 21, 22, 25, 27, 29, 31, 32, 34, 36, 38, 41, 42, 44, 47, 48, 50, 52, 54, 56, 59, 60, 62, 64, 67, 69, 70, 72, 74, 76, 79, 80, 83, 84, 87, 88, 91, 92, 94, 97, 98, 101, 102, 105, 106, 108, 111, 113, 115, 117, 118, 121, 123, 124, 127, 129, 130, 133, 135, 137, 138, 140, 142, 145, 147, 148, 150, 153, 154, 157, 158, 161, 163, 165, 166, 168, 170, 173, 174, 177, 178, 181, 183, 185, 187, 188, 190, 193, 194, 197, 198, 200, 203, 205, 207, 209, 210, 212, 215, 216, 218, 220, 222, 224, 226, 229, 230, 233, 234, 236, 238, 241, 242, 245, 246, 249, 250, 252, 254]
+2026-02-19 11:30:52,514 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:52,522 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:52,523 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:52,523 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-02-19 11:30:53,410 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:53,410 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:53,410 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:53,410 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:53,410 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:53,410 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 3
+2026-02-19 11:30:53,411 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 5
+2026-02-19 11:30:53,411 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 7
+2026-02-19 11:30:53,411 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 8
+2026-02-19 11:30:53,411 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 11
+2026-02-19 11:30:53,411 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 13
+2026-02-19 11:30:53,411 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 14
+2026-02-19 11:30:53,411 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 17
+2026-02-19 11:30:53,412 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:53,412 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 20
+2026-02-19 11:30:53,412 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 22
+2026-02-19 11:30:53,412 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 25
+2026-02-19 11:30:53,412 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 26
+2026-02-19 11:30:53,412 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 28
+2026-02-19 11:30:53,412 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 30
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 32
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 34
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 37
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 38
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 40
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 43
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 45
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 47
+2026-02-19 11:30:53,413 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 48
+2026-02-19 11:30:53,414 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 50
+2026-02-19 11:30:53,414 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 52
+2026-02-19 11:30:53,414 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 54
+2026-02-19 11:30:53,414 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 56
+2026-02-19 11:30:53,414 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 59
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 61
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 62
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 64
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 66
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 69
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 71
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 73
+2026-02-19 11:30:53,415 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 75
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 77
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 79
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 80
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 83
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 84
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 86
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 89
+2026-02-19 11:30:53,416 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 91
+2026-02-19 11:30:53,417 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 93
+2026-02-19 11:30:53,417 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 95
+2026-02-19 11:30:53,417 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 96
+2026-02-19 11:30:53,417 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 98
+2026-02-19 11:30:53,417 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 101
+2026-02-19 11:30:53,417 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 103
+2026-02-19 11:30:53,417 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 104
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 107
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 108
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 111
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 113
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 114
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 116
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 118
+2026-02-19 11:30:53,418 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 120
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 123
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 125
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 127
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 128
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 130
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 132
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 134
+2026-02-19 11:30:53,419 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 136
+2026-02-19 11:30:53,420 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 138
+2026-02-19 11:30:53,420 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 141
+2026-02-19 11:30:53,420 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 142
+2026-02-19 11:30:53,420 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 145
+2026-02-19 11:30:53,420 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 147
+2026-02-19 11:30:53,420 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 149
+2026-02-19 11:30:53,420 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 151
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 153
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 154
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 156
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 158
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 161
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 162
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 165
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 166
+2026-02-19 11:30:53,421 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 169
+2026-02-19 11:30:53,422 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 171
+2026-02-19 11:30:53,422 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 173
+2026-02-19 11:30:53,422 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 175
+2026-02-19 11:30:53,422 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 176
+2026-02-19 11:30:53,422 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 178
+2026-02-19 11:30:53,422 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 180
+2026-02-19 11:30:53,422 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 182
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 185
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 186
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 189
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 191
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 193
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 194
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 196
+2026-02-19 11:30:53,423 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 198
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 200
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 203
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 204
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 207
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 208
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 210
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 213
+2026-02-19 11:30:53,424 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 214
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 216
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 219
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 220
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 223
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 224
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 226
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 229
+2026-02-19 11:30:53,425 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 230
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 233
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 234
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 237
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 238
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 241
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 242
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 244
+2026-02-19 11:30:53,426 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 246
+2026-02-19 11:30:53,427 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 248
+2026-02-19 11:30:53,427 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 251
+2026-02-19 11:30:53,427 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 253
+2026-02-19 11:30:53,427 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 255
+2026-02-19 11:30:53,427 - scripts.iib.logger - INFO - Generated random index list: [1, 3, 5, 7, 8, 11, 13, 14, 17, 19, 20, 22, 25, 26, 28, 30, 32, 34, 37, 38, 40, 43, 45, 47, 48, 50, 52, 54, 56, 59, 61, 62, 64, 66, 69, 71, 73, 75, 77, 79, 80, 83, 84, 86, 89, 91, 93, 95, 96, 98, 101, 103, 104, 107, 108, 111, 113, 114, 116, 118, 120, 123, 125, 127, 128, 130, 132, 134, 136, 138, 141, 142, 145, 147, 149, 151, 153, 154, 156, 158, 161, 162, 165, 166, 169, 171, 173, 175, 176, 178, 180, 182, 185, 186, 189, 191, 193, 194, 196, 198, 200, 203, 204, 207, 208, 210, 213, 214, 216, 219, 220, 223, 224, 226, 229, 230, 233, 234, 237, 238, 241, 242, 244, 246, 248, 251, 253, 255]
+2026-02-19 11:30:53,427 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 3, 5, 7, 8, 11, 13, 14, 17, 19, 20, 22, 25, 26, 28, 30, 32, 34, 37, 38, 40, 43, 45, 47, 48, 50, 52, 54, 56, 59, 61, 62, 64, 66, 69, 71, 73, 75, 77, 79, 80, 83, 84, 86, 89, 91, 93, 95, 96, 98, 101, 103, 104, 107, 108, 111, 113, 114, 116, 118, 120, 123, 125, 127, 128, 130, 132, 134, 136, 138, 141, 142, 145, 147, 149, 151, 153, 154, 156, 158, 161, 162, 165, 166, 169, 171, 173, 175, 176, 178, 180, 182, 185, 186, 189, 191, 193, 194, 196, 198, 200, 203, 204, 207, 208, 210, 213, 214, 216, 219, 220, 223, 224, 226, 229, 230, 233, 234, 237, 238, 241, 242, 244, 246, 248, 251, 253, 255]
+2026-02-19 11:30:53,428 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:53,437 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:53,437 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:53,437 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-02-19 11:30:54,563 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:54,563 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:54,563 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:54,563 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:54,563 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:54,563 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 3
+2026-02-19 11:30:54,564 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 4
+2026-02-19 11:30:54,564 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 6
+2026-02-19 11:30:54,564 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 9
+2026-02-19 11:30:54,564 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 11
+2026-02-19 11:30:54,564 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 12
+2026-02-19 11:30:54,564 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 14
+2026-02-19 11:30:54,564 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 16
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 21
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 23
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 25
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 27
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 29
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 30
+2026-02-19 11:30:54,565 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 33
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 34
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 37
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 38
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 41
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 42
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 45
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 47
+2026-02-19 11:30:54,566 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 48
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 51
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 53
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 55
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 56
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 59
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 61
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 62
+2026-02-19 11:30:54,567 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 65
+2026-02-19 11:30:54,568 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 67
+2026-02-19 11:30:54,568 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 69
+2026-02-19 11:30:54,568 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 70
+2026-02-19 11:30:54,568 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 73
+2026-02-19 11:30:54,568 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 75
+2026-02-19 11:30:54,568 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 77
+2026-02-19 11:30:54,568 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 79
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 81
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 83
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 85
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 87
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 88
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 90
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 93
+2026-02-19 11:30:54,569 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 94
+2026-02-19 11:30:54,570 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 97
+2026-02-19 11:30:54,570 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 99
+2026-02-19 11:30:54,570 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 101
+2026-02-19 11:30:54,570 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 102
+2026-02-19 11:30:54,570 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 104
+2026-02-19 11:30:54,570 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 106
+2026-02-19 11:30:54,571 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 108
+2026-02-19 11:30:54,571 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 110
+2026-02-19 11:30:54,571 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 113
+2026-02-19 11:30:54,571 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 114
+2026-02-19 11:30:54,571 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 116
+2026-02-19 11:30:54,571 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 119
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 120
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 123
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 124
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 127
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 128
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 130
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 133
+2026-02-19 11:30:54,572 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 135
+2026-02-19 11:30:54,573 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 136
+2026-02-19 11:30:54,573 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 138
+2026-02-19 11:30:54,573 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 140
+2026-02-19 11:30:54,573 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 142
+2026-02-19 11:30:54,573 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 144
+2026-02-19 11:30:54,573 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 147
+2026-02-19 11:30:54,573 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 149
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 151
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 152
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 154
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 156
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 158
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 160
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 162
+2026-02-19 11:30:54,574 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 165
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 167
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 169
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 170
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 173
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 175
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 177
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 179
+2026-02-19 11:30:54,575 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 181
+2026-02-19 11:30:54,576 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 182
+2026-02-19 11:30:54,576 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 184
+2026-02-19 11:30:54,576 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 186
+2026-02-19 11:30:54,576 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 189
+2026-02-19 11:30:54,576 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 191
+2026-02-19 11:30:54,576 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 193
+2026-02-19 11:30:54,576 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 194
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 197
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 198
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 200
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 202
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 204
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 207
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 209
+2026-02-19 11:30:54,577 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 210
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 212
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 215
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 216
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 219
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 221
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 222
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 225
+2026-02-19 11:30:54,578 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 227
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 228
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 231
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 232
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 234
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 236
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 238
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 240
+2026-02-19 11:30:54,579 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 242
+2026-02-19 11:30:54,580 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 245
+2026-02-19 11:30:54,580 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 246
+2026-02-19 11:30:54,580 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 248
+2026-02-19 11:30:54,580 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 251
+2026-02-19 11:30:54,580 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 253
+2026-02-19 11:30:54,580 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 254
+2026-02-19 11:30:54,580 - scripts.iib.logger - INFO - Generated random index list: [1, 3, 4, 6, 9, 11, 12, 14, 16, 19, 21, 23, 25, 27, 29, 30, 33, 34, 37, 38, 41, 42, 45, 47, 48, 51, 53, 55, 56, 59, 61, 62, 65, 67, 69, 70, 73, 75, 77, 79, 81, 83, 85, 87, 88, 90, 93, 94, 97, 99, 101, 102, 104, 106, 108, 110, 113, 114, 116, 119, 120, 123, 124, 127, 128, 130, 133, 135, 136, 138, 140, 142, 144, 147, 149, 151, 152, 154, 156, 158, 160, 162, 165, 167, 169, 170, 173, 175, 177, 179, 181, 182, 184, 186, 189, 191, 193, 194, 197, 198, 200, 202, 204, 207, 209, 210, 212, 215, 216, 219, 221, 222, 225, 227, 228, 231, 232, 234, 236, 238, 240, 242, 245, 246, 248, 251, 253, 254]
+2026-02-19 11:30:54,581 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 3, 4, 6, 9, 11, 12, 14, 16, 19, 21, 23, 25, 27, 29, 30, 33, 34, 37, 38, 41, 42, 45, 47, 48, 51, 53, 55, 56, 59, 61, 62, 65, 67, 69, 70, 73, 75, 77, 79, 81, 83, 85, 87, 88, 90, 93, 94, 97, 99, 101, 102, 104, 106, 108, 110, 113, 114, 116, 119, 120, 123, 124, 127, 128, 130, 133, 135, 136, 138, 140, 142, 144, 147, 149, 151, 152, 154, 156, 158, 160, 162, 165, 167, 169, 170, 173, 175, 177, 179, 181, 182, 184, 186, 189, 191, 193, 194, 197, 198, 200, 202, 204, 207, 209, 210, 212, 215, 216, 219, 221, 222, 225, 227, 228, 231, 232, 234, 236, 238, 240, 242, 245, 246, 248, 251, 253, 254]
+2026-02-19 11:30:54,581 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:54,589 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:54,589 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:54,590 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-02-19 11:30:55,921 - scripts.iib.logger - INFO - Starting to get random images, requested size: 128
+2026-02-19 11:30:55,922 - scripts.iib.logger - INFO - Starting attempt 1 to get random images
+2026-02-19 11:30:55,922 - scripts.iib.logger - INFO - Total images in database: 274
+2026-02-19 11:30:55,922 - scripts.iib.logger - INFO - Calculated step size: 2
+2026-02-19 11:30:55,922 - scripts.iib.logger - DEBUG - Generated random index [0]: range 1-1, selected 1
+2026-02-19 11:30:55,922 - scripts.iib.logger - DEBUG - Generated random index [1]: range 2-3, selected 2
+2026-02-19 11:30:55,922 - scripts.iib.logger - DEBUG - Generated random index [2]: range 4-5, selected 4
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [3]: range 6-7, selected 7
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [4]: range 8-9, selected 9
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [5]: range 10-11, selected 11
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [6]: range 12-13, selected 13
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [7]: range 14-15, selected 15
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [8]: range 16-17, selected 16
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [9]: range 18-19, selected 19
+2026-02-19 11:30:55,923 - scripts.iib.logger - DEBUG - Generated random index [10]: range 20-21, selected 20
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [11]: range 22-23, selected 22
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [12]: range 24-25, selected 24
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [13]: range 26-27, selected 26
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [14]: range 28-29, selected 28
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [15]: range 30-31, selected 31
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [16]: range 32-33, selected 32
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [17]: range 34-35, selected 35
+2026-02-19 11:30:55,924 - scripts.iib.logger - DEBUG - Generated random index [18]: range 36-37, selected 37
+2026-02-19 11:30:55,925 - scripts.iib.logger - DEBUG - Generated random index [19]: range 38-39, selected 39
+2026-02-19 11:30:55,925 - scripts.iib.logger - DEBUG - Generated random index [20]: range 40-41, selected 40
+2026-02-19 11:30:55,925 - scripts.iib.logger - DEBUG - Generated random index [21]: range 42-43, selected 42
+2026-02-19 11:30:55,925 - scripts.iib.logger - DEBUG - Generated random index [22]: range 44-45, selected 45
+2026-02-19 11:30:55,925 - scripts.iib.logger - DEBUG - Generated random index [23]: range 46-47, selected 47
+2026-02-19 11:30:55,925 - scripts.iib.logger - DEBUG - Generated random index [24]: range 48-49, selected 48
+2026-02-19 11:30:55,925 - scripts.iib.logger - DEBUG - Generated random index [25]: range 50-51, selected 51
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [26]: range 52-53, selected 52
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [27]: range 54-55, selected 55
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [28]: range 56-57, selected 56
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [29]: range 58-59, selected 58
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [30]: range 60-61, selected 61
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [31]: range 62-63, selected 63
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [32]: range 64-65, selected 64
+2026-02-19 11:30:55,926 - scripts.iib.logger - DEBUG - Generated random index [33]: range 66-67, selected 66
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [34]: range 68-69, selected 69
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [35]: range 70-71, selected 71
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [36]: range 72-73, selected 73
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [37]: range 74-75, selected 74
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [38]: range 76-77, selected 76
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [39]: range 78-79, selected 79
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [40]: range 80-81, selected 81
+2026-02-19 11:30:55,927 - scripts.iib.logger - DEBUG - Generated random index [41]: range 82-83, selected 83
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [42]: range 84-85, selected 85
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [43]: range 86-87, selected 86
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [44]: range 88-89, selected 88
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [45]: range 90-91, selected 91
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [46]: range 92-93, selected 93
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [47]: range 94-95, selected 94
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [48]: range 96-97, selected 96
+2026-02-19 11:30:55,928 - scripts.iib.logger - DEBUG - Generated random index [49]: range 98-99, selected 98
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [50]: range 100-101, selected 101
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [51]: range 102-103, selected 103
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [52]: range 104-105, selected 104
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [53]: range 106-107, selected 106
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [54]: range 108-109, selected 109
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [55]: range 110-111, selected 110
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [56]: range 112-113, selected 112
+2026-02-19 11:30:55,929 - scripts.iib.logger - DEBUG - Generated random index [57]: range 114-115, selected 115
+2026-02-19 11:30:55,930 - scripts.iib.logger - DEBUG - Generated random index [58]: range 116-117, selected 117
+2026-02-19 11:30:55,930 - scripts.iib.logger - DEBUG - Generated random index [59]: range 118-119, selected 119
+2026-02-19 11:30:55,930 - scripts.iib.logger - DEBUG - Generated random index [60]: range 120-121, selected 121
+2026-02-19 11:30:55,930 - scripts.iib.logger - DEBUG - Generated random index [61]: range 122-123, selected 123
+2026-02-19 11:30:55,930 - scripts.iib.logger - DEBUG - Generated random index [62]: range 124-125, selected 124
+2026-02-19 11:30:55,930 - scripts.iib.logger - DEBUG - Generated random index [63]: range 126-127, selected 126
+2026-02-19 11:30:55,931 - scripts.iib.logger - DEBUG - Generated random index [64]: range 128-129, selected 129
+2026-02-19 11:30:55,931 - scripts.iib.logger - DEBUG - Generated random index [65]: range 130-131, selected 130
+2026-02-19 11:30:55,931 - scripts.iib.logger - DEBUG - Generated random index [66]: range 132-133, selected 132
+2026-02-19 11:30:55,931 - scripts.iib.logger - DEBUG - Generated random index [67]: range 134-135, selected 135
+2026-02-19 11:30:55,931 - scripts.iib.logger - DEBUG - Generated random index [68]: range 136-137, selected 137
+2026-02-19 11:30:55,931 - scripts.iib.logger - DEBUG - Generated random index [69]: range 138-139, selected 139
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [70]: range 140-141, selected 140
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [71]: range 142-143, selected 143
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [72]: range 144-145, selected 145
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [73]: range 146-147, selected 147
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [74]: range 148-149, selected 148
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [75]: range 150-151, selected 150
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [76]: range 152-153, selected 152
+2026-02-19 11:30:55,932 - scripts.iib.logger - DEBUG - Generated random index [77]: range 154-155, selected 154
+2026-02-19 11:30:55,933 - scripts.iib.logger - DEBUG - Generated random index [78]: range 156-157, selected 157
+2026-02-19 11:30:55,933 - scripts.iib.logger - DEBUG - Generated random index [79]: range 158-159, selected 159
+2026-02-19 11:30:55,933 - scripts.iib.logger - DEBUG - Generated random index [80]: range 160-161, selected 160
+2026-02-19 11:30:55,933 - scripts.iib.logger - DEBUG - Generated random index [81]: range 162-163, selected 162
+2026-02-19 11:30:55,933 - scripts.iib.logger - DEBUG - Generated random index [82]: range 164-165, selected 165
+2026-02-19 11:30:55,933 - scripts.iib.logger - DEBUG - Generated random index [83]: range 166-167, selected 166
+2026-02-19 11:30:55,933 - scripts.iib.logger - DEBUG - Generated random index [84]: range 168-169, selected 169
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [85]: range 170-171, selected 170
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [86]: range 172-173, selected 173
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [87]: range 174-175, selected 175
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [88]: range 176-177, selected 176
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [89]: range 178-179, selected 178
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [90]: range 180-181, selected 181
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [91]: range 182-183, selected 182
+2026-02-19 11:30:55,934 - scripts.iib.logger - DEBUG - Generated random index [92]: range 184-185, selected 185
+2026-02-19 11:30:55,935 - scripts.iib.logger - DEBUG - Generated random index [93]: range 186-187, selected 186
+2026-02-19 11:30:55,935 - scripts.iib.logger - DEBUG - Generated random index [94]: range 188-189, selected 188
+2026-02-19 11:30:55,935 - scripts.iib.logger - DEBUG - Generated random index [95]: range 190-191, selected 191
+2026-02-19 11:30:55,935 - scripts.iib.logger - DEBUG - Generated random index [96]: range 192-193, selected 193
+2026-02-19 11:30:55,935 - scripts.iib.logger - DEBUG - Generated random index [97]: range 194-195, selected 194
+2026-02-19 11:30:55,935 - scripts.iib.logger - DEBUG - Generated random index [98]: range 196-197, selected 197
+2026-02-19 11:30:55,935 - scripts.iib.logger - DEBUG - Generated random index [99]: range 198-199, selected 199
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [100]: range 200-201, selected 200
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [101]: range 202-203, selected 202
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [102]: range 204-205, selected 205
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [103]: range 206-207, selected 206
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [104]: range 208-209, selected 208
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [105]: range 210-211, selected 211
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [106]: range 212-213, selected 212
+2026-02-19 11:30:55,936 - scripts.iib.logger - DEBUG - Generated random index [107]: range 214-215, selected 214
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [108]: range 216-217, selected 217
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [109]: range 218-219, selected 219
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [110]: range 220-221, selected 221
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [111]: range 222-223, selected 222
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [112]: range 224-225, selected 225
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [113]: range 226-227, selected 226
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [114]: range 228-229, selected 228
+2026-02-19 11:30:55,937 - scripts.iib.logger - DEBUG - Generated random index [115]: range 230-231, selected 230
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [116]: range 232-233, selected 232
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [117]: range 234-235, selected 234
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [118]: range 236-237, selected 237
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [119]: range 238-239, selected 239
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [120]: range 240-241, selected 241
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [121]: range 242-243, selected 243
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [122]: range 244-245, selected 245
+2026-02-19 11:30:55,938 - scripts.iib.logger - DEBUG - Generated random index [123]: range 246-247, selected 247
+2026-02-19 11:30:55,939 - scripts.iib.logger - DEBUG - Generated random index [124]: range 248-249, selected 248
+2026-02-19 11:30:55,939 - scripts.iib.logger - DEBUG - Generated random index [125]: range 250-251, selected 250
+2026-02-19 11:30:55,939 - scripts.iib.logger - DEBUG - Generated random index [126]: range 252-253, selected 252
+2026-02-19 11:30:55,939 - scripts.iib.logger - DEBUG - Generated random index [127]: range 254-255, selected 254
+2026-02-19 11:30:55,939 - scripts.iib.logger - INFO - Generated random index list: [1, 2, 4, 7, 9, 11, 13, 15, 16, 19, 20, 22, 24, 26, 28, 31, 32, 35, 37, 39, 40, 42, 45, 47, 48, 51, 52, 55, 56, 58, 61, 63, 64, 66, 69, 71, 73, 74, 76, 79, 81, 83, 85, 86, 88, 91, 93, 94, 96, 98, 101, 103, 104, 106, 109, 110, 112, 115, 117, 119, 121, 123, 124, 126, 129, 130, 132, 135, 137, 139, 140, 143, 145, 147, 148, 150, 152, 154, 157, 159, 160, 162, 165, 166, 169, 170, 173, 175, 176, 178, 181, 182, 185, 186, 188, 191, 193, 194, 197, 199, 200, 202, 205, 206, 208, 211, 212, 214, 217, 219, 221, 222, 225, 226, 228, 230, 232, 234, 237, 239, 241, 243, 245, 247, 248, 250, 252, 254]
+2026-02-19 11:30:55,939 - scripts.iib.logger - DEBUG - Executing SQL query: SELECT * FROM image WHERE id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?), parameters: [1, 2, 4, 7, 9, 11, 13, 15, 16, 19, 20, 22, 24, 26, 28, 31, 32, 35, 37, 39, 40, 42, 45, 47, 48, 51, 52, 55, 56, 58, 61, 63, 64, 66, 69, 71, 73, 74, 76, 79, 81, 83, 85, 86, 88, 91, 93, 94, 96, 98, 101, 103, 104, 106, 109, 110, 112, 115, 117, 119, 121, 123, 124, 126, 129, 130, 132, 135, 137, 139, 140, 143, 145, 147, 148, 150, 152, 154, 157, 159, 160, 162, 165, 166, 169, 170, 173, 175, 176, 178, 181, 182, 185, 186, 188, 191, 193, 194, 197, 199, 200, 202, 205, 206, 208, 211, 212, 214, 217, 219, 221, 222, 225, 226, 228, 230, 232, 234, 237, 239, 241, 243, 245, 247, 248, 250, 252, 254]
+2026-02-19 11:30:55,940 - scripts.iib.logger - INFO - Query returned 128 records
+2026-02-19 11:30:55,948 - scripts.iib.logger - INFO - Valid images found in this cycle: 128
+2026-02-19 11:30:55,948 - scripts.iib.logger - INFO - Total unique images after deduplication: 128
+2026-02-19 11:30:55,948 - scripts.iib.logger - INFO - Random image retrieval completed, final image count: 128
+2026-09-07 17:29:45,351 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 17:29:45,406 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-07 18:25:02,257 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 18:25:02,281 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-07 18:55:02,514 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 18:55:02,539 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-07 19:24:00,870 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 19:24:00,899 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-07 19:44:15,676 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 19:44:15,712 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-07 19:50:36,880 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 19:50:36,905 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-07 21:05:06,367 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 21:05:06,391 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-07 21:22:54,719 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-07 21:22:54,747 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 01:02:50,618 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 01:02:50,653 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 03:28:10,407 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 03:28:10,431 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 03:38:06,340 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 03:38:06,365 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 04:28:40,455 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 04:28:40,478 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 05:35:04,870 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 05:35:04,948 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 05:38:40,946 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 05:38:40,972 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 05:40:34,562 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 05:40:34,585 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 05:44:33,433 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 05:44:33,456 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 06:46:09,677 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 06:46:09,701 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-08 07:25:31,494 - scripts.iib.logger - INFO - delete file: H:\Forge-Neo-v3.2-sage\webui\output\img2img-images\03411-2026-09-08_07-23-45.png
+2026-09-08 07:25:43,580 - scripts.iib.logger - INFO - delete file: H:\Forge-Neo-v3.2-sage\webui\output\img2img-images\03410-2026-09-08_07-23-04.png
+2026-09-08 07:25:43,860 - scripts.iib.logger - INFO - delete file: H:\Forge-Neo-v3.2-sage\webui\output\img2img-images\03409-2026-09-08_07-22-31.png
+2026-09-08 13:59:24,560 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-08 13:59:24,621 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-09 14:37:12,736 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-09 14:37:12,776 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-10 02:51:45,229 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-10 02:51:45,295 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}
+2026-09-10 16:24:31,545 - scripts.iib.logger - DEBUG - Version probe failed for imageio-ffmpeg/imageio_ffmpeg: No module named 'imageio_ffmpeg'
+2026-09-10 16:24:31,569 - scripts.iib.logger - INFO - Version info requested: {'python_version': '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'hash': 'ac5418772986623d8dfa64ff12cdd54be2459b2b', 'tag': 'v1.9.0', 'av': '17.1.0', 'imageio': '2.37.2', 'pillow': '12.3.0', 'pillow_avif_plugin': '1.5.5', 'requests': '2.32.5', 'numpy': '2.3.5', 'hnswlib': '0.8.0'}

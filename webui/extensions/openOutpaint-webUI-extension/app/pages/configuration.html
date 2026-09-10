@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>openOutpaint 🐠</title>
+		<!-- CSS Variables -->
+		<link href="../css/colors.css?v=f732f19" rel="stylesheet" />
+		<link href="../css/icons.css?v=77b6393" rel="stylesheet" />
+
+		<link href="../css/index.css?v=cf6b502" rel="stylesheet" />
+		<link href="../css/layers.css?v=92c0352" rel="stylesheet" />
+
+		<link href="../css/ui/generic.css?v=ed024fe" rel="stylesheet" />
+
+		<link href="../css/ui/history.css?v=0b03861" rel="stylesheet" />
+		<link href="../css/ui/layers.css?v=1d66c2b" rel="stylesheet" />
+		<link href="../css/ui/toolbar.css?v=109c78f" rel="stylesheet" />
+
+		<!-- Tool Specific CSS -->
+		<link href="../css/ui/tool/dream.css?v=2d8a8ac" rel="stylesheet" />
+		<link href="../css/ui/tool/stamp.css?v=6f5ce15" rel="stylesheet" />
+		<link href="../css/ui/tool/colorbrush.css?v=57c8be5" rel="stylesheet" />
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		<style>
+			* {
+				font-size: 100%;
+				font-family: Arial, Helvetica, sans-serif;
+				user-select: none;
+			}
+
+			body {
+				color: var(--c-text);
+
+				margin: 0;
+				padding: 15px;
+			}
+
+			label {
+				display: flex;
+			}
+			label > input {
+				justify-content: space-between;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+			input.canvas-size-input {
+				-webkit-appearance: textfield;
+				-moz-appearance: textfield;
+
+				width: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td class="title">Canvas Size</td>
+				<td class="input">
+					<input
+						id="canvas-width"
+						class="canvas-size-input"
+						type="number"
+						step="1" />
+					x
+					<input
+						id="canvas-height"
+						class="canvas-size-input"
+						type="number"
+						step="1" />
+				</td>
+			</tr>
+
+			<tr>
+				<td class="title">Max Steps</td>
+				<td class="input">
+					<input
+						id="max-steps"
+						class="canvas-size-input"
+						type="number"
+						step="1"
+						value="70" />
+				</td>
+			</tr>
+
+			<tr>
+				<td class="title">CFG minmax</td>
+				<td class="input">
+					<input
+						id="min-cfg"
+						class="canvas-size-input"
+						type="number"
+						step="0.1"
+						value="1.0" />
+					::
+					<input
+						id="max-cfg"
+						class="canvas-size-input"
+						type="number"
+						step="0.1"
+						value="30.0" />
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<div
+						class="ui separator"
+						style="
+							width: 100% !important;
+							margin-top: 3px;
+							margin-bottom: 3px;
+						"></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="title">Lie to HRfix</td>
+				<td class="input">
+					<input id="hrfix-liar" class="canvas-size-input" type="checkbox" />
+				</td>
+			</tr>
+			<tr>
+				<td class="title">New Layer per Dream</td>
+				<td class="input">
+					<input id="autolayer" class="canvas-size-input" type="checkbox" />
+				</td>
+			</tr>
+			<tr>
+				<td class="title">Smooth Rendering</td>
+				<td class="input">
+					<input
+						id="cbxSmooth"
+						class="canvas-size-input"
+						type="checkbox"
+						onchange="changeSmoothRendering()" />
+				</td>
+			</tr>
+			<tr>
+				<td class="title">+ Button Updates Prompt</td>
+				<td class="input">
+					<input
+						id="cbxUpdatePromptOnMoreButton"
+						class="canvas-size-input"
+						type="checkbox" />
+				</td>
+			</tr>
+			<tr>
+				<td class="title">Jump to 1st New on +</td>
+				<td class="input">
+					<input
+						id="cbxJumpTo1stNewOnMoreButton"
+						class="canvas-size-input"
+						type="checkbox" />
+				</td>
+			</tr>
+			<!-- //TODO implement this
+			<tr>
+				<td class="title">Marching Ants Update MS</td>
+				<td class="input">
+					<input
+						id="marching-ants-update-ms"
+						class="canvas-size-input"
+						type="number"
+						step="1"
+						value="20" />
+				</td>
+			</tr> -->
+		</table>
+
+		<script>
+			const canvasWidth = document.getElementById("canvas-width");
+			const canvasHeight = document.getElementById("canvas-height");
+			const maxSteps = document.getElementById("max-steps");
+			const minCfg = document.getElementById("min-cfg");
+			const maxCfg = document.getElementById("max-cfg");
+			const hrfixLiar = document.getElementById("hrfix-liar");
+			const autolayer = document.getElementById("autolayer");
+			const smoothRendering = document.getElementById("cbxSmooth");
+			const updatePromptOnMoreButton = document.getElementById(
+				"cbxUpdatePromptOnMoreButton"
+			);
+			const jumpTo1stNewOnMoreButton = document.getElementById(
+				"cbxJumpTo1stNewOnMoreButton"
+			);
+
+			function writeToLocalStorage() {
+				localStorage.setItem(
+					"openoutpaint/settings.canvas-width",
+					canvasWidth.value
+				);
+				localStorage.setItem(
+					"openoutpaint/settings.canvas-height",
+					canvasHeight.value
+				);
+				localStorage.setItem("openoutpaint/settings.max-steps", maxSteps.value);
+				localStorage.setItem("openoutpaint/settings.min-cfg", minCfg.value);
+				localStorage.setItem("openoutpaint/settings.max-cfg", maxCfg.value);
+				localStorage.setItem(
+					"openoutpaint/settings.hrfix-liar",
+					hrfixLiar.checked
+				);
+				localStorage.setItem(
+					"openoutpaint/settings.autolayer",
+					autolayer.checked
+				);
+				localStorage.setItem(
+					"openoutpaint/settings.smooth",
+					smoothRendering.checked
+				);
+				localStorage.setItem(
+					"openoutpaint/settings.update-prompt-on-more-button",
+					updatePromptOnMoreButton.checked
+				);
+				localStorage.setItem(
+					"openoutpaint/settings.jump-to-1st-new-on-more-button",
+					jumpTo1stNewOnMoreButton.checked
+				);
+			}
+
+			// Loads values from local storage
+			canvasWidth.value =
+				localStorage.getItem("openoutpaint/settings.canvas-width") || 2048;
+			canvasHeight.value =
+				localStorage.getItem("openoutpaint/settings.canvas-height") || 2048;
+			maxSteps.value =
+				localStorage.getItem("openoutpaint/settings.max-steps") || 70;
+			minCfg.value = localStorage.getItem("openoutpaint/settings.min-cfg") || 1;
+			maxCfg.value =
+				localStorage.getItem("openoutpaint/settings.max-cfg") || 30;
+			let _enable_dishonesty =
+				localStorage.getItem("openoutpaint/settings.hrfix-liar") === null
+					? true
+					: localStorage.getItem("openoutpaint/settings.hrfix-liar") === "true";
+			hrfixLiar.checked = _enable_dishonesty;
+			let _enable_autolayers =
+				localStorage.getItem("openoutpaint/settings.autolayer") === null
+					? false
+					: localStorage.getItem("openoutpaint/settings.autolayer") === "true";
+			autolayer.checked = _enable_autolayers;
+
+			let _enable_smooth =
+				localStorage.getItem("openoutpaint/settings.smooth") === null
+					? true
+					: localStorage.getItem("openoutpaint/settings.smooth") === "true";
+			smoothRendering.checked = _enable_smooth;
+
+			let _enable_update_prompt_on_more_button =
+				localStorage.getItem(
+					"openoutpaint/settings.update-prompt-on-more-button"
+				) === null
+					? true
+					: localStorage.getItem(
+							"openoutpaint/settings.update-prompt-on-more-button"
+						) === "true";
+			updatePromptOnMoreButton.checked = _enable_update_prompt_on_more_button;
+
+			let _enable_jump_to_1st_new_on_more_button =
+				localStorage.getItem(
+					"openoutpaint/settings.jump-to-1st-new-on-more-button"
+				) === null
+					? true
+					: localStorage.getItem(
+							"openoutpaint/settings.jump-to-1st-new-on-more-button"
+						) === "true";
+			jumpTo1stNewOnMoreButton.checked = _enable_jump_to_1st_new_on_more_button;
+
+			writeToLocalStorage();
+
+			canvasWidth.onchange = writeToLocalStorage;
+			canvasHeight.onchange = writeToLocalStorage;
+			maxSteps.onchange = writeToLocalStorage;
+			minCfg.onchange = writeToLocalStorage;
+			maxCfg.onchange = writeToLocalStorage;
+			hrfixLiar.onchange = writeToLocalStorage;
+			autolayer.onchange = writeToLocalStorage;
+			smoothRendering.onchange = writeToLocalStorage;
+			updatePromptOnMoreButton.onchange = writeToLocalStorage;
+			jumpTo1stNewOnMoreButton.onchange = writeToLocalStorage;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>openOutpaint 🐠</title>
+		<!-- CSS Variables -->
+		<link href="css/colors.css?v=f732f19" rel="stylesheet" />
+		<link href="css/icons.css?v=77b6393" rel="stylesheet" />
+
+		<link href="css/index.css?v=cf6b502" rel="stylesheet" />
+		<link href="css/layers.css?v=92c0352" rel="stylesheet" />
+
+		<link href="css/ui/generic.css?v=ed024fe" rel="stylesheet" />
+
+		<link href="css/ui/notifications.css?v=7b152de" rel="stylesheet" />
+		<link href="css/ui/workspace.css?v=2a9fdf7" rel="stylesheet" />
+		<link href="css/ui/history.css?v=0b03861" rel="stylesheet" />
+		<link href="css/ui/layers.css?v=1d66c2b" rel="stylesheet" />
+		<link href="css/ui/toolbar.css?v=109c78f" rel="stylesheet" />
+
+		<!-- Tool Specific CSS -->
+		<link href="css/ui/tool/dream.css?v=2d8a8ac" rel="stylesheet" />
+		<link href="css/ui/tool/stamp.css?v=6f5ce15" rel="stylesheet" />
+		<link href="css/ui/tool/colorbrush.css?v=57c8be5" rel="stylesheet" />
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	</head>
+
+	<body>
+		<!-- Main Toolbar -->
+		<div
+			id="infoContainer"
+			class="floating-window"
+			style="left: 10px; top: 10px">
+			<div id="infoTitleBar" class="draggable floating-window-title">
+				openOutpaint 🐠
+				<div style="flex: 1"></div>
+				<button id="settings-btn" class="ui icon header-button">
+					<div class="icon-settings"></div>
+				</button>
+			</div>
+			<div id="info" class="menu-container" style="min-width: 200px">
+				<div
+					id="workspace-select-area"
+					style="display: flex; margin-bottom: 5px">
+					<div id="workspace-select"></div>
+					<div class="buttons" style="display: flex">
+						<button
+							id="save-workspace-btn"
+							class="ui inline-icon icon-save workspace-btn"
+							title="Save Workspace"></button>
+						<button
+							id="rename-workspace-btn"
+							class="ui inline-icon icon-pencil workspace-btn"
+							title="Rename Workspace"></button>
+						<button
+							id="more-workspace-btn"
+							class="ui inline-icon icon-more-horizontal workspace-btn"
+							title="More Options"></button>
+						<div
+							id="more-workspace-menu"
+							class="workspace-collapsible collapsed">
+							<div>
+								<button
+									id="export-workspace-btn"
+									class="ui inline-icon icon-download workspace-btn"
+									title="Export Workspace"></button>
+								<button
+									id="import-workspace-btn"
+									class="ui inline-icon icon-upload workspace-btn"
+									title="Import Workspace"></button>
+								<button
+									id="delete-workspace-btn"
+									class="ui inline-icon icon-trash workspace-btn"
+									title="Delete Workspace"></button>
+							</div>
+							<div style="width: 5px; background-color: var(--c-primary)"></div>
+						</div>
+						<div style="width: 5px; background-color: var(--c-primary)"></div>
+					</div>
+				</div>
+
+				<div class="host-field-wrapper">
+					<div class="host-field">
+						<div class="label">Host</div>
+						<input id="host" value="http://127.0.0.1:7860" />
+					</div>
+					<div
+						id="connection-status-indicator"
+						class="connection-status before">
+						<span id="connection-status-indicator-text">Waiting</span>
+					</div>
+				</div>
+
+				<!-- Prompts section -->
+				<button type="button" class="collapsible">Prompts</button>
+				<div class="content prompt">
+					<div class="inputs">
+						<div class="prompt-wrapper">
+							<div class="prompt-indicator positive" title="Prompt"></div>
+							<textarea id="prompt" class="expandable"></textarea>
+						</div>
+						<div class="prompt-wrapper">
+							<div
+								class="prompt-indicator negative"
+								title="Negative Prompt"></div>
+							<textarea id="negPrompt" class="expandable"></textarea>
+						</div>
+						<div class="prompt-wrapper">
+							<div class="prompt-indicator styles" title="Styles"></div>
+							<div id="style-ac-mselect" style="flex-shrink: 1"></div>
+						</div>
+					</div>
+					<div class="prompt-history-wrapper">
+						<div class="prompt-history-container">
+							<div id="prompt-history"></div>
+							<button
+								id="prompt-history-btn"
+								class="prompt-history-btn"></button>
+						</div>
+					</div>
+				</div>
+				<!-- SD section -->
+				<button type="button" class="collapsible">
+					Stable Diffusion settings
+				</button>
+				<div class="content">
+					<label>Model:</label>
+					<div id="models-ac-select"></div>
+					<button id="refreshModelsBtn" onclick="getModels(true)">
+						<img
+							class="refreshbutton"
+							src="./res/icons/refresh-cw.svg?v=f627140"
+							alt="refresh models"
+							title="refresh models" />
+					</button>
+					<label>Sampler:</label>
+					<div id="sampler-ac-select"></div>
+					<label>Scheduler:</label>
+					<div id="scheduler-ac-select"></div>
+					<label for="seed">Seed (-1 for random):</label>
+					<br />
+					<input
+						type="number"
+						id="seed"
+						onchange="changeSeed()"
+						min="-1"
+						max="99999999999999999999"
+						value="-1"
+						step="1" />
+					<br />
+					<label>Lora:</label>
+					<div id="lora-ac-select"></div>
+					<input
+						type="checkbox"
+						id="cbxRefiner"
+						onchange="changeRefinerEnabled()" />
+					<label for="cbxRefiner">Enable Refiner</label>
+					<br />
+					<label id="refinerModelLabel" class="refiner">Refiner Model</label>
+					<div id="refiner-ac-select" class="refiner"></div>
+					<!-- <button
+						id="refreshRefinersBtn"
+						class="refiner"
+						onclick="getModels(true)">
+						<img
+							class="refreshbutton"
+							src="./res/icons/refresh-cw.svg?v=f627140"
+							alt="refresh refiner models"
+							title="refresh refiner models" />
+					</button> -->
+					<div id="refinerSwitchAt" class="refiner"></div>
+					<input type="checkbox" id="cbxHRFix" onchange="changeHiResFix()" />
+					<label for="cbxHRFix">Apply Txt2Img HRfix</label>
+					<br />
+					<input
+						type="checkbox"
+						id="cbxHRFSquare"
+						onchange="changeHiResSquare()"
+						class="hrfix" />
+					<label for="cbxHRFSquare" class="hrfix">
+						Square Firstpass Aspect
+					</label>
+					<br class="hrfix" />
+					<div id="hrFixScale" class="hrfix"></div>
+					<div id="hrFixLockPx" class="hrfix"></div>
+					<div id="hrFixSteps" class="hrfix"></div>
+					<label id="hrFixLabel" class="hrfix">Choose HRfix upscaler</label>
+					<div id="hrFixUpscaler" class="hrfix"></div>
+					<div id="hrDenoising" class="hrfix"></div>
+					<!-- <input
+						type="checkbox"
+						id="cbxRestoreFaces"
+						onchange="changeRestoreFaces()" />
+					<label for="cbxRestoreFaces">Restore Faces</label>
+					<br /> -->
+					<input
+						type="checkbox"
+						id="cbxSyncCursorSize"
+						onchange="changeSyncCursorSize()" />
+					<label for="cbxSyncCursorSize">Sync cursor size</label>
+					<br />
+					<div id="resolution"></div>
+					<div id="steps"></div>
+					<div id="cfgScale"></div>
+					<div id="batchSize"></div>
+					<div id="batchCount"></div>
+					<label for="maskBlur">Mask blur:</label>
+					<span id="maskBlurText"></span>
+					<br />
+					<input
+						type="number"
+						id="maskBlur"
+						name="maskBlur"
+						min="0"
+						max="256"
+						value="0"
+						step="1"
+						onchange="changeMaskBlur()" />
+				</div>
+				<!-- Extensions section -->
+				<button type="button" class="collapsible">Extensions</button>
+				<div class="content">
+					<input
+						type="checkbox"
+						id="cbxDynPrompts"
+						onchange="changeDynamicPromptsExtension()"
+						disabled="disabled" />
+					<label for="cbxDynPrompts">Dynamic Prompts</label>
+					<br />
+					<input
+						type="checkbox"
+						id="cbxControlNet"
+						onchange="changeControlNetExtension()"
+						disabled="disabled" />
+					<label for="cbxControlNet">ControlNet In/Outpainting</label>
+					<br class="controlNetElement" />
+					<label id="cnModuleLabel" class="controlNetElement">
+						Inpaint Preprocessor
+					</label>
+					<div id="controlNetModule-ac-select" class="controlNetElement"></div>
+					<label id="cnModelLabel" class="controlNetElement">Model</label>
+					<div id="controlNetModel-ac-select" class="controlNetElement"></div>
+					<label id="cnControlLabel" class="controlNetElement">
+						Inpaint Mode
+					</label>
+					<select id="controlNetMode-select" class="controlNetElement">
+						<option value="Balanced">balanced</option>
+						<option value="My prompt is more important">+prompt</option>
+						<option value="ControlNet is more important">+CN</option>
+					</select>
+					<br class="controlNetElement" />
+					<label id="cnResizeLabel" class="controlNetElement">
+						Resize Mode
+					</label>
+					<select id="controlNetResize-select" class="controlNetElement">
+						<option value="Just Resize">resize</option>
+						<option value="Crop and Resize">+crop</option>
+						<option value="Resize and Fill">+fill</option>
+					</select>
+					<br class="controlNetElement" />
+					<input
+						type="checkbox"
+						id="cbxControlNetReferenceLayer"
+						onchange="changeControlNetReference()"
+						class="controlNetElement" />
+					<label for="cbxControlNetReferenceLayer" class="controlNetElement">
+						Reference as 1st CN Unit
+					</label>
+					<br class="controlNetReferenceElement" />
+					<label id="cnReferenceModuleLabel" class="controlNetReferenceElement">
+						Reference Preprocessor
+					</label>
+					<div
+						id="controlNetReferenceModule-ac-select"
+						class="controlNetReferenceElement"></div>
+					<div
+						id="controlNetReferenceFidelity"
+						class="controlNetReferenceElement"></div>
+					<label id="cnResizeLabel" class="controlNetReferenceElement">
+						Reference Mode
+					</label>
+					<select
+						id="controlNetReferenceMode-select"
+						class="controlNetReferenceElement">
+						<option value="Balanced">balanced</option>
+						<option value="My prompt is more important">+prompt</option>
+						<option value="ControlNet is more important">+CN</option>
+					</select>
+				</div>
+				<!-- Save/load image section -->
+				<button type="button" class="collapsible">Save/Upscaling</button>
+				<div class="content">
+					<button onclick="downloadCanvas()">Save canvas</button>
+					<br />
+					<label>Choose upscaler</label>
+					<div id="upscaler-ac-select"></div>
+					<div id="upscaleX"></div>
+					<button onclick="upscaleAndDownload(true,false)">
+						Upscale (and download)
+					</button>
+					<button onclick="upscaleAndDownload(false,true)">
+						Upscale (to resource)
+					</button>
+					<br />
+
+					<button onclick="newImage()">Clear canvas</button>
+				</div>
+				<!-- Debug info -->
+				<button type="button" class="collapsible">Debug info</button>
+				<div id="coords" class="content">
+					<label for="mouseX">mouseX:</label>
+					<span id="mouseX"></span>
+					<br />
+					<label for="mouseY">mouseY:</label>
+					<span id="mouseY"></span>
+					<br />
+					<label for="canvasX">canvasX:</label>
+					<span id="canvasX"></span>
+					<br />
+					<label for="canvasY">canvasY:</label>
+					<span id="canvasY"></span>
+					<br />
+					<label for="snapX">snapX:</label>
+					<span id="snapX"></span>
+					<br />
+					<label for="snapY">snapY:</label>
+					<span id="snapY"></span>
+					<br />
+					<label for="heldButton">Mouse button:</label>
+					<span id="heldButton"></span>
+					<br />
+					<button id="resetToDefaults" onclick="resetToDefaults()">
+						Reset to defaults
+					</button>
+					<button id="toggleDebugBtn" onclick="global.toggledebug()">
+						Toggle Debug
+					</button>
+					<br />
+					<span id="version">
+						<a href="https://github.com/zero01101/openOutpaint" target="_blank">
+							v20240831.001
+						</a>
+						<br />
+						<a
+							href="https://github.com/zero01101/openOutpaint/wiki/Manual"
+							target="_blank">
+							User Manual
+						</a>
+					</span>
+					<br />
+					<!-- <hr /> -->
+				</div>
+				<div style="display: flex; align-items: center">
+					<div
+						style="
+							flex: 1;
+							border-top: 1px black solid;
+							margin-right: 10px;
+						"></div>
+					Context Menu
+					<div
+						style="
+							flex: 1;
+							border-top: 1px black solid;
+							margin-left: 10px;
+						"></div>
+				</div>
+				<div id="tool-context" class="context-menu"></div>
+			</div>
+		</div>
+
+		<!-- History -->
+		<div id="ui-history" class="floating-window" style="right: 10px; top: 10px">
+			<div class="draggable floating-window-title">
+				History
+				<div style="flex: 1"></div>
+				<button
+					id="history-logs-btn"
+					class="ui icon header-button"
+					title="Generate History Log">
+					<div class="icon-scroll"></div>
+				</button>
+			</div>
+			<div class="menu-container" style="min-width: 200px">
+				<div id="history" class="history"></div>
+				<div class="button-array" style="padding: 10px">
+					<button type="button" onclick="commands.undo()" class="button tool">
+						undo
+					</button>
+					<button type="button" onclick="commands.redo()" class="button tool">
+						redo
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Layers -->
+		<div
+			id="ui-layers"
+			class="floating-window"
+			style="right: 10px; bottom: 10px">
+			<div class="draggable floating-window-title">
+				Layers
+				<div style="flex: 1"></div>
+				<button
+					id="unzoom-btn"
+					class="ui icon header-button"
+					title="Reset Zoom to 1x"
+					onclick="unzoom()">
+					<div class="icon-unzoom"></div>
+				</button>
+			</div>
+			<div class="menu-container" style="min-width: 200px">
+				<div class="layer-manager">
+					<div id="layer-list" class="layer-list"></div>
+					<div class="ui separator"></div>
+					<div class="layer-list-actions">
+						<button
+							type="button"
+							title="Add Layer"
+							onclick="commands.runCommand('addLayer', 'Added Layer', {})"
+							class="ui icon button">
+							<div class="icon-file-plus"></div>
+						</button>
+
+						<button
+							type="button"
+							title="Move Layer Up"
+							onclick="commands.runCommand('moveLayer', 'Moved Layer Up',{delta: 1})"
+							class="ui icon button">
+							<div class="icon-chevron-up"></div>
+						</button>
+
+						<button
+							type="button"
+							title="Move Layer Down"
+							onclick="commands.runCommand('moveLayer', 'Moved Layer Down', {delta: -1})"
+							class="ui icon button">
+							<div class="icon-chevron-down"></div>
+						</button>
+
+						<button
+							type="button"
+							title="Merge Layer Down"
+							onclick="commands.runCommand('mergeLayer', 'Merged Layer Down')"
+							class="ui icon button">
+							<div class="icon-chevron-flat-down"></div>
+						</button>
+
+						<button
+							type="button"
+							title="Delete Layer"
+							onclick="commands.runCommand('deleteLayer', 'Deleted Layer')"
+							class="ui icon button">
+							<div class="icon-file-x"></div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts-->
+		<div
+			id="ui-script"
+			class="floating-window"
+			style="right: 10px; top: 330px; display: none">
+			<div class="draggable floating-window-title">Script</div>
+			<div class="menu-container" style="min-width: 200px">
+				<div id="script-select" class="script-select">
+					<select id="script-selector" onchange="changeScript(event)">
+						<!-- <option id="no_selected_script" value="">Select a script...</option>
+						<option id="custom" value="custom">Custom</option> -->
+					</select>
+					<!-- <button
+						id="save-custom-script"
+						disabled="disabled"
+						title="Save custom script"
+						onclick="saveCustomScript()">
+						<image src="./res/icons/save.svg" width="60%"></image>
+					</button> -->
+				</div>
+				<div id="script-name" class="script-name">
+					<label for="script-name-input">Script Name:</label>
+					<br />
+					<input
+						id="script-name-input"
+						disabled="disabled"
+						onfocusout="storeUserscriptVal(event, 'name')" />
+					<br />
+				</div>
+				<div id="script-args" class="script-args">
+					<label for="script-args-input">Script Args List:</label>
+					<br />
+					<textarea
+						id="script-args-input"
+						onfocusout="storeUserscriptVal(event, 'args')"></textarea>
+					<br />
+				</div>
+			</div>
+		</div>
+
+		<!-- Toolbar -->
+		<div
+			id="ui-toolbar"
+			class="floating-window toolbar"
+			style="right: 270px; top: 10px">
+			<div class="draggable handle">
+				<span class="line"></span>
+			</div>
+			<div class="lock-indicator" id="toolbar-lock-indicator"></div>
+			<div class="toolbar-section"></div>
+		</div>
+
+		<!-- Canvases -->
+		<div id="layer-render" class="layer-render-target"></div>
+
+		<!-- Overlay -->
+		<canvas id="layer-overlay" class="overlay-canvas"></canvas>
+		<canvas id="layer-debug-overlay" class="overlay-canvas"></canvas>
+
+		<!-- Page Overlay -->
+		<div id="page-overlay-wrapper" class="page-overlay invisible">
+			<div class="page-overlay-window">
+				<div class="title">
+					Settings
+					<button id="settings-btn-close" class="close"></button>
+				</div>
+				<div class="ui separator"></div>
+				<iframe
+					id="page-overlay"
+					src="pages/configuration.html?v=fdbd833"></iframe>
+			</div>
+		</div>
+
+		<!-- Basics -->
+		<script src="js/global.js?v=ac30d16" type="text/javascript"></script>
+		<script src="js/defaults.js?v=5b06818" type="text/javascript"></script>
+		<script src="js/extensions.js?v=5102854" type="text/javascript"></script>
+
+		<!-- Base Libs -->
+		<script src="js/lib/util.js?v=379aef7" type="text/javascript"></script>
+		<script
+			src="js/lib/notifications.js?v=270db88"
+			type="text/javascript"></script>
+		<script src="js/lib/events.js?v=2ab7933" type="text/javascript"></script>
+		<script src="js/lib/db.js?v=434363b" type="text/javascript"></script>
+		<script src="js/lib/input.js?v=f99493d" type="text/javascript"></script>
+		<script src="js/lib/layers.js?v=26b7436" type="text/javascript"></script>
+		<script src="js/lib/commands.js?v=9b176a7" type="text/javascript"></script>
+
+		<script src="js/lib/toolbar.js?v=4fcf718" type="text/javascript"></script>
+		<script src="js/lib/ui.js?v=17014b3" type="text/javascript"></script>
+
+		<script
+			src="js/initalize/layers.populate.js?v=066dc8e"
+			type="text/javascript"></script>
+
+		<!-- Configuration -->
+		<script src="js/config.js?v=9747005" type="text/javascript"></script>
+		<script src="js/theme.js?v=435cc1b" type="text/javascript"></script>
+
+		<!-- Content -->
+		<script src="js/prompt.js?v=7a1c68c" type="text/javascript"></script>
+		<script src="js/index.js?v=8ad9927" type="text/javascript"></script>
+
+		<script
+			src="js/ui/floating/history.js?v=4f29db4"
+			type="text/javascript"></script>
+		<script
+			src="js/ui/floating/layers.js?v=3f5807f"
+			type="text/javascript"></script>
+
+		<!-- Load Tools -->
+		<script
+			src="js/ui/tool/generic.js?v=3e678e0"
+			type="text/javascript"></script>
+
+		<script src="js/ui/tool/dream.js?v=9ae0612" type="text/javascript"></script>
+		<script
+			src="js/ui/tool/maskbrush.js?v=e9bd0eb"
+			type="text/javascript"></script>
+		<script
+			src="js/ui/tool/colorbrush.js?v=84ff9fa"
+			type="text/javascript"></script>
+		<script
+			src="js/ui/tool/select.js?v=597d547"
+			type="text/javascript"></script>
+		<script src="js/ui/tool/stamp.js?v=fdca5bc" type="text/javascript"></script>
+		<script
+			src="js/ui/tool/interrogate.js?v=dd45b4a"
+			type="text/javascript"></script>
+
+		<!-- Initialize -->
+		<script
+			src="js/initalize/workspace.populate.js?v=925431d"
+			type="text/javascript"></script>
+		<script
+			src="js/initalize/shortcuts.populate.js?v=98e7502"
+			type="text/javascript"></script>
+		<script
+			src="js/initalize/toolbar.populate.js?v=c1ca438"
+			type="text/javascript"></script>
+		<script
+			src="js/initalize/debug.populate.js?v=64ad17f"
+			type="text/javascript"></script>
+		<script
+			src="js/initalize/ui.populate.js?v=b59b288"
+			type="text/javascript"></script>
+
+		<!-- Deals with webui communication -->
+		<script src="js/webui.js?v=ccd423a" type="text/javascript"></script>
+	</body>
+</html>
